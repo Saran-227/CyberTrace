@@ -52,14 +52,14 @@ The primary candidate ATM dataset created in **Phase 2A** by querying OpenStreet
 - **Local Caching**: Raw query responses are cached deterministically in `data/external/osm/osm_atms_{city}.json` to allow offline execution and prevent rate-limiting.
 
 ### C. ATM Historical Activity Dataset (`atm_activity.csv`)
-Generated in **Phase 2B** to simulate historical operational metrics across all 333 verified OSM ATM locations over a 90-day time window (`2026-07-03` to `2026-09-30`).
+Generated in **Phase 2B & audited in Phase 2B.1** to simulate historical operational metrics across all 333 verified OSM ATM locations over a completed 90-day time window (`2026-06-26` through `2026-09-23`).
 
 > [!WARNING]
-> **Synthetic Banking Disclaimer**: All ATM activity data is **100% synthetic** and mathematically simulated for machine-learning prototyping. It does not reflect real financial switch transactions or customer account operations. Real investigations require authorized bank CBS audit logs and switch journals.
+> **Synthetic Operational Activity Notice**: ATM activity data is synthetic and represents simulated operational activity. It does not represent actual bank transaction logs or confirmed fraud activity. Real investigations require authorized bank CBS audit logs and switch journals.
 
 **Schema Fields:**
 - `atm_id`: Deterministic foreign key referencing `atm_locations.csv`
-- `date`: Transaction date (`YYYY-MM-DD`)
+- `date`: Completed historical transaction date (`2026-06-26` to `2026-09-23`)
 - `hour`: Operational hour of day ($0 \dots 23$)
 - `day_of_week`: Day index ($0 = \text{Monday} \dots 6 = \text{Sunday}$)
 - `is_weekend`: Flag ($1$ for Saturday/Sunday, $0$ for weekdays)
@@ -68,12 +68,13 @@ Generated in **Phase 2B** to simulate historical operational metrics across all 
 - `cash_withdrawal_count`: Simulated cash dispensing operations ($\le \text{transaction\_count}$)
 - `estimated_cash_volume`: Estimated total dispensed cash volume in INR ($\ge 0.0$)
 - `activity_score`: Composite normalized activity metric bounded in $[0.0, 100.0]$
-- `fraud_withdrawal_count`: Simulated anomalous/suspicious withdrawal signal
-- `high_value_withdrawal_count`: Frequency of maximum denomination transactions
+- `high_value_withdrawal_count`: Frequency of simulated high-value withdrawals ($\ge ₹15,000$, calculated purely from synthetic transaction amounts)
 - `average_amount`: Simulated average transaction ticket size in INR
 
 **Validation & Leakage Safeguards:**
+- **No Fraud Variable**: `fraud_withdrawal_count` is absent. CyberTrace does not possess real fraud transaction logs.
 - **Zero Target Leakage**: `withdrawal_zone` and complaint target variables are strictly omitted.
 - **Panipat Status**: Panipat has 0 OSM ATMs in `atm_locations.csv`; thus, exactly 0 activity records are generated for Panipat (no fake ATMs fabricated).
 - **Invariant Guarantee**: `cash_withdrawal_count <= transaction_count` holds strictly across all 719,280 generated records.
+
 

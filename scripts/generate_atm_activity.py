@@ -19,7 +19,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate synthetic ATM activity dataset.")
     parser.add_argument("--days", type=int, default=90, help="Number of historical days (default: 90)")
     parser.add_argument("--seed", type=int, default=42, help="Random seed for deterministic generation (default: 42)")
-    parser.add_argument("--start-date", type=str, default="2026-07-03", help="Start date YYYY-MM-DD (default: 2026-07-03)")
+    parser.add_argument("--start-date", type=str, default="2026-06-26", help="Start date YYYY-MM-DD (default: 2026-06-26)")
     args = parser.parse_args()
 
     print(f"Generating {args.days} days of synthetic ATM activity (seed={args.seed}, start={args.start_date})...")

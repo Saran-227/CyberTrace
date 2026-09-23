@@ -136,7 +136,6 @@ ATM_ACTIVITY_SCHEMA = [
     "cash_withdrawal_count",
     "estimated_cash_volume",
     "activity_score",
-    "fraud_withdrawal_count",
     "high_value_withdrawal_count",
     "average_amount",
 ]

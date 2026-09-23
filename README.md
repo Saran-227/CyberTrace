@@ -8,7 +8,7 @@ The system ingests synthetic cybercrime complaint metadata, predicts a likely ge
 
 ## ⚠️ Academic Disclaimers & Ethics Policy
 
-1. **Synthetic Data Disclosure**: All cybercrime complaint records, transaction histories, and ATM activity logs are **synthetic**. No actual victim data or personal identifiable information (PII) is used.
+1. **Synthetic Data Disclosure**: All cybercrime complaint records, transaction histories, and ATM activity logs are **synthetic**. ATM activity data is synthetic and represents simulated operational activity. It does not represent actual bank transaction logs or confirmed fraud activity. No actual victim data or personal identifiable information (PII) is used.
 2. **Zero Target Leakage**: The supervised machine learning model does not access hidden cash-out coordinates or target labels during inference or feature engineering.
 3. **No Fabrication of Evidence**: The system clearly distinguishes:
    - **ML Prediction**: Statistical likelihood of geographic withdrawal zones.
@@ -203,8 +203,8 @@ PHASE 1: Dataset generation and validation
 PHASE 2A: ATM geographic dataset pipeline
           STATUS: COMPLETE (OpenStreetMap ingestion, caching, normalization, and validation)
 
-PHASE 2B: Synthetic historical ATM activity dataset
-          STATUS: COMPLETE (719,280 synthetic records, 90 days, zero target leakage, reproducible)
+PHASE 2B / 2B.1: Synthetic historical ATM activity dataset & methodology audit
+          STATUS: COMPLETE (719,280 synthetic records, 2026-06-26 to 2026-09-23, zero target leakage, zero fraud variables)
 
 PHASE 3: Geographic analysis and zone validation
           STATUS: NEXT

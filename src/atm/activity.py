@@ -66,7 +66,7 @@ def get_bank_tier_weight(bank_name: Any) -> float:
 
 def generate_synthetic_atm_activity(
     atm_locations_df: Optional[pd.DataFrame] = None,
-    start_date: str = "2026-07-03",
+    start_date: str = "2026-06-26",
     days: int = 90,
     random_seed: int = 42,
     save_processed: bool = True,
@@ -78,10 +78,11 @@ def generate_synthetic_atm_activity(
     - Only reads physical ATM infrastructure from atm_locations.csv.
     - Does NOT read, reference, or correlate with withdrawal_zone.
     - Does NOT use complaint records or hidden target coordinates.
+    - Contains NO fraud-specific activity variables (CyberTrace does not possess real bank fraud logs).
 
     Parameters:
         atm_locations_df: DataFrame of verified ATMs. If None, loads from atm_locations.csv.
-        start_date: Starting observation date (YYYY-MM-DD).
+        start_date: Starting observation date (YYYY-MM-DD), default 2026-06-26 (ending 2026-09-23 for 90 days).
         days: Number of historical days to simulate (default 90).
         random_seed: Deterministic RNG seed for complete reproducibility.
         save_processed: If True, writes to data/processed/atm_activity.csv.
@@ -171,12 +172,8 @@ def generate_synthetic_atm_activity(
     cash_volume = np.round(wd_counts * mean_ticket, 2)
     cash_volume[wd_counts == 0] = 0.0
 
-    # High value withdrawals (> 15,000 INR)
+    # High value withdrawals (> 15,000 INR calculated purely from synthetic transactions)
     high_val = rng.binomial(wd_counts, 0.07)
-
-    # Anomalous / Fraud cash-out burst (in ~0.2% of active timestamps, 1-2 rapid withdrawals)
-    fraud_flag = (rng.uniform(size=total_rows) < 0.002) & (wd_counts > 0)
-    fraud_tx = np.where(fraud_flag, rng.integers(1, 3, size=total_rows), 0)
 
     # Average amount per withdrawal
     denom = np.maximum(wd_counts, 1)
@@ -199,7 +196,6 @@ def generate_synthetic_atm_activity(
         "cash_withdrawal_count": wd_counts,
         "estimated_cash_volume": cash_volume,
         "activity_score": activity_score,
-        "fraud_withdrawal_count": fraud_tx,
         "high_value_withdrawal_count": high_val,
         "average_amount": avg_amount,
     })
@@ -235,10 +231,21 @@ def validate_atm_activity_dataframe(
     if missing_cols:
         errors.append(f"Missing required columns: {missing_cols}")
 
-    # 2. Strict Zero Target Leakage check
+    # 2. Strict Zero Target Leakage & Clean Activity Checks
     has_target = "withdrawal_zone" in df.columns
     if has_target:
         errors.append("CRITICAL: Target column 'withdrawal_zone' found in ATM activity dataset (Target Leakage)!")
+
+    # Check for fraud-specific columns (should not be in primary activity dataset)
+    fraud_cols = [c for c in df.columns if "fraud" in c.lower()]
+    has_fraud_column = len(fraud_cols) > 0
+    if has_fraud_column:
+        errors.append(f"CRITICAL: Fraud-specific column(s) {fraud_cols} found in ATM activity dataset!")
+
+    # Check for complaint metadata leakage
+    complaint_cols = [c for c in df.columns if c in ["complaint_id", "complaint_latitude", "complaint_longitude", "fraud_type", "amount_category"]]
+    if complaint_cols:
+        errors.append(f"CRITICAL: Complaint metadata column(s) {complaint_cols} found in ATM activity dataset!")
 
     # 3. ATM ID validity
     if atm_locations_df is None:
@@ -271,10 +278,19 @@ def validate_atm_activity_dataframe(
     if inv_score > 0:
         errors.append(f"{inv_score} records have activity_score outside [0, 100].")
 
-    # 5. Temporal consistency
+    # 5. Temporal consistency & date range audit
     inv_hours = int(((df["hour"] < 0) | (df["hour"] > 23)).sum())
     if inv_hours > 0:
         errors.append(f"{inv_hours} records have invalid hour values outside 0-23.")
+
+    # Check future dates (relative to current audit cutoff: 2026-09-23)
+    future_dates_count = 0
+    unique_dates_count = 0
+    if "date" in df.columns:
+        future_dates_count = int((df["date"] > "2026-09-23").sum())
+        if future_dates_count > 0:
+            errors.append(f"{future_dates_count} records have dates past 2026-09-23 (future date leakage).")
+        unique_dates_count = int(df["date"].nunique())
 
     # Check is_night consistency
     expected_night = ((df["hour"] >= 22) | (df["hour"] <= 5)).astype(int)
@@ -294,8 +310,11 @@ def validate_atm_activity_dataframe(
         "is_valid": is_valid,
         "missing_columns": missing_cols,
         "has_withdrawal_zone": has_target,
+        "has_fraud_column": has_fraud_column,
         "total_records": len(df),
         "unique_atms": df["atm_id"].nunique(),
+        "unique_dates_count": unique_dates_count,
+        "future_dates_count": future_dates_count,
         "nonexistent_atms_count": nonexistent_atms_count,
         "negative_transaction_counts": neg_tx,
         "negative_withdrawal_counts": neg_wd,
@@ -329,7 +348,6 @@ def get_atm_activity_summary(atm_id: str, hour: Optional[int] = None) -> Dict[st
         return default_summary
 
     total_tx = atm_records["transaction_count"].sum()
-    fraud_tx = atm_records["fraud_withdrawal_count"].sum() if "fraud_withdrawal_count" in atm_records.columns else 0
     high_val = atm_records["high_value_withdrawal_count"].sum() if "high_value_withdrawal_count" in atm_records.columns else 0
 
     hour_active = False
@@ -340,7 +358,7 @@ def get_atm_activity_summary(atm_id: str, hour: Optional[int] = None) -> Dict[st
     return {
         "atm_id": atm_id,
         "total_recorded_transactions": int(total_tx),
-        "historical_fraud_withdrawals": int(fraud_tx),
+        "historical_fraud_withdrawals": 0,
         "high_value_withdrawal_rate": round(float(high_val / max(1, total_tx)), 3),
         "is_historically_active_at_hour": hour_active,
         "is_synthetic_data": True,
