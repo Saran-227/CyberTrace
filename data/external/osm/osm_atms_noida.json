@@ -1,0 +1,39 @@
+{
+  "region_name": "Noida",
+  "bbox": [
+    28.46,
+    77.3,
+    28.62,
+    77.48
+  ],
+  "timestamp": 1790193501.8798375,
+  "status": "OK",
+  "notes": "Retrieved 1 elements from OSM API 0.6 fallback",
+  "count": 1,
+  "elements": [
+    {
+      "type": "node",
+      "id": 9565139144,
+      "lat": 28.5355254,
+      "lon": 77.3967982,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "cash_in": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "network": "SBI ATM",
+        "not:brand:wikidata": "Q1340361",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    }
+  ]
+}

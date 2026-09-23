@@ -1,0 +1,334 @@
+atm_id,bank,operator,latitude,longitude,address,city,district,state,is_24x7,source
+OSM-NODE-1845296821,Punjab National Bank,Punjab National Bank,31.301184,75.579888,unknown,Jalandhar,Jalandhar,Punjab,unknown,OpenStreetMap
+OSM-NODE-5094962456,ICICI Bank,ICICI,31.316589,75.589165,"22- 23, G T Road, Opposite Kings Hotel, Jawahar Nagar",Jalandhar,Jalandhar,Punjab,unknown,OpenStreetMap
+OSM-NODE-5095007519,Syndicate Bank,Syndicate Bank,31.322502,75.576902,"Model Town Rd, Near Passport Office, Near Hotel Sky Lark, Shastri Nagar, Civil Line",Jalandhar,Jalandhar,Punjab,unknown,OpenStreetMap
+OSM-NODE-916550345,Punjab National Bank,unknown,30.909005,75.860628,unknown,Ludhiana,Ludhiana,Punjab,unknown,OpenStreetMap
+OSM-NODE-2194435660,Union Bank Of  India,unknown,30.914374,75.852146,unknown,Ludhiana,Ludhiana,Punjab,unknown,OpenStreetMap
+OSM-NODE-4355006890,Union bank,Union bank,30.900582,75.873984,unknown,Ludhiana,Ludhiana,Punjab,unknown,OpenStreetMap
+OSM-NODE-13971678384,Central Bank of India,Central Bank of India,30.92385,75.854159,Daresi Road,Ludhiana,Ludhiana,Punjab,False,OpenStreetMap
+OSM-NODE-2592596093,State Bank,State Bank,31.643618,74.876412,unknown,Amritsar,Amritsar,Punjab,unknown,OpenStreetMap
+OSM-NODE-4510825889,HDFC Bank,HDFC Bank,31.627023,74.877999,unknown,Amritsar,Amritsar,Punjab,True,OpenStreetMap
+OSM-NODE-5478127723,state bank,state bank,31.633416,74.883651,unknown,Amritsar,Amritsar,Punjab,True,OpenStreetMap
+OSM-NODE-6618425385,PNB,PNB,31.626153,74.878009,unknown,Amritsar,Amritsar,Punjab,unknown,OpenStreetMap
+OSM-NODE-6626664510,unknown,unknown,31.626455,74.878153,unknown,Amritsar,Amritsar,Punjab,unknown,OpenStreetMap
+OSM-NODE-6846320851,State Bank of India,State Bank of India,31.625533,74.879801,Mahan Singh Gate Road,Amritsar,Amritsar,Punjab,False,OpenStreetMap
+OSM-NODE-11809604387,Bank of India,Bank of India,31.629965,74.873307,unknown,Amritsar,Amritsar,Punjab,unknown,OpenStreetMap
+OSM-NODE-11809604389,UCO Bank,UCO Bank,31.629927,74.873335,unknown,Amritsar,Amritsar,Punjab,unknown,OpenStreetMap
+OSM-NODE-11810040090,Axis Bank,Axis Bank,31.627454,74.875075,unknown,Amritsar,Amritsar,Punjab,unknown,OpenStreetMap
+OSM-NODE-11810040093,Jammu and Kashmir Bank,Jammu and Kashmir Bank,31.626978,74.875722,unknown,Amritsar,Amritsar,Punjab,unknown,OpenStreetMap
+OSM-NODE-11810040095,State Bank of India,State Bank of India,31.626495,74.877181,unknown,Amritsar,Amritsar,Punjab,unknown,OpenStreetMap
+OSM-NODE-12066244993,unknown,unknown,31.642004,74.866866,unknown,Amritsar,Amritsar,Punjab,unknown,OpenStreetMap
+OSM-NODE-1330374711,unknown,unknown,30.335716,76.384768,unknown,Patiala,Patiala,Punjab,unknown,OpenStreetMap
+OSM-NODE-3979941615,unknown,unknown,30.354441,76.362042,unknown,Patiala,Patiala,Punjab,unknown,OpenStreetMap
+OSM-NODE-4283616202,HDFC Bank,HDFC Bank,30.364629,76.466879,unknown,Patiala,Patiala,Punjab,True,OpenStreetMap
+OSM-NODE-4283616204,AXIS Bank,AXIS Bank,30.364884,76.467195,unknown,Patiala,Patiala,Punjab,unknown,OpenStreetMap
+OSM-NODE-12201826936,unknown,unknown,30.352642,76.369952,unknown,Patiala,Patiala,Punjab,unknown,OpenStreetMap
+OSM-NODE-597104343,State Bank of India,State Bank of India,30.688298,76.803616,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-1849636382,unknown,unknown,30.740917,76.797681,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-2210744171,Canara Bank,Canara Bank,30.743991,76.734047,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-3674995851,Citibank,Citibank,30.74271,76.789558,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-3674999749,Citibank,Citibank,30.704919,76.80103,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-4355014491,HDFC Bank,HDFC Bank,30.734557,76.770079,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-4355014591,sbp,sbp,30.754484,76.770146,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-4508426291,unknown,unknown,30.690847,76.812026,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-4699379791,Punjab National Bank,Punjab National Bank,30.71764,76.766459,unknown,Chandigarh,Chandigarh,Chandigarh,True,OpenStreetMap
+OSM-NODE-4782436023,riti ghar,riti ghar,30.724563,76.797619,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-5721820621,unknown,unknown,30.708731,76.784489,unknown,Chandigarh,Chandigarh,Chandigarh,True,OpenStreetMap
+OSM-NODE-6612909977,HDFC Bank,HDFC Bank,30.680744,76.750667,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-6612932359,Union Bank of India,Union Bank of India,30.720921,76.759078,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-6612932362,IndusInd Bank,IndusInd Bank,30.723781,76.763548,unknown,Chandigarh,Chandigarh,Chandigarh,True,OpenStreetMap
+OSM-NODE-6612932363,State Bank ATM Sector 35 Chandigarh,State Bank ATM Sector 35 Chandigarh,30.721671,76.760248,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-6612985292,Kotak Mahindra Bank,Kotak Mahindra Bank,30.734084,76.770203,unknown,Chandigarh,Chandigarh,Chandigarh,True,OpenStreetMap
+OSM-NODE-6612985301,IndusInd Bank,IndusInd Bank,30.734622,76.769999,unknown,Chandigarh,Chandigarh,Chandigarh,True,OpenStreetMap
+OSM-NODE-6612985309,Central Bank of India,Central Bank of India,30.730544,76.773212,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-6612985310,ICICI Bank,ICICI Bank,30.727679,76.769669,unknown,Chandigarh,Chandigarh,Chandigarh,True,OpenStreetMap
+OSM-NODE-6612985315,Punjab National Bank,Punjab National Bank,30.734319,76.770482,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-6612985316,State Bank of India,State Bank of India,30.735913,76.7688,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-6975339942,J&K Bank,J&K Bank,30.738959,76.774238,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-6982385788,Kotak Mahindra Bank,Kotak Mahindra Bank,30.740698,76.797678,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100705525,State Bank of India,State Bank of India,30.76598,76.776882,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100712278,State Bank of India,State Bank of India,30.75192,76.768998,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100725175,State Bank of India,State Bank of India,30.740722,76.787581,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100725176,State Bank of India,State Bank of India,30.741153,76.785896,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100728050,State Bank of India,State Bank of India,30.760332,76.776966,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100741578,State Bank of India,State Bank of India,30.709855,76.780592,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100748789,State Bank of India,State Bank of India,30.724671,76.778691,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100749214,State Bank of India,State Bank of India,30.7112,76.812807,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100749444,State Bank of India,State Bank of India,30.72595,76.795382,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100749825,State Bank ATM Sector 22 Chandigarh,State Bank ATM Sector 22 Chandigarh,30.735921,76.768725,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100749826,State Bank of India,State Bank of India,30.731749,76.776027,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100751631,State Bank of India,State Bank of India,30.722004,76.79907,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100756405,State Bank of India,State Bank of India,30.72308,76.768178,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100756406,State Bank of India,State Bank of India,30.722166,76.768708,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100756407,State Bank of India,State Bank of India,30.719926,76.768212,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100765045,State Bank of India,State Bank of India,30.696912,76.783912,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100765046,State Bank of India,State Bank of India,30.706158,76.801128,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100779480,State Bank of India,State Bank of India,30.74855,76.790257,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100780557,State Bank ATM shanti nagar Manimajra Chandigarh,State Bank ATM shanti nagar Manimajra Chandigarh,30.719778,76.832462,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100785608,State Bank of India,State Bank of India,30.765588,76.774684,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100849225,State Bank of India,State Bank of India,30.740666,76.789686,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7100849226,State Bank of India,State Bank of India,30.740469,76.78636,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101048042,State Bank ATM Sector 42 Chandigarh,State Bank ATM Sector 42 Chandigarh,30.723466,76.744821,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101110843,State Bank of India,State Bank of India,30.735663,76.779779,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101117737,State Bank of India,State Bank of India,30.730525,76.773968,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101118894,State Bank ATM Sector 22 Chandigarh,State Bank ATM Sector 22 Chandigarh,30.727772,76.767964,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101123318,State Bank of India,State Bank of India,30.739629,76.748543,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101123321,State Bank of India,State Bank of India,30.722743,76.810751,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101123322,State Bank ATM Sector 28 Chandigarh,State Bank ATM Sector 28 Chandigarh,30.714998,76.806182,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101123334,State Bank of India,State Bank of India,30.751344,76.794365,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101127225,State Bank of India,State Bank of India,30.718044,76.784297,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101130694,State Bank of India,State Bank of India,30.723183,76.76842,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101136356,State Bank ATM Sector 31 Chandigarh,State Bank ATM Sector 31 Chandigarh,30.702667,76.78107,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101145043,State Bank of India,State Bank of India,30.726212,76.808389,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101178390,State Bank of India,State Bank of India,30.733661,76.802946,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101264406,State Bank of India,State Bank of India,30.711377,76.753587,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101271710,State Bank of India,State Bank of India,30.716432,76.744526,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101278534,State Bank ATM Industrial and Business Park,State Bank ATM Industrial and Business Park,30.702073,76.799971,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101283034,State Bank ATM sector 49 Chandigarh,State Bank ATM sector 49 Chandigarh,30.693417,76.755874,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101283035,State Bank of India,State Bank of India,30.753877,76.741891,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101283036,State Bank of India,State Bank of India,30.757616,76.778211,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101283037,State Bank ATM Sector 14 Chandigarh,State Bank ATM Sector 14 Chandigarh,30.756306,76.766792,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101283038,State Bank of India,State Bank of India,30.737851,76.794737,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101307096,State Bank ATM ManiMajra Chandigarh,State Bank ATM ManiMajra Chandigarh,30.718,76.834868,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101307097,State Bank of India,State Bank of India,30.715792,76.843234,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7101326002,State Bank ATM Civil Secretariat Chandigarh,State Bank ATM Civil Secretariat Chandigarh,30.761636,76.800395,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7104038217,State Bank of India,State Bank of India,30.754462,76.787671,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7104038218,State Bank of India,State Bank of India,30.747101,76.787716,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7104038219,SBI,State Bank ATM Sukhna Lake Chandigarh,30.745234,76.810116,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7104077250,State Bank ATM Sector 36 Chandigarh,State Bank ATM Sector 36 Chandigarh,30.734242,76.753348,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7104094663,State Bank of India,State Bank of India,30.735044,76.736662,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7104099181,State Bank of India,State Bank of India,30.716188,76.776416,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7104103067,State Bank ATM (Khuda Ali Sher),State Bank ATM (Khuda Ali Sher),30.77417,76.810704,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-7466918429,Punjab National Bank,Punjab National Bank,30.724319,76.768118,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-9730014718,Punjab National Bank,Punjab National Bank,30.734855,76.778909,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-9999535169,Bank of Baroda,Bank of Baroda,30.683739,76.846317,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-10296408019,Union Bank of India,Union Bank of India,30.681474,76.848834,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-11076363672,HDFC Bank,HDFC Bank,30.713177,76.834661,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-11483121727,CSB Bank,CSB Bank,30.682821,76.845019,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-12097020971,State Bank of India,State Bank of India,30.751312,76.785461,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-12597199136,State Bank of India,State Bank of India,30.705057,76.773787,unknown,Chandigarh,Chandigarh,Chandigarh,unknown,OpenStreetMap
+OSM-NODE-1447314499,Punjab National Bank,Punjab National Bank,30.338667,76.828081,unknown,Ambala,Ambala,Haryana,unknown,OpenStreetMap
+OSM-NODE-1447314711,State Bank of India,unknown,30.389939,76.780324,unknown,Ambala,Ambala,Haryana,unknown,OpenStreetMap
+OSM-NODE-2065206400,unknown,unknown,30.391024,76.791943,unknown,Ambala,Ambala,Haryana,unknown,OpenStreetMap
+OSM-NODE-8046150089,Axis Bank,Axis Bank,30.3684,76.799281,unknown,Ambala,Ambala,Haryana,unknown,OpenStreetMap
+OSM-NODE-9525196143,HDFC Bank,HDFC Bank,30.359542,76.83165,unknown,Ambala,Ambala,Haryana,True,OpenStreetMap
+OSM-NODE-266376686,HSBC Bank,unknown,28.474044,77.04749,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-266376703,HDFC Bank,unknown,28.474096,77.047576,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-266587260,Citibank,Citibank,28.476707,77.063354,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-266734429,ICICI Bank,unknown,28.410913,77.043077,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-267120725,unknown,unknown,28.471761,77.101957,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-271336441,State Bank of India,unknown,28.474153,77.047729,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-271336448,HDFC Bank,HDFC Bank,28.455757,77.038404,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-271336454,State Bank of India,State Bank of India,28.456074,77.038211,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-277793690,unknown,unknown,28.474863,77.070697,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-297255247,ICICI Bank,ICICI Bank,28.459029,77.076436,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-297255248,HDFC Bank,HDFC Bank Limited,28.459016,77.076389,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-412744824,ICICI Bank,ICICI Bank,28.452938,77.050711,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-477905030,State Bank of India,State Bank of India,28.391685,77.048679,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-477905082,Union Bank of India,Union Bank of India,28.393599,77.046738,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-477905114,Punjab National Bank,Punjab National Bank,28.463361,77.032807,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-482663982,Standard Chartered,Standard Chartered,28.493008,77.092111,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-482663990,ABN Amro Bank,ABN Amro Bank,28.494107,77.093327,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-482663991,Citibank,Citibank,28.493708,77.093021,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-482663996,Kotak Mahindra Bank,Kotak Mahindra Bank,28.493598,77.092904,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-482849107,ICICI Bank,ICICI Bank,28.471738,77.102494,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-484198838,ICICI Bank,ICICI Bank,28.49498,77.103355,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-484198839,State Bank of India,State Bank of India,28.494834,77.103521,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-537979936,HDFC Bank,HDFC,28.479567,77.083775,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-537979940,IndusInd Bank,IndusInd Bank,28.479323,77.082874,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-537979943,ABN Amro,ABN Amro,28.479445,77.082871,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-537979957,Axis Bank,Axis Bank,28.479618,77.086653,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-537979966,Axis Bank,Axis Bank,28.480144,77.089523,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-565507015,unknown,unknown,28.43874,77.005287,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-581891474,unknown,unknown,28.461667,77.024146,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-1358147112,Standard Chartered,Standard Chartered,28.451631,77.074977,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-1358147152,HDFC Bank,HDFC Bank,28.451654,77.074976,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-1371226161,Standard Chartered,Standard Chartered,28.467562,77.081527,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-1372597046,RBL Bank,RBL Bank,28.462538,77.086921,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-1389058661,Punjab National Bank,Punjab National Bank,28.477754,77.0726,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-1389062584,unknown,unknown,28.417564,77.0564,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-1390057661,HDFC Bank,HDFC Bank,28.457228,77.063349,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-1390058506,ICICI Bank,ICICI Bank,28.456887,77.063362,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-1390059649,Axis Bank,Axis Bank,28.457102,77.063353,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-1390062512,Citibank,Citibank,28.456991,77.063372,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-1556459151,Citibank,Citibank,28.50457,77.097135,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-1562504506,unknown,unknown,28.452613,77.050501,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-1668936691,Standard Chartered,Standard Chartered,28.417236,77.050594,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-2009753174,unknown,unknown,28.529322,77.086729,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-2399657393,ICICI Bank,ICICI Bank,28.424988,77.099285,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-2399657399,State Bank of India,State Bank of India,28.425224,77.099238,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-2450211342,ICICI Bank,ICICI Bank,28.474587,77.070711,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-4078505382,state bank,unknown,28.47468,77.009418,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-4101251295,unknown,unknown,28.401363,77.048587,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-4101264092,unknown,unknown,28.401395,77.048662,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-4212577536,Axis Bank,Axis Bank,28.511878,77.03918,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-4212600962,Punjab National Bank,Punjab National Bank,28.504574,77.053167,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-4357793821,HDFC,HDFC,28.449038,77.056655,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-4357795875,Axis Bank,Axis Bank,28.448946,77.057027,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-4357795876,State Bank of India,State Bank of India,28.449216,77.056638,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-4969981421,HDFC Bank,HDFC Bank,28.451323,77.081766,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-5220810365,ICICI Bank,ICICI Bank,28.434677,77.10641,Golf Course Road,Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-5220810368,State Bank of India,State Bank of India,28.433569,77.105581,Golf Course Road,Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-5220810369,IndusInd Bank,IndusInd Bank,28.433817,77.105388,Golf Course Road,Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-5220810370,Kotak Mahindra Bank,Kotak Mahindra Bank,28.433819,77.105233,Golf Course Road,Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-5221320059,ICICI Bank,ICICI Bank,28.434699,77.106381,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-5228001162,HDFC Bank,HDFC Bank,28.434663,77.106438,Golf Course Road,Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-5248190626,Citibank,Citibank,28.434798,77.106366,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-5248190627,IndusInd Bank,IndusInd Bank,28.435923,77.111625,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-5412580321,Axis Bank,Axis Bank,28.463704,77.064998,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-6221553773,Bank of Baroda,Bank of Baroda,28.439274,77.034235,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-6435602485,Central Bank of India,Central Bank of India,28.491905,77.09378,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-7131288729,IndusInd Bank,IndusInd Bank,28.465544,77.032367,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-7131328036,Axis Bank,Axis Bank,28.465022,77.033605,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-7131357055,Karnataka Bank,Karnataka Bank,28.4649,77.033616,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-7131374816,ICICI Bank,ICICI Bank,28.476549,77.062952,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-9871055743,HDFC Bank,HDFC Bank,28.512266,77.026151,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-9879040022,Axis Bank,Axis Bank,28.472767,77.086902,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-9879136273,Axis Bank,Axis Bank,28.472476,77.08936,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-9948372686,ICICI Bank,ICICI Bank,28.468549,77.033764,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-10816636701,HDFC Bank,HDFC Bank,28.476103,77.093318,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-10876296335,Axis Bank,Axis Bank,28.424833,77.068395,"G5;G6, Sector 51",Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-10911354429,State Bank of India,State Bank of India,28.458899,77.072902,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-10924011401,HDFC Bank,HDFC Bank,28.424828,77.068668,"G-01;F-01, Ocus Quantum",Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-10924013202,IndusInd Bank,IndusInd Bank,28.42479,77.068599,unknown,Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-10951960291,Axis Bank,Axis Bank,28.395188,77.031433,unknown,Gurugram,Gurgaon,Haryana,unknown,OpenStreetMap
+OSM-NODE-10951960304,State Bank of India,State Bank of India,28.395056,77.031434,unknown,Gurugram,Gurgaon,Haryana,unknown,OpenStreetMap
+OSM-NODE-10951988905,IndusInd Bank,IndusInd Bank,28.395141,77.031435,unknown,Gurugram,Gurgaon,Haryana,unknown,OpenStreetMap
+OSM-NODE-11037384816,AU Small Finance Bank,AU Small Finance Bank,28.44365,77.100698,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11037504489,Axis Bank,Axis Bank,28.467046,77.082368,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11037529618,Kotak Mahindra Bank,Kotak Mahindra Bank,28.467034,77.082276,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11273940037,HDFC atm,unknown,28.413068,77.055249,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11273950020,State Bank of India,State Bank of India,28.412705,77.055359,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11273951303,Yes Bank,Yes Bank,28.412844,77.055236,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11634093111,IndusInd Bank,IndusInd Bank,28.411899,77.048653,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11688160165,ICICI Bank,ICICI Bank,28.514561,77.106645,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-11688160172,Axis Bank ATM,Axis Bank ATM,28.516043,77.107804,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11929097589,Punjab National Bank,Punjab National Bank,28.451295,77.081818,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11929097593,Bank of Baroda,Bank of Baroda,28.450779,77.081713,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-11929097594,Axis Bank,Axis Bank,28.451144,77.081916,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-11929097595,Punjab National Bank,Punjab National Bank,28.451272,77.081871,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-11929097596,HDFC Bank,HDFC Bank Limited,28.451263,77.081741,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11929097597,ICICI Bank,ICICI Bank Limited,28.451022,77.081584,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11929097598,Kotak Mahindra Bank,Kotak Mahindra Bank Limited,28.450993,77.08156,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11929097623,Bank of Baroda,Bank of Baroda,28.45083,77.081745,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11929097624,Axis Bank,Axis Bank,28.4511,77.081959,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11929097641,ICICI Bank,ICICI Bank,28.451065,77.081606,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-11930060341,Axis Bank,Axis Bank Limited,28.478679,77.071332,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-11930060342,RBL Bank,RBL Bank Limited,28.47857,77.071209,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-12091557061,State Bank of India,State Bank of India,28.459213,77.072763,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-12091626142,Axis Bank Limited,Axis Bank Limited,28.460412,77.079346,"-, Sushant Shopping Arcade, Sushant Lok 1",Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-12810731411,ICICI Bank,ICICI Bank,28.449113,77.056519,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-13073917050,ICICI Bank,ICICI Bank,28.424827,77.068555,"G-02, Ocus Quantum",Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-13175452498,HDFC Bank,HDFC Bank,28.476079,77.093261,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-13243334786,SBI,SBI,28.480303,77.092794,unknown,Gurugram,Gurugram,Haryana,True,OpenStreetMap
+OSM-NODE-13246051184,Kotak Mahindra Bank,Kotak Mahindra Bank,28.493438,77.092174,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-13246708704,Kotak Mahindra Bank,Kotak Mahindra Bank,28.459687,77.095452,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-13246708705,IDBI Bank,IDBI Bank,28.459624,77.095452,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-13584134282,Bank of Maharashtra,Bank of Maharashtra,28.42483,77.068477,"G-3;G-4, Ocus Quantum",Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-13974268620,Utkarsh Small Finance Bank,Utkarsh Small Finance Bank,28.417725,77.056234,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-13996916126,State Bank of India,State Bank of India,28.426846,77.058425,"GF-47,48,49,50",Gurugram,Gurugram,Haryana,False,OpenStreetMap
+OSM-NODE-14112503092,State Bank of India,State Bank of India,28.465433,77.07428,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-14112503097,State Bank of India,State Bank of India,28.468297,77.074438,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-14112503098,HDFC Bank,HDFC Bank,28.46833,77.074434,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-14112525867,HDFC Bank,HDFC Bank,28.426893,77.056968,unknown,Gurugram,Gurugram,Haryana,unknown,OpenStreetMap
+OSM-NODE-3401885126,unknown,unknown,28.433648,77.322545,unknown,Faridabad,Faridabad,Haryana,unknown,OpenStreetMap
+OSM-NODE-3401911750,unknown,unknown,28.433314,77.321382,unknown,Faridabad,Faridabad,Haryana,unknown,OpenStreetMap
+OSM-NODE-5137714321,SBI Bank,SBI Bank,28.357136,77.293564,unknown,Faridabad,Faridabad,Haryana,True,OpenStreetMap
+OSM-NODE-5139611721,HDFC Bank,HDFC Bank,28.358599,77.293553,unknown,Faridabad,Faridabad,Haryana,True,OpenStreetMap
+OSM-NODE-10901565338,PnB,PnB,28.415246,77.352749,unknown,Faridabad,Faridabad,Haryana,unknown,OpenStreetMap
+OSM-NODE-11696680075,Kotak Mahindra Bank ATM,Kotak Mahindra Bank ATM,28.469746,77.307198,unknown,Faridabad,Faridabad,Haryana,unknown,OpenStreetMap
+OSM-NODE-4385547591,unknown,unknown,28.613535,77.218433,unknown,New Delhi,New Delhi,Delhi,unknown,OpenStreetMap
+OSM-NODE-4713325589,State Bank of India,State Bank of India,28.624646,77.205376,unknown,New Delhi,New Delhi,Delhi,True,OpenStreetMap
+OSM-NODE-5338583878,State Bank,State Bank,28.62483,77.202973,unknown,New Delhi,New Delhi,Delhi,True,OpenStreetMap
+OSM-NODE-5338584664,Bank of Baroda,Bank of Baroda,28.624911,77.201087,unknown,New Delhi,New Delhi,Delhi,True,OpenStreetMap
+OSM-NODE-5345521629,Union Bank of India,Union Bank of India,28.621541,77.219259,unknown,New Delhi,New Delhi,Delhi,unknown,OpenStreetMap
+OSM-NODE-5345531970,Axis Bank,Axis Bank,28.623646,77.219395,unknown,New Delhi,New Delhi,Delhi,unknown,OpenStreetMap
+OSM-NODE-6385537596,State Bank of India,State Bank of India,28.610774,77.214274,unknown,New Delhi,New Delhi,Delhi,True,OpenStreetMap
+OSM-NODE-6385537606,Canara Bank,Canara Bank,28.619899,77.210606,unknown,New Delhi,New Delhi,Delhi,unknown,OpenStreetMap
+OSM-NODE-6470072750,UCO Bank,UCO Bank,28.622967,77.211944,unknown,New Delhi,New Delhi,Delhi,unknown,OpenStreetMap
+OSM-NODE-6470184614,unknown,unknown,28.61756,77.212551,unknown,New Delhi,New Delhi,Delhi,unknown,OpenStreetMap
+OSM-NODE-6470184617,State Bank of India,State Bank of India,28.604011,77.197675,unknown,New Delhi,New Delhi,Delhi,True,OpenStreetMap
+OSM-NODE-6539240961,State Bank of India,State Bank of India,28.624808,77.219372,unknown,New Delhi,New Delhi,Delhi,True,OpenStreetMap
+OSM-NODE-7265860000,State Bank of India,State Bank of India,28.61033,77.201061,unknown,New Delhi,New Delhi,Delhi,True,OpenStreetMap
+OSM-NODE-10732829707,unknown,unknown,28.608173,77.217533,unknown,New Delhi,New Delhi,Delhi,unknown,OpenStreetMap
+OSM-NODE-12586887172,Punjab National Bank,Punjab National Bank,28.623507,77.211871,unknown,New Delhi,New Delhi,Delhi,unknown,OpenStreetMap
+OSM-NODE-13681529729,Central Bank of India,Central Bank of India,28.617392,77.213635,unknown,New Delhi,New Delhi,Delhi,True,OpenStreetMap
+OSM-NODE-9565139144,State Bank of India,State Bank of India,28.535525,77.396798,unknown,Noida,Gautam Buddha Nagar,Uttar Pradesh,True,OpenStreetMap
+OSM-NODE-2619650159,State Bank of India,unknown,28.69152,77.447541,Sanjay Nagar,Ghaziabad,Ghaziabad,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-1287853287,ICICI Bank,ICICI Bank,28.995709,77.71517,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-1287889054,ICICI Bank,ICICI Bank,28.968031,77.728901,unknown,Meerut,Meerut,Uttar Pradesh,False,OpenStreetMap
+OSM-NODE-9865467418,Bank of Baroda,Bank of Baroda,28.998217,77.700436,Abu Lane,Meerut,Meerut,Uttar Pradesh,False,OpenStreetMap
+OSM-NODE-11145896688,Punjab National Bank,Punjab National Bank,28.988118,77.727118,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11245642370,State Bank of India,State Bank of India,28.994102,77.705912,unknown,Meerut,Meerut,Uttar Pradesh,True,OpenStreetMap
+OSM-NODE-11245642374,Punjab & Sind Bank,Punjab & Sind Bank,28.994721,77.705916,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11245642501,Bank of Baroda,Bank of Baroda,28.990029,77.705931,unknown,Meerut,Meerut,Uttar Pradesh,False,OpenStreetMap
+OSM-NODE-11245642505,Bank of India,Bank of India,28.990201,77.705717,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11245796361,Karur Vysya Bank,Karur Vysya Bank,28.988421,77.705937,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11252182996,State Bank of India,State Bank of India,28.985873,77.68753,unknown,Meerut,Meerut,Uttar Pradesh,True,OpenStreetMap
+OSM-NODE-11252970331,State Bank of India,State Bank of India,28.989149,77.725476,unknown,Meerut,Meerut,Uttar Pradesh,False,OpenStreetMap
+OSM-NODE-11266776847,Indian Bank,Indian Bank,28.987416,77.719396,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11266776854,Canara Bank,Canara Bank,28.988388,77.718624,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11268880617,Axis Bank,Axis Bank,28.974864,77.721495,unknown,Meerut,Meerut,Uttar Pradesh,False,OpenStreetMap
+OSM-NODE-11277194953,Punjab National Bank,Punjab National Bank,28.996447,77.702669,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11505562450,Canara Bank,Canara Bank,28.998833,77.699854,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11505906188,Punjab National Bank,Punjab National Bank,28.993106,77.694802,Westend Road,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11505906210,ICICI Bank,ICICI Bank,28.989798,77.693195,unknown,Meerut,Meerut,Uttar Pradesh,True,OpenStreetMap
+OSM-NODE-11533769752,Punjab National Bank,Punjab National Bank,28.995124,77.698164,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11684293312,Axis Bank,Axis Bank,28.96323,77.729292,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11697359052,Axis Bank,Axis Bank,28.995658,77.714963,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11783297373,UCO Bank,UCO Bank,28.990747,77.714578,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11783297394,State Bank of India,State Bank of India,28.989497,77.712594,Western Kutchery Road,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11783297401,DCB Bank,unknown,28.986345,77.709417,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11783297423,IndusInd Bank,IndusInd Bank,28.987606,77.710253,Western Kutchery Road,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11783297435,HDFC Bank,HDFC Bank,28.987425,77.710025,Western Kutchery Road,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11799866330,UCO Bank,UCO Bank,28.991891,77.705914,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11835352543,Bank of Baroda,Bank of Baroda,28.981822,77.706781,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-11850671849,HDFC Bank,HDFC Bank,28.989399,77.728879,unknown,Meerut,Meerut,Uttar Pradesh,True,OpenStreetMap
+OSM-NODE-12059474398,Hitachi,Hitachi,28.997389,77.706086,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-12090075533,State Bank of India,State Bank of India,28.989145,77.725441,unknown,Meerut,Meerut,Uttar Pradesh,True,OpenStreetMap
+OSM-NODE-12090131849,Canara Bank,Canara Bank,28.988761,77.725499,Saket,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-12118147474,ICICI Bank,ICICI Bank,28.974095,77.720978,unknown,Meerut,Meerut,Uttar Pradesh,True,OpenStreetMap
+OSM-NODE-12118254820,Canara Bank,unknown,28.982267,77.702728,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-12132389332,Bank of Baroda,Bank of Baroda,28.969866,77.723302,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-12287578454,State Bank of India,State Bank of India,28.990843,77.706254,unknown,Meerut,Meerut,Uttar Pradesh,True,OpenStreetMap
+OSM-NODE-12347730457,State Bank of India,State Bank of India,28.973269,77.720483,unknown,Meerut,Meerut,Uttar Pradesh,True,OpenStreetMap
+OSM-NODE-12598551909,Punjab National Bank,Punjab National Bank,28.986251,77.714199,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-13097856993,HDFC Bank,HDFC Bank,28.963237,77.72928,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-13319421383,Punjab National Bank,Punjab National Bank,28.987952,77.729761,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-13331567816,Bank of Baroda,Bank of Baroda,28.991552,77.711629,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-13338348638,Axis Bank,Axis Bank,28.974854,77.721484,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-13339716903,Axis Bank,Axis Bank,28.974827,77.72152,unknown,Meerut,Meerut,Uttar Pradesh,unknown,OpenStreetMap
+OSM-NODE-1466911301,unknown,unknown,26.91634,75.807437,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-2690970389,Axis Bank,Axis Bank,26.902603,75.7926,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3677351613,Indian State Bank,unknown,26.917788,75.79984,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3677353029,Karnataka Bank,Karnataka Bank,26.91869,75.798565,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3677353030,ICICI Bank,ICICI Bank,26.918126,75.799674,unknown,Jaipur,Jaipur,Rajasthan,True,OpenStreetMap
+OSM-NODE-3677355516,Indian Overseas Bank,Indian Overseas Bank,26.918326,75.799514,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3685074341,Indian Bank,Indian Bank,26.919414,75.798635,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3685076425,CSB Bank,CSB Bank,26.919574,75.79868,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3806491204,State Bank of India,State Bank of India,26.927086,75.795017,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3806705156,Allahabad Bank,Allahabad Bank,26.916095,75.810122,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3806705457,J&K Bank,unknown,26.916108,75.810215,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3840693081,State Bank of India,State Bank of India,26.902548,75.785376,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3842344275,Axis Bank,Axis Bank,26.916516,75.809316,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3842353310,Standard Chartered,Standard Chartered,26.916401,75.807356,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-3842353311,ICICI Bank,ICICI Bank,26.916361,75.807741,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-4703268090,State Bank of India,State Bank of India,26.9147,75.799699,unknown,Jaipur,Jaipur,Rajasthan,True,OpenStreetMap
+OSM-NODE-4703287189,India Post ATM,India Post ATM,26.913919,75.799137,unknown,Jaipur,Jaipur,Rajasthan,True,OpenStreetMap
+OSM-NODE-4703287289,IndusInd Bank ATM,IndusInd Bank ATM,26.914727,75.799727,unknown,Jaipur,Jaipur,Rajasthan,True,OpenStreetMap
+OSM-NODE-4763765421,Bank of India,Bank of India,26.917357,75.79948,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-6633319187,State Bank of India,State Bank of India,26.929433,75.802908,unknown,Jaipur,Jaipur,Rajasthan,True,OpenStreetMap
+OSM-NODE-6859993686,unknown,unknown,26.927585,75.79061,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-7006069585,State Bank of India,State Bank of India,26.925404,75.792815,unknown,Jaipur,Jaipur,Rajasthan,True,OpenStreetMap
+OSM-NODE-7043371100,Central Bank of india ATM,Central Bank of india ATM,26.940978,75.777792,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-7048880050,State Bank of India,State Bank of India,26.917513,75.766608,unknown,Jaipur,Jaipur,Rajasthan,True,OpenStreetMap
+OSM-NODE-8119003882,Punjab & Sindh Bank,Punjab & Sindh Bank,26.920947,75.795905,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-8120433447,Canara Bank,Canara Bank,26.898933,75.784078,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-12358211501,SBI,SBI,26.927532,75.793144,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-12361795418,SBI,SBI,26.927536,75.790818,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-12365225003,ICICI Bank,ICICI Bank,26.929714,75.802378,unknown,Jaipur,Jaipur,Rajasthan,True,OpenStreetMap
+OSM-NODE-12369823003,ICICI Bank,ICICI Bank,26.920229,75.789625,unknown,Jaipur,Jaipur,Rajasthan,True,OpenStreetMap
+OSM-NODE-13602800754,Kotak Mahindra Bank,Kotak Mahindra Bank,26.927791,75.797975,unknown,Jaipur,Jaipur,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-14159487967,Union Bank of India,Union Bank of India,26.918951,75.795628,unknown,Jaipur,Jaipur,Rajasthan,True,OpenStreetMap
+OSM-NODE-1694918139,Saksham,Saksham,27.568877,76.613572,unknown,Alwar,Alwar,Rajasthan,unknown,OpenStreetMap
+OSM-NODE-1694918180,ICICI Bank,Śaksham,27.568927,76.613588,unknown,Alwar,Alwar,Rajasthan,unknown,OpenStreetMap

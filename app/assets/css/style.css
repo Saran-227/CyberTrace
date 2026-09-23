@@ -1,0 +1,161 @@
+/* CyberTrace - Modern Cyber-Intelligence Platform Styling */
+
+:root {
+  --bg-primary: #0a0e17;
+  --bg-secondary: #111827;
+  --bg-card: #162032;
+  --border-color: #1f2e48;
+  --accent-cyan: #00e5ff;
+  --accent-blue: #0284c7;
+  --accent-blue-bright: #38bdf8;
+  --accent-alert: #ef4444;
+  --accent-warn: #f59e0b;
+  --accent-success: #10b981;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Global Container Styling */
+.stApp {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-family);
+}
+
+/* Header & Platform Title */
+.platform-header {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.platform-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, #ffffff 30%, var(--accent-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.platform-subtitle {
+  font-size: 0.85rem;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 0.2rem;
+  font-weight: 600;
+}
+
+/* Metric / KPI Cards */
+.cyber-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.2s ease;
+}
+
+.cyber-card:hover {
+  border-color: rgba(0, 229, 255, 0.4);
+}
+
+.cyber-card-header {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.cyber-card-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.cyber-card-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-cyan {
+  background: rgba(0, 229, 255, 0.15);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+}
+
+.badge-alert {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--accent-alert);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badge-warn {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent-warn);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* Official 1930 / Cybercrime Reporting Banner */
+.official-reporting-banner {
+  background: linear-gradient(90deg, #1e1b4b 0%, #172554 100%);
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-title {
+  color: #93c5fd;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.banner-desc {
+  color: #cbd5e1;
+  font-size: 0.8rem;
+}
+
+.helpline-pill {
+  background: #dc2626;
+  color: #ffffff;
+  font-weight: 800;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Map Frame */
+.map-container {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}

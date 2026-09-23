@@ -1,0 +1,29 @@
+{
+  "region_name": "Ghaziabad",
+  "bbox": [
+    28.6,
+    77.36,
+    28.75,
+    77.53
+  ],
+  "timestamp": 1790192718.3028886,
+  "count": 1,
+  "elements": [
+    {
+      "type": "node",
+      "id": 2619650159,
+      "lat": 28.69152,
+      "lon": 77.4475414,
+      "tags": {
+        "addr:city": "Ghaziabad",
+        "addr:postcode": "201002",
+        "addr:street": "Sanjay Nagar",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    }
+  ]
+}

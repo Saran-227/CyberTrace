@@ -1,0 +1,1187 @@
+{
+  "region_name": "Chandigarh",
+  "bbox": [
+    30.68,
+    76.71,
+    30.8,
+    76.85
+  ],
+  "timestamp": 1790193377.8324952,
+  "status": "OK",
+  "notes": "Retrieved 84 elements from https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+  "count": 84,
+  "elements": [
+    {
+      "type": "node",
+      "id": 597104343,
+      "lat": 30.6882979,
+      "lon": 76.8036159,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1849636382,
+      "lat": 30.7409174,
+      "lon": 76.7976806,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2210744171,
+      "lat": 30.7439907,
+      "lon": 76.7340473,
+      "tags": {
+        "amenity": "atm",
+        "branch": "ATM  Sector 39 B",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "brand:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "brand:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "brand:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:wikidata": "Q2003777",
+        "check_date": "2021-08-27",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "name:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "name:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "name:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "name:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3674995851,
+      "lat": 30.7427101,
+      "lon": 76.7895584,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "name": "Citibank",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3674999749,
+      "lat": 30.7049189,
+      "lon": 76.8010303,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "name": "Citibank",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4355014491,
+      "lat": 30.7345571,
+      "lon": 76.7700794,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4355014591,
+      "lat": 30.7544836,
+      "lon": 76.7701458,
+      "tags": {
+        "amenity": "atm",
+        "operator": "sbp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4508426291,
+      "lat": 30.6908474,
+      "lon": 76.812026,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4699379791,
+      "lat": 30.7176395,
+      "lon": 76.7664591,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank",
+        "opening_hours": "24/7",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4782436023,
+      "lat": 30.724563,
+      "lon": 76.7976187,
+      "tags": {
+        "amenity": "atm",
+        "operator": "riti ghar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5721820621,
+      "lat": 30.7087314,
+      "lon": 76.784489,
+      "tags": {
+        "amenity": "atm",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612909977,
+      "lat": 30.6807436,
+      "lon": 76.750667,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612932359,
+      "lat": 30.7209208,
+      "lon": 76.7590777,
+      "tags": {
+        "amenity": "atm",
+        "atm": "yes",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "name": "Union Bank of India",
+        "operator": "Union Bank of India",
+        "operator:wikidata": "Q2004078"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612932362,
+      "lat": 30.723781,
+      "lon": 76.7635482,
+      "tags": {
+        "amenity": "atm",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "opening_hours": "24/7",
+        "operator": "IndusInd Bank",
+        "operator:wikidata": "Q2040323"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612932363,
+      "lat": 30.7216714,
+      "lon": 76.760248,
+      "tags": {
+        "amenity": "atm",
+        "atm": "yes",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM Sector 35 Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612985292,
+      "lat": 30.7340841,
+      "lon": 76.7702028,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "opening_hours": "24/7",
+        "operator": "Kotak Mahindra Bank",
+        "operator:wikidata": "Q2040404"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612985301,
+      "lat": 30.7346221,
+      "lon": 76.7699986,
+      "tags": {
+        "amenity": "atm",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "opening_hours": "24/7",
+        "operator": "IndusInd Bank",
+        "operator:wikidata": "Q2040323",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612985309,
+      "lat": 30.730544,
+      "lon": 76.7732125,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Central Bank of India",
+        "brand:wikidata": "Q2007090",
+        "name": "Central Bank of India",
+        "operator": "Central Bank of India",
+        "operator:wikidata": "Q2007090"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612985310,
+      "lat": 30.7276786,
+      "lon": 76.7696686,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612985315,
+      "lat": 30.7343193,
+      "lon": 76.7704823,
+      "tags": {
+        "addr:neighbourhood": "Sector 22-D",
+        "amenity": "atm",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612985316,
+      "lat": 30.7359128,
+      "lon": 76.7688005,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6975339942,
+      "lat": 30.7389589,
+      "lon": 76.7742377,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "J&K Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6982385788,
+      "lat": 30.7406984,
+      "lon": 76.7976783,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "name": "Kotak Mahindra Bank",
+        "operator": "Kotak Mahindra Bank",
+        "operator:wikidata": "Q2040404"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100705525,
+      "lat": 30.7659799,
+      "lon": 76.7768821,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100712278,
+      "lat": 30.7519199,
+      "lon": 76.7689982,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100725175,
+      "lat": 30.7407222,
+      "lon": 76.7875813,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100725176,
+      "lat": 30.7411531,
+      "lon": 76.7858959,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100728050,
+      "lat": 30.760332,
+      "lon": 76.7769661,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100741578,
+      "lat": 30.7098555,
+      "lon": 76.7805923,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100748789,
+      "lat": 30.7246711,
+      "lon": 76.7786909,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100749214,
+      "lat": 30.7112001,
+      "lon": 76.8128074,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100749444,
+      "lat": 30.7259502,
+      "lon": 76.795382,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100749825,
+      "lat": 30.7359209,
+      "lon": 76.7687251,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM Sector 22 Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100749826,
+      "lat": 30.731749,
+      "lon": 76.776027,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100751631,
+      "lat": 30.7220043,
+      "lon": 76.79907,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100756405,
+      "lat": 30.7230801,
+      "lon": 76.7681781,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100756406,
+      "lat": 30.7221656,
+      "lon": 76.7687083,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100756407,
+      "lat": 30.7199259,
+      "lon": 76.7682115,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100765045,
+      "lat": 30.6969117,
+      "lon": 76.7839118,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100765046,
+      "lat": 30.7061584,
+      "lon": 76.8011281,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100779480,
+      "lat": 30.74855,
+      "lon": 76.7902572,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100780557,
+      "lat": 30.7197782,
+      "lon": 76.8324617,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM shanti nagar Manimajra Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100785608,
+      "lat": 30.7655884,
+      "lon": 76.7746838,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100849225,
+      "lat": 30.7406662,
+      "lon": 76.7896857,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100849226,
+      "lat": 30.7404688,
+      "lon": 76.7863602,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101048042,
+      "lat": 30.7234664,
+      "lon": 76.7448209,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM Sector 42 Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101110843,
+      "lat": 30.7356628,
+      "lon": 76.7797793,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101117737,
+      "lat": 30.7305253,
+      "lon": 76.7739684,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101118894,
+      "lat": 30.7277724,
+      "lon": 76.7679642,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM Sector 22 Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101123318,
+      "lat": 30.7396295,
+      "lon": 76.748543,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101123321,
+      "lat": 30.7227431,
+      "lon": 76.8107515,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101123322,
+      "lat": 30.7149983,
+      "lon": 76.806182,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM Sector 28 Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101123334,
+      "lat": 30.7513437,
+      "lon": 76.7943648,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101127225,
+      "lat": 30.7180444,
+      "lon": 76.7842973,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101130694,
+      "lat": 30.7231834,
+      "lon": 76.7684198,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101136356,
+      "lat": 30.7026673,
+      "lon": 76.7810701,
+      "tags": {
+        "amenity": "atm",
+        "operator": "State Bank ATM Sector 31 Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101145043,
+      "lat": 30.7262118,
+      "lon": 76.8083893,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101178390,
+      "lat": 30.7336609,
+      "lon": 76.8029463,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101264406,
+      "lat": 30.7113768,
+      "lon": 76.7535869,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101271710,
+      "lat": 30.7164318,
+      "lon": 76.7445256,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2025-02-06",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101278534,
+      "lat": 30.7020729,
+      "lon": 76.7999706,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM Industrial and Business Park"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101283034,
+      "lat": 30.6934174,
+      "lon": 76.7558744,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM sector 49 Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101283035,
+      "lat": 30.7538771,
+      "lon": 76.7418915,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101283036,
+      "lat": 30.757616,
+      "lon": 76.778211,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101283037,
+      "lat": 30.7563064,
+      "lon": 76.7667924,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM Sector 14 Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101283038,
+      "lat": 30.7378512,
+      "lon": 76.794737,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101307096,
+      "lat": 30.7180005,
+      "lon": 76.8348676,
+      "tags": {
+        "amenity": "atm",
+        "fixme": "Check if this ATM exists. Marked in park area.",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM ManiMajra Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101307097,
+      "lat": 30.7157915,
+      "lon": 76.8432341,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7101326002,
+      "lat": 30.7616355,
+      "lon": 76.8003952,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM Civil Secretariat Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7104038217,
+      "lat": 30.7544619,
+      "lon": 76.7876713,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7104038218,
+      "lat": 30.7471008,
+      "lon": 76.7877155,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7104038219,
+      "lat": 30.7452345,
+      "lon": 76.8101156,
+      "tags": {
+        "amenity": "atm",
+        "brand": "SBI",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM Sukhna Lake Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7104077250,
+      "lat": 30.734242,
+      "lon": 76.7533476,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM Sector 36 Chandigarh"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7104094663,
+      "lat": 30.7350438,
+      "lon": 76.7366624,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7104099181,
+      "lat": 30.716188,
+      "lon": 76.7764158,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7104103067,
+      "lat": 30.7741702,
+      "lon": 76.8107035,
+      "tags": {
+        "amenity": "atm",
+        "name": "State Bank ATM",
+        "operator": "State Bank ATM (Khuda Ali Sher)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7466918429,
+      "lat": 30.724319,
+      "lon": 76.7681183,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "drive_through": "no",
+        "name": "Punjab National Bank",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9730014718,
+      "lat": 30.7348549,
+      "lon": 76.7789088,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9999535169,
+      "lat": 30.6837389,
+      "lon": 76.8463172,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "description": "with ATM",
+        "name": "Bank of Baroda"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10296408019,
+      "lat": 30.681474,
+      "lon": 76.8488344,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "name": "Union Bank of India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11076363672,
+      "lat": 30.7131771,
+      "lon": 76.8346614,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11483121727,
+      "lat": 30.6828206,
+      "lon": 76.8450192,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "CSB Bank",
+        "brand:wikidata": "Q5053244",
+        "name": "CSB Bank",
+        "official_name": "Catholic Syrian Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12097020971,
+      "lat": 30.7513124,
+      "lon": 76.7854608,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12597199136,
+      "lat": 30.7050574,
+      "lon": 76.7737867,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    }
+  ]
+}

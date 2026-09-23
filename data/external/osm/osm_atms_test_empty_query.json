@@ -1,0 +1,14 @@
+{
+  "region_name": "test_empty_query",
+  "bbox": [
+    25.1,
+    75.1,
+    25.2,
+    75.2
+  ],
+  "timestamp": 1790193862.3530054,
+  "status": "NO_OSM_ATMS_FOUND",
+  "notes": "Query succeeded across endpoints but 0 ATM elements found",
+  "count": 0,
+  "elements": []
+}

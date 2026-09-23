@@ -1,0 +1,73 @@
+{
+  "region_name": "Jalandhar",
+  "bbox": [
+    31.24,
+    75.48,
+    31.4,
+    75.68
+  ],
+  "timestamp": 1790193151.6767352,
+  "status": "OK",
+  "notes": "Retrieved 3 elements from https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+  "count": 3,
+  "elements": [
+    {
+      "type": "node",
+      "id": 1845296821,
+      "lat": 31.301184,
+      "lon": 75.5798879,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank",
+        "name:en": "Punjab National Bank",
+        "short_name": "PNB",
+        "website": "https://www.pnbindia.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5094962456,
+      "lat": 31.3165893,
+      "lon": 75.5891647,
+      "tags": {
+        "addr:city": "Jalandhar",
+        "addr:housenumber": "22- 23",
+        "addr:postcode": "144001",
+        "addr:street": "G T Road, Opposite Kings Hotel, Jawahar Nagar",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Jalandhar",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "drive_through": "no",
+        "name": "ICICI Bank",
+        "name:pa": "\u0a07\u0a15\u0a3f\u0a15\u0a40 \u0a2c\u0a48\u0a02\u0a15",
+        "operator": "ICICI",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5095007519,
+      "lat": 31.3225016,
+      "lon": 75.5769018,
+      "tags": {
+        "addr:city": "Jalandhar",
+        "addr:postcode": "144001",
+        "addr:street": "Model Town Rd, Near Passport Office, Near Hotel Sky Lark, Shastri Nagar, Civil Line",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Syndicate Bank",
+        "brand:wikidata": "Q2004088",
+        "drive_through": "yes",
+        "name": "Syndicate Bank",
+        "name:pa": "\u0a38\u0a3f\u0a70\u0a21\u0a40\u0a15\u0a47\u0a1f\u200d \u0a2c\u0a48\u0a02\u0a15",
+        "phone": "0181 222 4246",
+        "website": "https://www.syndicatebank.in/english/home.aspx"
+      }
+    }
+  ]
+}

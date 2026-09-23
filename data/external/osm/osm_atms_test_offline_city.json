@@ -1,0 +1,31 @@
+{
+  "region_name": "test_offline_city",
+  "bbox": [
+    28.45,
+    77.02,
+    28.5,
+    77.08
+  ],
+  "timestamp": 1790193862.3404565,
+  "status": "OK",
+  "notes": "",
+  "count": 2,
+  "elements": [
+    {
+      "type": "node",
+      "id": 7771,
+      "lat": 28.46,
+      "lon": 77.03,
+      "tags": {
+        "operator": "ICICI Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7772,
+      "lat": 28.47,
+      "lon": 77.04,
+      "tags": {}
+    }
+  ]
+}

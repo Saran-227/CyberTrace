@@ -1,0 +1,2275 @@
+{
+  "region_name": "Gurugram",
+  "bbox": [
+    28.37,
+    76.93,
+    28.53,
+    77.12
+  ],
+  "timestamp": 1790193146.3634958,
+  "status": "OK",
+  "notes": "Retrieved 119 elements from https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+  "count": 119,
+  "elements": [
+    {
+      "type": "node",
+      "id": 266376686,
+      "lat": 28.4740435,
+      "lon": 77.0474903,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "created_by": "Potlatch 0.9a",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "HSBC Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "wheelchair": "limited",
+        "wheelchair:description": "No lift. Ground floor is accessible."
+      }
+    },
+    {
+      "type": "node",
+      "id": 266376703,
+      "lat": 28.4740963,
+      "lon": 77.0475761,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "created_by": "Potlatch 0.9a",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "HDFC Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 266587260,
+      "lat": 28.4767072,
+      "lon": 77.0633541,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Citi Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 266734429,
+      "lat": 28.4109126,
+      "lon": 77.043077,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "ICICI Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 267120725,
+      "lat": 28.4717609,
+      "lon": 77.1019571,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "created_by": "Potlatch 0.9b",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 271336441,
+      "lat": 28.4741534,
+      "lon": 77.047729,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "State Bank of India",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 271336448,
+      "lat": 28.4557573,
+      "lon": 77.0384039,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:en": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "HDFC Bank",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:en": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 271336454,
+      "lat": 28.4560738,
+      "lon": 77.0382109,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "State Bank of India",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 277793690,
+      "lat": 28.4748625,
+      "lon": 77.0706974,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 297255247,
+      "lat": 28.4590293,
+      "lon": 77.076436,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "check_date": "2025-02-23",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "short_name": "ICICI",
+        "website": "https://www.icicibank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 297255248,
+      "lat": 28.4590161,
+      "lon": 77.0763889,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2025-02-23",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "name": "HDFC Bank",
+        "name:en": "HDFC Bank",
+        "operator": "HDFC Bank Limited",
+        "short_name": "HDFC",
+        "website": "https://www.hdfcbank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 412744824,
+      "lat": 28.4529381,
+      "lon": 77.0507109,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 477905030,
+      "lat": 28.3916847,
+      "lon": 77.0486793,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 477905082,
+      "lat": 28.3935986,
+      "lon": 77.0467381,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "name": "Union Bank of India",
+        "name:en": "Union Bank of India",
+        "short_name": "UBI",
+        "website": "https://www.unionbankofindia.co.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 477905114,
+      "lat": 28.4633607,
+      "lon": 77.0328074,
+      "tags": {
+        "addr:city": "Gurugram",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Fountain Chowk",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank",
+        "name:en": "Punjab National Bank",
+        "short_name": "PNB",
+        "website": "https://www.pnbindia.in",
+        "wikimedia_commons": "Category:Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 482663982,
+      "lat": 28.4930082,
+      "lon": 77.0921113,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Standard Chartered",
+        "brand:wikidata": "Q548278",
+        "fixme": "check if it's just office or a branch",
+        "name": "Standard Chartered"
+      }
+    },
+    {
+      "type": "node",
+      "id": 482663990,
+      "lat": 28.4941065,
+      "lon": 77.093327,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "ABN Amro Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 482663991,
+      "lat": 28.4937082,
+      "lon": 77.0930212,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Citibank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 482663996,
+      "lat": 28.493598,
+      "lon": 77.0929044,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Kotak Mahindra Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Kotak Mahindra Bank",
+        "operator:wikidata": "Q2040404"
+      }
+    },
+    {
+      "type": "node",
+      "id": 482849107,
+      "lat": 28.4717376,
+      "lon": 77.1024943,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 484198838,
+      "lat": 28.49498,
+      "lon": 77.1033552,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 484198839,
+      "lat": 28.4948344,
+      "lon": 77.1035209,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 537979936,
+      "lat": 28.4795667,
+      "lon": 77.0837751,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2025-02-23",
+        "name": "HDFC Bank",
+        "operator": "HDFC",
+        "short_name": "HDFC",
+        "website": "https://www.hdfcbank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 537979940,
+      "lat": 28.4793231,
+      "lon": 77.0828744,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "name": "IndusInd Bank",
+        "name:en": "IndusInd Bank",
+        "website": "https://www.indusind.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 537979943,
+      "lat": 28.4794447,
+      "lon": 77.0828708,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "name": "ABN Amro",
+        "operator": "ABN Amro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 537979957,
+      "lat": 28.4796183,
+      "lon": 77.0866532,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Axis Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 537979966,
+      "lat": 28.4801441,
+      "lon": 77.0895234,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "check_date": "2025-02-23",
+        "name": "Axis Bank",
+        "name:en": "Axis Bank",
+        "operator": "Axis Bank",
+        "website": "https://www.axisbank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 565507015,
+      "lat": 28.4387396,
+      "lon": 77.0052866,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 581891474,
+      "lat": 28.4616667,
+      "lon": 77.024146,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1358147112,
+      "lat": 28.4516306,
+      "lon": 77.0749768,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Standard Chartered",
+        "brand:wikidata": "Q548278",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Standard Chartered",
+        "operator:wikidata": "Q548278"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1358147152,
+      "lat": 28.4516536,
+      "lon": 77.0749759,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:en": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:en": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1371226161,
+      "lat": 28.4675617,
+      "lon": 77.0815273,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Standard Chartered",
+        "brand:wikidata": "Q548278",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Standard Chartered",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Standard Chartered",
+        "operator:wikidata": "Q548278"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1372597046,
+      "lat": 28.4625378,
+      "lon": 77.0869209,
+      "tags": {
+        "amenity": "atm",
+        "brand": "RBL Bank",
+        "brand:wikidata": "Q13120398",
+        "check_date": "2023-08-20",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "RBL Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "RBL Bank",
+        "operator:wikidata": "Q13120398"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1389058661,
+      "lat": 28.477754,
+      "lon": 77.0726,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "check_date": "2025-02-23",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Punjab National Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1389062584,
+      "lat": 28.417564,
+      "lon": 77.0564,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1390057661,
+      "lat": 28.4572283,
+      "lon": 77.063349,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:en": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2025-02-23",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "HDFC",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:en": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1390058506,
+      "lat": 28.4568866,
+      "lon": 77.0633617,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "check_date": "2025-02-23",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "ICICI",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1390059649,
+      "lat": 28.4571018,
+      "lon": 77.0633534,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "check_date": "2025-02-23",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Axis Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1390062512,
+      "lat": 28.4569906,
+      "lon": 77.0633723,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Citi Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1556459151,
+      "lat": 28.5045702,
+      "lon": 77.0971354,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063",
+        "short_name": "Citi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1562504506,
+      "lat": 28.4526131,
+      "lon": 77.0505014,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1668936691,
+      "lat": 28.4172356,
+      "lon": 77.0505943,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Standard Chartered",
+        "brand:wikidata": "Q548278",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Standard Chartered",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Standard Chartered",
+        "operator:wikidata": "Q548278"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2009753174,
+      "lat": 28.529322,
+      "lon": 77.0867293,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2399657393,
+      "lat": 28.4249884,
+      "lon": 77.0992852,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "check_date": "2025-02-23",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2399657399,
+      "lat": 28.4252244,
+      "lon": 77.0992377,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2450211342,
+      "lat": 28.4745865,
+      "lon": 77.070711,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "check_date": "2024-05-21",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4078505382,
+      "lat": 28.4746801,
+      "lon": 77.009418,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "state bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4101251295,
+      "lat": 28.4013635,
+      "lon": 77.0485867,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4101264092,
+      "lat": 28.4013948,
+      "lon": 77.0486618,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4212577536,
+      "lat": 28.5118779,
+      "lon": 77.0391796,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "name:en": "Axis Bank",
+        "website": "https://www.axisbank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4212600962,
+      "lat": 28.5045742,
+      "lon": 77.0531667,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "drive_through": "no",
+        "name": "Punjab National Bank",
+        "name:en": "Punjab National Bank",
+        "operator": "Punjab National Bank",
+        "short_name": "PNB",
+        "website": "https://www.pnbindia.in",
+        "wikimedia_commons": "Category:Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4357793821,
+      "lat": 28.4490382,
+      "lon": 77.0566548,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC",
+        "brand:wikidata": "Q631047",
+        "name": "HDFC Bank",
+        "operator": "HDFC",
+        "short_name": "HDFC",
+        "website": "https://www.hdfcbank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4357795875,
+      "lat": 28.4489464,
+      "lon": 77.0570273,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Axis Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Axis Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4357795876,
+      "lat": 28.449216,
+      "lon": 77.0566378,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "State Bank of India",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4969981421,
+      "lat": 28.451323,
+      "lon": 77.0817663,
+      "tags": {
+        "amenity": "atm",
+        "branch": "The Peach Tree, Sushant Lok",
+        "brand": "HDFC Bank",
+        "brand:en": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "cash_in": "yes",
+        "check_date": "2025-02-23",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "network": "HDFC Bank",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:en": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5220810365,
+      "lat": 28.4346767,
+      "lon": 77.1064101,
+      "tags": {
+        "addr:city": "Gurugram",
+        "addr:postcode": "122002",
+        "addr:street": "Golf Course Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "drive_through": "no",
+        "name": "ICICI Bank",
+        "opening_hours": "Mo-Fr 09:30-17:00; Sa[1,3] 09:30-17:00; Sa[2,4] off; Su off",
+        "operator": "ICICI Bank",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5220810368,
+      "lat": 28.433569,
+      "lon": 77.1055815,
+      "tags": {
+        "addr:city": "Gurugram",
+        "addr:postcode": "122002",
+        "addr:street": "Golf Course Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2025-02-23",
+        "drive_through": "no",
+        "name": "State Bank of India",
+        "opening_hours": "Mo-Fr 10:00-16:00; Sa[1,3] 10:00-16:00; Sa[2,4] off; Su off",
+        "operator": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5220810369,
+      "lat": 28.4338166,
+      "lon": 77.1053884,
+      "tags": {
+        "addr:city": "Gurugram",
+        "addr:postcode": "122002",
+        "addr:street": "Golf Course Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "check_date": "2025-02-23",
+        "drive_through": "no",
+        "name": "IndusInd Bank",
+        "opening_hours": "Mo-Su 09:00-17:00",
+        "operator": "IndusInd Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5220810370,
+      "lat": 28.433819,
+      "lon": 77.1052328,
+      "tags": {
+        "addr:city": "Gurugram",
+        "addr:postcode": "122002",
+        "addr:street": "Golf Course Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "check_date": "2025-02-23",
+        "drive_through": "no",
+        "name": "Kotak Mahindra Bank",
+        "opening_hours": "Mo-Su 09:00-17:00",
+        "operator": "Kotak Mahindra Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5221320059,
+      "lat": 28.4346987,
+      "lon": 77.1063815,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5228001162,
+      "lat": 28.4346631,
+      "lon": 77.1064383,
+      "tags": {
+        "addr:city": "Gurugram",
+        "addr:postcode": "122002",
+        "addr:street": "Golf Course Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "drive_through": "no",
+        "name": "HDFC Bank",
+        "opening_hours": "Mo-Su 09:00-15:00",
+        "operator": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5248190626,
+      "lat": 28.4347984,
+      "lon": 77.1063656,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Citibank",
+        "brand:wikidata": "Q857063",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Citibank",
+        "operator:wikidata": "Q857063"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5248190627,
+      "lat": 28.4359234,
+      "lon": 77.1116254,
+      "tags": {
+        "amenity": "atm",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "level": "-1",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "IndusInd Bank",
+        "operator:wikidata": "Q2040323"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5412580321,
+      "lat": 28.4637038,
+      "lon": 77.0649977,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "check_date": "2025-02-23",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "network": "Axis Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Axis Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6221553773,
+      "lat": 28.4392741,
+      "lon": 77.0342351,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Bank of Baroda",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Bank of Baroda",
+        "operator:wikidata": "Q2003797"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6435602485,
+      "lat": 28.4919048,
+      "lon": 77.0937804,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Central Bank of India",
+        "brand:wikidata": "Q2007090",
+        "cash_in": "no",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "fee": "yes",
+        "indoor": "yes",
+        "language:en": "yes",
+        "language:hi": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "opening_hours": "24/7",
+        "operator": "Central Bank of India",
+        "operator:wikidata": "Q2007090"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7131288729,
+      "lat": 28.465544,
+      "lon": 77.0323667,
+      "tags": {
+        "amenity": "atm",
+        "brand": "IndusInd Bank",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "opening_hours": "24/7",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7131328036,
+      "lat": 28.4650221,
+      "lon": 77.0336048,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7131357055,
+      "lat": 28.4648997,
+      "lon": 77.0336164,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Karnataka Bank",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7131374816,
+      "lat": 28.4765489,
+      "lon": 77.0629523,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9871055743,
+      "lat": 28.5122658,
+      "lon": 77.0261506,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:en": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "HDFC Bank",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:en": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9879040022,
+      "lat": 28.472767,
+      "lon": 77.0869019,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Axis Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9879136273,
+      "lat": 28.4724757,
+      "lon": 77.0893604,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "cash_in": "no",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Axis Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9948372686,
+      "lat": 28.4685492,
+      "lon": 77.0337642,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10816636701,
+      "lat": 28.4761034,
+      "lon": 77.0933183,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2025-02-23",
+        "name": "HDFC Bank",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10876296335,
+      "lat": 28.424833,
+      "lon": 77.0683946,
+      "tags": {
+        "addr:city": "Gurugram",
+        "addr:housenumber": "G5;G6",
+        "addr:postcode": "122001",
+        "addr:street": "Sector 51",
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Ocus Quantum, Sector 51",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "drive_through": "no",
+        "level": "0",
+        "name": "Axis Bank",
+        "name:en": "Axis Bank",
+        "opening_hours": "Mo-Sa 09:30-15:30; Sa[2,4] off; PH off",
+        "operator": "Axis Bank",
+        "website": "https://branch.axisbank.com/axis-bank-branch-banks-sector-51-gurugram-87437/Home"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10911354429,
+      "lat": 28.4588986,
+      "lon": 77.0729024,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2024-08-04",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "name": "State Bank Of India",
+        "name:en": "State Bank Of India",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10924011401,
+      "lat": 28.4248283,
+      "lon": 77.0686678,
+      "tags": {
+        "addr:city": "Gurugram",
+        "addr:district": "Gurugram",
+        "addr:housenumber": "G-01;F-01",
+        "addr:postcode": "122003",
+        "addr:street": "Ocus Quantum",
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Ocus Quantum",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "drive_through": "no",
+        "level": "0",
+        "mobile": "+91 9409767967",
+        "name": "HDFC Bank",
+        "opening_hours": "Mo-Sa 09:30-15:30; Sa[2,4] off; PH off",
+        "short_name": "HDFC",
+        "website": "https://www.hdfc.bank.in/branch-locator/haryana/gurugram/hdfcbank-branch-occusquantum"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10924013202,
+      "lat": 28.4247901,
+      "lon": 77.0685991,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "drive_through": "no",
+        "level": "0",
+        "name": "IndusInd Bank",
+        "opening_hours": "Mo-Sa 09:30-15:30; Sa[2,4] off; PH off",
+        "phone": "+911244212534"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10951960291,
+      "lat": 28.3951881,
+      "lon": 77.0314328,
+      "tags": {
+        "addr:city": "Gurgaon",
+        "addr:district": "Gurgaon",
+        "addr:postcode": "122101",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10951960304,
+      "lat": 28.3950557,
+      "lon": 77.0314336,
+      "tags": {
+        "addr:city": "Gurgaon",
+        "addr:district": "Gurgaon",
+        "addr:postcode": "122101",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10951988905,
+      "lat": 28.3951406,
+      "lon": 77.0314348,
+      "tags": {
+        "addr:city": "Gurgaon",
+        "addr:district": "Gurgaon",
+        "addr:postcode": "122101",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Sector 69",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "name": "IndusInd Bank",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11037384816,
+      "lat": 28.4436497,
+      "lon": 77.1006983,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "AU Small Finance Bank",
+        "brand:wikidata": "Q48729722",
+        "check_date": "2025-02-23",
+        "name": "AU Small Finance Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11037504489,
+      "lat": 28.4670456,
+      "lon": 77.0823676,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "check_date": "2025-02-23",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Axis Bank",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11037529618,
+      "lat": 28.4670342,
+      "lon": 77.0822756,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "check_date": "2025-02-23",
+        "level": "0",
+        "name": "Kotak Mahindra Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11273940037,
+      "lat": 28.4130678,
+      "lon": 77.0552487,
+      "tags": {
+        "amenity": "atm",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "HDFC atm",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11273950020,
+      "lat": 28.4127054,
+      "lon": 77.0553589,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "SBI ATM",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11273951303,
+      "lat": 28.4128435,
+      "lon": 77.0552363,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Yes Bank",
+        "brand:wikidata": "Q2040394",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "name": "Yes Bank ATM",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "Yes Bank",
+        "operator:wikidata": "Q2040394"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11634093111,
+      "lat": 28.4118993,
+      "lon": 77.048653,
+      "tags": {
+        "amenity": "atm",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "note": "Contributors are requested to not edit the \"covered\", \"currency:INR\", \"drive_through\", \"indoor\" and \"lit\" tags. (2024/05/23)",
+        "operator": "IndusInd Bank",
+        "operator:wikidata": "Q2040323"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11688160165,
+      "lat": 28.5145607,
+      "lon": 77.1066454,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/02/19)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11688160172,
+      "lat": 28.5160429,
+      "lon": 77.1078043,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Axis Bank ATM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097589,
+      "lat": 28.4512951,
+      "lon": 77.0818181,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "check_date": "2025-02-23",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "Punjab National Bank",
+        "name:en": "Punjab National Bank",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097593,
+      "lat": 28.4507793,
+      "lon": 77.0817127,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "check_date": "2025-08-31",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "network": "Bank of Baroda",
+        "opening_hours": "24/7",
+        "operator": "Bank of Baroda",
+        "operator:wikidata": "Q2003797",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097594,
+      "lat": 28.4511443,
+      "lon": 77.0819161,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "check_date": "2025-08-31",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "network": "Axis Bank",
+        "opening_hours": "24/7",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097595,
+      "lat": 28.4512715,
+      "lon": 77.0818709,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "check_date": "2025-08-31",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "network": "Punjab National Bank",
+        "opening_hours": "24/7",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097596,
+      "lat": 28.4512629,
+      "lon": 77.0817406,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "The Peach Tree, Sushant Lok",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2025-02-23",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "HDFC Bank",
+        "name:en": "HDFC Bank",
+        "operator": "HDFC Bank Limited",
+        "short_name": "HDFC",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097597,
+      "lat": 28.4510217,
+      "lon": 77.0815839,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "check_date": "2025-08-31",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "operator": "ICICI Bank Limited",
+        "short_name": "ICICI",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097598,
+      "lat": 28.4509926,
+      "lon": 77.0815598,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "check_date": "2025-08-31",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "Kotak Mahindra Bank",
+        "name:en": "Kotak Mahindra Bank",
+        "operator": "Kotak Mahindra Bank Limited",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097623,
+      "lat": 28.4508302,
+      "lon": 77.0817448,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "check_date": "2025-08-31",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "Bank of Baroda",
+        "name:en": "Bank of Baroda",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097624,
+      "lat": 28.4510998,
+      "lon": 77.0819589,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "C Block, Sushant Lok",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "check_date": "2025-08-31",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "Axis Bank",
+        "name:en": "Axis Bank",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11929097641,
+      "lat": 28.4510648,
+      "lon": 77.0816064,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "check_date": "2025-08-31",
+        "covered": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "lit": "yes",
+        "network": "ICICI Bank",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11930060341,
+      "lat": 28.478679,
+      "lon": 77.0713317,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "IFFCO Chowk",
+        "brand": "Axis Bank",
+        "check_date": "2025-02-23",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "Axis Bank",
+        "name:en": "Axis Bank",
+        "operator": "Axis Bank Limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11930060342,
+      "lat": 28.4785697,
+      "lon": 77.0712094,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "RBL Bank",
+        "check_date": "2025-02-23",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "internet_access": "no",
+        "name": "RBL Bank",
+        "name:en": "RBL Bank",
+        "operator": "RBL Bank Limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12091557061,
+      "lat": 28.4592127,
+      "lon": 77.0727632,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "cash_in": "no",
+        "check_date": "2024-08-04",
+        "currency:INR": "yes",
+        "drive_through": "yes",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12091626142,
+      "lat": 28.4604124,
+      "lon": 77.079346,
+      "tags": {
+        "addr:floor": "0",
+        "addr:housenumber": "-",
+        "addr:street": "Sushant Shopping Arcade, Sushant Lok 1",
+        "addr:unit": "G-105",
+        "amenity": "atm",
+        "check_date": "2025-02-23",
+        "level": "0",
+        "operator": "Axis Bank Limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12810731411,
+      "lat": 28.4491127,
+      "lon": 77.0565186,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "operator": "ICICI Bank",
+        "operator:wikidata": "Q1653258"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13073917050,
+      "lat": 28.424827,
+      "lon": 77.0685548,
+      "tags": {
+        "addr:city": "Gurugram",
+        "addr:district": "Gurugram",
+        "addr:housenumber": "G-02",
+        "addr:postcode": "122003",
+        "addr:street": "Ocus Quantum",
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Gurgaon Sector 51",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "drive_through": "no",
+        "level": "0",
+        "name": "ICICI Bank",
+        "opening_hours": "Mo-Sa 09:30-15:30; Sa[1,3,5] 09:30-14:00; Sa[2,4] off; PH off",
+        "short_name": "ICICI",
+        "website": "https://www.icici.bank.in/branch/haryana/gurgaon/icic0005896"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13175452498,
+      "lat": 28.4760788,
+      "lon": 77.093261,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "level": "0",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13243334786,
+      "lat": 28.4803025,
+      "lon": 77.0927936,
+      "tags": {
+        "amenity": "atm",
+        "brand": "SBI",
+        "level": "0",
+        "opening_hours": "24/7",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13246051184,
+      "lat": 28.4934379,
+      "lon": 77.092174,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "name": "Kotak Mahindra Bank",
+        "operator": "Kotak Mahindra Bank",
+        "operator:wikidata": "Q2040404"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13246708704,
+      "lat": 28.4596871,
+      "lon": 77.0954516,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "name": "Kotak Mahindra Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13246708705,
+      "lat": 28.4596244,
+      "lon": 77.0954523,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "IDBI Bank",
+        "brand:wikidata": "Q3633485",
+        "name": "IDBI Bank",
+        "short_name": "IDBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13584134282,
+      "lat": 28.4248305,
+      "lon": 77.0684768,
+      "tags": {
+        "addr:city": "Gurugram",
+        "addr:district": "Gurugram",
+        "addr:housenumber": "G-3;G-4",
+        "addr:postcode": "122003",
+        "addr:street": "Ocus Quantum",
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Gurugram Sector 51",
+        "brand": "Bank of Maharashtra",
+        "brand:wikidata": "Q2004304",
+        "drive_through": "no",
+        "level": "0",
+        "mobile": "+917065090841",
+        "name": "Bank of Maharashtra",
+        "opening_hours": "Mo-Sa 10:00-16:00; Sa[2,4] off; PH off",
+        "website": "https://bankofmaharashtra.bank.in/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13974268620,
+      "lat": 28.4177248,
+      "lon": 77.0562341,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "South City II, Gurugram",
+        "level": "0",
+        "name": "Utkarsh Small Finance Bank",
+        "operator": "Utkarsh Small Finance Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13996916126,
+      "lat": 28.4268461,
+      "lon": 77.0584252,
+      "tags": {
+        "addr:housenumber": "GF-47,48,49,50",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Mayfield Garden",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "level": "0",
+        "name": "State Bank of India",
+        "opening_hours": "Mo-Sa 10:00-16:00; Sa[2,4] off; PH off",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14112503092,
+      "lat": 28.4654327,
+      "lon": 77.0742802,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2026-08-20",
+        "name": "State Bank of India Millenium Plaza",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14112503097,
+      "lat": 28.4682975,
+      "lon": 77.0744382,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2026-08-20",
+        "name": "State Bank of India A-Block, Sushant Lok",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14112503098,
+      "lat": 28.4683302,
+      "lon": 77.0744341,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2026-08-20",
+        "name": "HDFC Bank Bestech Centre Sushant Lok",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14112525867,
+      "lat": 28.4268931,
+      "lon": 77.0569685,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "check_date": "2026-08-20",
+        "name": "HDFC Bank SS Plaza",
+        "short_name": "HDFC"
+      }
+    }
+  ]
+}

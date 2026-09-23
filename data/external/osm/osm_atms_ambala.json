@@ -1,0 +1,96 @@
+{
+  "region_name": "Ambala",
+  "bbox": [
+    30.31,
+    76.7,
+    30.45,
+    76.86
+  ],
+  "timestamp": 1790193391.1840441,
+  "status": "OK",
+  "notes": "Retrieved 5 elements from https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+  "count": 5,
+  "elements": [
+    {
+      "type": "node",
+      "id": 1447314499,
+      "lat": 30.3386673,
+      "lon": 76.8280814,
+      "tags": {
+        "amenity": "atm",
+        "atm": "yes",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "brand:wikipedia": "en:Punjab National Bank",
+        "name": "Punjab National Bank",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499",
+        "operator:wikipedia": "en:Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1447314711,
+      "lat": 30.3899387,
+      "lon": 76.7803244,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "short_name": "SBI",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2065206400,
+      "lat": 30.3910239,
+      "lon": 76.7919431,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8046150089,
+      "lat": 30.3684003,
+      "lon": 76.7992807,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9525196143,
+      "lat": 30.3595418,
+      "lon": 76.8316503,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:en": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "brand:wikipedia": "en:HDFC Bank",
+        "cash_in": "yes",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "name": "HDFC Bank",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:en": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "operator:wikipedia": "en:HDFC Bank",
+        "short_name": "HDFC"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python byte-code and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment variables
+.env
+.env.local
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE configurations
+.vscode/
+.idea/
+
+# Jupyter checkpoint caches
+.ipynb_checkpoints/
+
+# Temporary / Cached API responses (OSM cache)
+data/external/osm/*.tmp
+*.log
+
+# Generated reports output (keep templates and directory tracked)
+reports/generated/*.pdf
+reports/generated/*.html
+!reports/generated/.gitkeep
+
+# Ensure datasets are preserved and tracked
+!data/raw/*.csv
+!data/processed/*.csv

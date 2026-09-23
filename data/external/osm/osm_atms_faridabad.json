@@ -1,0 +1,90 @@
+{
+  "region_name": "Faridabad",
+  "bbox": [
+    28.32,
+    77.24,
+    28.48,
+    77.39
+  ],
+  "timestamp": 1790199999.0,
+  "status": "OK",
+  "notes": "Retrieved 6 elements from https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+  "count": 6,
+  "elements": [
+    {
+      "type": "node",
+      "id": 3401885126,
+      "lat": 28.4336483,
+      "lon": 77.3225453,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3401911750,
+      "lat": 28.4333135,
+      "lon": 77.3213816,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5137714321,
+      "lat": 28.357136,
+      "lon": 77.2935643,
+      "tags": {
+        "amenity": "atm",
+        "opening_hours": "24/7",
+        "operator": "SBI Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5139611721,
+      "lat": 28.3585994,
+      "lon": 77.2935526,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:en": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:en": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10901565338,
+      "lat": 28.4152462,
+      "lon": 77.3527486,
+      "tags": {
+        "amenity": "atm",
+        "operator": "PnB"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11696680075,
+      "lat": 28.4697463,
+      "lon": 77.3071979,
+      "tags": {
+        "amenity": "atm",
+        "network": "Kotak Mahindra",
+        "operator": "Kotak Mahindra Bank ATM"
+      }
+    }
+  ]
+}

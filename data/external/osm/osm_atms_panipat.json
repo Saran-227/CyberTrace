@@ -1,0 +1,14 @@
+{
+  "region_name": "Panipat",
+  "bbox": [
+    29.33,
+    76.9,
+    29.46,
+    77.03
+  ],
+  "timestamp": 1790199999.0,
+  "status": "NO_OSM_ATMS_FOUND",
+  "notes": "OpenStreetMap query succeeded across bounding box but 0 ATM elements are tagged in Panipat",
+  "count": 0,
+  "elements": []
+}

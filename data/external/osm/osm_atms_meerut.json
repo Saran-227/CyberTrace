@@ -1,0 +1,793 @@
+{
+  "region_name": "Meerut",
+  "bbox": [
+    28.9,
+    77.62,
+    29.06,
+    77.79
+  ],
+  "timestamp": 1790192721.6038299,
+  "count": 43,
+  "elements": [
+    {
+      "type": "node",
+      "id": 1287853287,
+      "lat": 28.9957087,
+      "lon": 77.7151699,
+      "tags": {
+        "addr:city": "Meerut",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Rajlok",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "level": "0",
+        "name": "ICICI Bank",
+        "short_name": "ICICI",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1287889054,
+      "lat": 28.9680314,
+      "lon": 77.7289007,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Garh Road",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "check_date": "2025-11-15",
+        "level": "0",
+        "name": "ICICI Bank",
+        "opening_hours": "Mo-Sa 09:30-15:00; Su off",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9865467418,
+      "lat": 28.9982165,
+      "lon": 77.7004361,
+      "tags": {
+        "addr:city": "Meerut",
+        "addr:place": "Abu Lane",
+        "addr:postcode": "250001",
+        "addr:street": "Abu Lane",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Abulane",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "cash_in": "yes",
+        "check_date": "2024-10-07",
+        "level": "0",
+        "name": "Bank of Baroda",
+        "name:en": "Bank of Baroda",
+        "opening_hours": "Mo-Sa 10:00-16:00; Su,Sa[2,4],PH off",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11145896688,
+      "lat": 28.9881176,
+      "lon": 77.7271175,
+      "tags": {
+        "amenity": "atm",
+        "atm": "yes",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "cash_in": "no",
+        "currency:INR": "yes",
+        "name": "Punjab National Bank",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245642370,
+      "lat": 28.9941016,
+      "lon": 77.7059116,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245642374,
+      "lat": 28.9947208,
+      "lon": 77.7059159,
+      "tags": {
+        "amenity": "atm",
+        "branch": "Begum Bridge, Meerut",
+        "brand": "Punjab & Sind Bank",
+        "brand:en": "Punjab & Sind Bank",
+        "brand:hi": "\u092a\u0902\u091c\u093e\u092c \u090f\u0923\u094d\u0921 \u0938\u093f\u0902\u0927 \u092c\u0948\u0902\u0915",
+        "brand:wikidata": "Q2003302",
+        "name:en": "Punjab & Sind Bank",
+        "name:hi": "\u092a\u0902\u091c\u093e\u092c \u090f\u0923\u094d\u0921 \u0938\u093f\u0902\u0927 \u092c\u0948\u0902\u0915",
+        "operator": "Punjab & Sind Bank",
+        "operator:wikidata": "Q2003302"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245642501,
+      "lat": 28.9900285,
+      "lon": 77.7059312,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Sotiganj, Meerut Branch",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "check_date": "2026-07-26",
+        "level": "0",
+        "name": "Bank of Baroda",
+        "opening_hours": "Mo-Sa 10:00-16:00; Su,Sa[2,4],PH off",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245642505,
+      "lat": 28.9902008,
+      "lon": 77.7057172,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Begum Bridge",
+        "brand": "Bank of India",
+        "brand:wikidata": "Q2004439",
+        "level": "0",
+        "name": "Bank of India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11245796361,
+      "lat": 28.9884208,
+      "lon": 77.7059374,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Meerut",
+        "brand": "Karur Vysya Bank",
+        "brand:wikidata": "Q6373724",
+        "level": "0",
+        "name": "Karur Vysya Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11252182996,
+      "lat": 28.9858727,
+      "lon": 77.68753,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "level": "0",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11252970331,
+      "lat": 28.9891492,
+      "lon": 77.7254764,
+      "tags": {
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:neighbourhood": "Saket",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Saket",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "cash_in": "yes",
+        "check_date": "2025-11-11",
+        "email": "sbi.11460@sbi.co.in",
+        "level": "0",
+        "name": "State Bank of India",
+        "opening_hours": "Mo-Sa 10:00-14:00,15:00-16:00; Su,Sa[2,4],PH off",
+        "operator": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "phone": "+91 121 266 7288; +91 85058 81122",
+        "ref": "11460",
+        "short_name": "SBI",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11266776847,
+      "lat": 28.9874159,
+      "lon": 77.719396,
+      "tags": {
+        "addr:city": "Meerut",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "M.D.A. Meerut",
+        "brand": "Indian Bank",
+        "brand:wikidata": "Q2003789",
+        "level": "0",
+        "name": "Indian Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11266776854,
+      "lat": 28.9883883,
+      "lon": 77.7186242,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "brand:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "brand:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "brand:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:wikidata": "Q2003777",
+        "level": "0",
+        "name:en": "Canara Bank",
+        "name:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "name:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "name:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "name:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "name:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11268880617,
+      "lat": 28.9748645,
+      "lon": 77.7214953,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Suraj Kund",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "check_date": "2025-11-28",
+        "level": "0",
+        "name": "Axis Bank",
+        "opening_hours": "Mo-Sa 09:30-15:30; Su,Sa[2,4] off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11277194953,
+      "lat": 28.996447,
+      "lon": 77.7026692,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "level": "Abulane, Meerut Cantt",
+        "name": "Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11505562450,
+      "lat": 28.9988332,
+      "lon": 77.6998538,
+      "tags": {
+        "addr:city": "Meerut",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Cantonment Meerut",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "brand:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "brand:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "brand:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "name:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "name:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "name:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "name:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11505906188,
+      "lat": 28.9931057,
+      "lon": 77.6948022,
+      "tags": {
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:street": "Westend Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11505906210,
+      "lat": 28.9897983,
+      "lon": 77.6931949,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "level": "0",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11533769752,
+      "lat": 28.9951239,
+      "lon": 77.6981643,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Meerut Cantt",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11684293312,
+      "lat": 28.9632299,
+      "lon": 77.7292917,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "level": "0",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11697359052,
+      "lat": 28.9956576,
+      "lon": 77.7149634,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis bank atm",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11783297373,
+      "lat": 28.9907467,
+      "lon": 77.7145778,
+      "tags": {
+        "amenity": "atm",
+        "branch": "Kutchery Road",
+        "brand": "UCO Bank",
+        "brand:wikidata": "Q2005310",
+        "level": "0",
+        "name": "UCO Bank",
+        "operator": "UCO Bank",
+        "operator:wikidata": "Q2005310",
+        "ref": "2068",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11783297394,
+      "lat": 28.9894965,
+      "lon": 77.7125937,
+      "tags": {
+        "addr:city": "Meerut",
+        "addr:street": "Western Kutchery Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Kutcheri Branch",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "level": "0",
+        "name": "State Bank of India",
+        "short_name": "SBI",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11783297401,
+      "lat": 28.9863452,
+      "lon": 77.709417,
+      "tags": {
+        "addr:city": "Meerut",
+        "amenity": "bank",
+        "atm": "yes",
+        "level": "0",
+        "name": "DCB Bank",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11783297423,
+      "lat": 28.9876065,
+      "lon": 77.7102526,
+      "tags": {
+        "addr:city": "Meerut",
+        "addr:street": "Western Kutchery Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "level": "0",
+        "name": "IndusInd Bank",
+        "operator": "IndusInd Bank",
+        "operator:wikidata": "Q2040323"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11783297435,
+      "lat": 28.9874247,
+      "lon": 77.7100247,
+      "tags": {
+        "addr:city": "Meerut",
+        "addr:street": "Western Kutchery Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Western Kutchery Road",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "level": "0",
+        "name": "HDFC Bank",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11799866330,
+      "lat": 28.9918908,
+      "lon": 77.7059136,
+      "tags": {
+        "amenity": "atm",
+        "brand": "UCO Bank",
+        "brand:wikidata": "Q2005310",
+        "cash_in": "yes",
+        "currency:INR": "yes",
+        "operator": "UCO Bank",
+        "operator:wikidata": "Q2005310"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11835352543,
+      "lat": 28.9818219,
+      "lon": 77.7067808,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "level": "0",
+        "operator": "Bank of Baroda",
+        "operator:wikidata": "Q2003797"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11850671849,
+      "lat": 28.9893992,
+      "lon": 77.7288793,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:en": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "level": "0",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:en": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12059474398,
+      "lat": 28.9973887,
+      "lon": 77.706086,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Hitachi",
+        "brand:wikidata": "Q53238",
+        "level": "0",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12090075533,
+      "lat": 28.9891453,
+      "lon": 77.725441,
+      "tags": {
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:neighbourhood": "Saket",
+        "addr:state": "Uttar Pradesh",
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "cash_in": "yes",
+        "check_date": "2024-08-03",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "level": "0",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12090131849,
+      "lat": 28.9887614,
+      "lon": 77.7254992,
+      "tags": {
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "addr:neighbourhood": "Saket",
+        "addr:state": "Uttar Pradesh",
+        "addr:suburb": "Saket",
+        "amenity": "atm",
+        "branch": "Saket",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "brand:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "brand:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "brand:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:wikidata": "Q2003777",
+        "level": "0",
+        "name:en": "Canara Bank",
+        "name:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "name:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "name:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "name:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "name:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12118147474,
+      "lat": 28.974095,
+      "lon": 77.7209784,
+      "tags": {
+        "addr:city": "Meerut",
+        "addr:district": "Meerut",
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "name": "ICICI Bank",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12118254820,
+      "lat": 28.9822666,
+      "lon": 77.7027276,
+      "tags": {
+        "amenity": "atm",
+        "name": "Canara Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12132389332,
+      "lat": 28.9698664,
+      "lon": 77.723302,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "operator": "Bank of Baroda",
+        "operator:wikidata": "Q2003797"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12287578454,
+      "lat": 28.9908434,
+      "lon": 77.7062537,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "level": "0",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12347730457,
+      "lat": 28.9732687,
+      "lon": 77.7204833,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "level": "0",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12598551909,
+      "lat": 28.9862511,
+      "lon": 77.7141989,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Punjab National Bank",
+        "level": "0",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13097856993,
+      "lat": 28.9632374,
+      "lon": 77.7292795,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "level": "0",
+        "operator": "HDFC Bank",
+        "operator:wikidata": "Q631047"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13319421383,
+      "lat": 28.9879525,
+      "lon": 77.7297609,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Punjab National Bank",
+        "level": "0",
+        "operator": "Punjab National Bank",
+        "operator:wikidata": "Q2743499"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13331567816,
+      "lat": 28.9915519,
+      "lon": 77.7116286,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of Baroda",
+        "operator": "Bank of Baroda",
+        "operator:wikidata": "Q2003797"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13338348638,
+      "lat": 28.9748536,
+      "lon": 77.721484,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13339716903,
+      "lat": 28.9748266,
+      "lon": 77.72152,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    }
+  ]
+}

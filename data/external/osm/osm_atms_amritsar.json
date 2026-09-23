@@ -1,0 +1,188 @@
+{
+  "region_name": "Amritsar",
+  "bbox": [
+    31.56,
+    74.78,
+    31.72,
+    74.96
+  ],
+  "timestamp": 1790193344.280375,
+  "status": "OK",
+  "notes": "Retrieved 12 elements from OSM API 0.6 fallback",
+  "count": 12,
+  "elements": [
+    {
+      "type": "node",
+      "id": 2592596093,
+      "lat": 31.6436183,
+      "lon": 74.8764121,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4510825889,
+      "lat": 31.6270231,
+      "lon": 74.8779994,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:en": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:en": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5478127723,
+      "lat": 31.6334161,
+      "lon": 74.8836508,
+      "tags": {
+        "amenity": "atm",
+        "opening_hours": "24/7",
+        "operator": "state bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6618425385,
+      "lat": 31.6261532,
+      "lon": 74.8780094,
+      "tags": {
+        "amenity": "atm",
+        "check_date": "2023-12-17",
+        "operator": "PNB"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6626664510,
+      "lat": 31.626455,
+      "lon": 74.8781534,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6846320851,
+      "lat": 31.6255328,
+      "lon": 74.8798013,
+      "tags": {
+        "addr:city": "Amritsar",
+        "addr:postcode": "143001",
+        "addr:street": "Mahan Singh Gate Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "opening_hours": "Mo-Sa 10:00-16:00; Sa[2], Sa[-1] off"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11809604387,
+      "lat": 31.6299647,
+      "lon": 74.8733068,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of India",
+        "brand:wikidata": "Q2004439",
+        "check_date": "2024-04-11",
+        "covered": "yes",
+        "lit": "yes",
+        "operator": "Bank of India",
+        "operator:wikidata": "Q2004439",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11809604389,
+      "lat": 31.6299274,
+      "lon": 74.8733351,
+      "tags": {
+        "amenity": "atm",
+        "brand": "UCO Bank",
+        "brand:wikidata": "Q2005310",
+        "check_date": "2024-04-11",
+        "currency:INR": "yes",
+        "level": "0",
+        "operator": "UCO Bank",
+        "operator:wikidata": "Q2005310",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11810040090,
+      "lat": 31.627454,
+      "lon": 74.8750754,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "check_date": "2024-04-11",
+        "level": "0",
+        "name": "Axis Bank",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11810040093,
+      "lat": 31.6269776,
+      "lon": 74.8757222,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Jammu and Kashmir Bank",
+        "brand:wikidata": "Q2040429",
+        "check_date": "2024-04-11",
+        "level": "0",
+        "operator": "Jammu and Kashmir Bank",
+        "operator:wikidata": "Q2040429",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11810040095,
+      "lat": 31.6264947,
+      "lon": 74.8771809,
+      "tags": {
+        "addr:city": "Amritsar",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Katra Jaimal Singh",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2024-04-11",
+        "level": "0",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12066244993,
+      "lat": 31.6420042,
+      "lon": 74.8668661,
+      "tags": {
+        "amenity": "atm"
+      }
+    }
+  ]
+}

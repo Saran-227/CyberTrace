@@ -1,0 +1,39 @@
+{
+  "region_name": "Alwar",
+  "bbox": [
+    27.5,
+    76.56,
+    27.62,
+    76.69
+  ],
+  "timestamp": 1790192730.028839,
+  "count": 2,
+  "elements": [
+    {
+      "type": "node",
+      "id": 1694918139,
+      "lat": 27.5688767,
+      "lon": 76.613572,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Saksham"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1694918180,
+      "lat": 27.5689267,
+      "lon": 76.613588,
+      "tags": {
+        "addr:city": "Alwar",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "operator": "\u015aaksham",
+        "short_name": "ICICI"
+      }
+    }
+  ]
+}

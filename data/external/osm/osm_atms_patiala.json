@@ -1,0 +1,75 @@
+{
+  "region_name": "Patiala",
+  "bbox": [
+    30.27,
+    76.3,
+    30.42,
+    76.47
+  ],
+  "timestamp": 1790193359.2700539,
+  "status": "OK",
+  "notes": "Retrieved 5 elements from https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+  "count": 5,
+  "elements": [
+    {
+      "type": "node",
+      "id": 1330374711,
+      "lat": 30.3357156,
+      "lon": 76.3847681,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3979941615,
+      "lat": 30.3544407,
+      "lon": 76.3620415,
+      "tags": {
+        "addr:city": "Patiala",
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4283616202,
+      "lat": 30.3646294,
+      "lon": 76.4668794,
+      "tags": {
+        "amenity": "atm",
+        "brand": "HDFC Bank",
+        "brand:en": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "HDFC Bank",
+        "operator:en": "HDFC Bank",
+        "operator:wikidata": "Q631047",
+        "short_name": "HDFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4283616204,
+      "lat": 30.3648842,
+      "lon": 76.4671954,
+      "tags": {
+        "amenity": "atm",
+        "brand": "AXIS Bank",
+        "operator": "AXIS Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12201826936,
+      "lat": 30.3526416,
+      "lon": 76.3699516,
+      "tags": {
+        "amenity": "atm"
+      }
+    }
+  ]
+}

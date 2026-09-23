@@ -1,0 +1,72 @@
+{
+  "region_name": "Ludhiana",
+  "bbox": [
+    30.82,
+    75.76,
+    31.0,
+    75.96
+  ],
+  "timestamp": 1790193248.0630376,
+  "status": "OK",
+  "notes": "Retrieved 4 elements from OSM API 0.6 fallback",
+  "count": 4,
+  "elements": [
+    {
+      "type": "node",
+      "id": 916550345,
+      "lat": 30.9090045,
+      "lon": 75.8606279,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand:wikidata": "Q2743499",
+        "name": "Punjab National Bank",
+        "name:en": "Punjab National Bank",
+        "short_name": "PNB",
+        "website": "https://www.pnbindia.in",
+        "wikidata": "Q2743499",
+        "wikipedia": "en:Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2194435660,
+      "lat": 30.9143737,
+      "lon": 75.8521462,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "name": "Union Bank Of  India",
+        "source": "Survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4355006890,
+      "lat": 30.9005819,
+      "lon": 75.8739839,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Union bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13971678384,
+      "lat": 30.9238502,
+      "lon": 75.8541586,
+      "tags": {
+        "addr:city": "Ludhiana",
+        "addr:district": "Ludhiana",
+        "addr:postcode": "141001",
+        "addr:street": "Daresi Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Central Bank of India",
+        "brand:wikidata": "Q2007090",
+        "name": "Central Bank of India",
+        "opening_hours": "Mo-Fr 09:00-17:00"
+      }
+    }
+  ]
+}

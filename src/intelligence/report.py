@@ -1,0 +1,272 @@
+"""Executive Intelligence Report Generator for CyberTrace.
+
+Produces non-technical, human-readable HTML and PDF intelligence briefs.
+Enforces academic synthetic data disclosures and evidence boundaries.
+"""
+
+from typing import Dict, Any, List, Optional
+from datetime import datetime
+from pathlib import Path
+from jinja2 import Template
+
+from src.config import GENERATED_REPORTS_DIR, REPORT_TEMPLATES_DIR
+from src.intelligence.explanation import generate_investigative_explanation
+from src.utils.logging import get_logger
+
+logger = get_logger("ReportGenerator")
+
+DEFAULT_HTML_TEMPLATE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CyberTrace Executive Intelligence Report - Case {{ case_id }}</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background: #f8fafc;
+    margin: 0;
+    padding: 30px;
+  }
+  .report-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 48px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+  }
+  .header {
+    border-bottom: 2px solid #0284c7;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #0f172a;
+    letter-spacing: 0.5px;
+  }
+  .badge {
+    background: #0284c7;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .disclaimer-banner {
+    background: #fef2f2;
+    border-left: 4px solid #ef4444;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    color: #991b1b;
+  }
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 6px;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 12px 16px;
+  }
+  .card-label {
+    font-size: 12px;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .card-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 13px;
+  }
+  th, td {
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+  }
+  th {
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #475569;
+  }
+  .top-cand {
+    background: #f0fdf4;
+    font-weight: 600;
+  }
+  ul {
+    padding-left: 20px;
+    margin: 8px 0;
+  }
+  li {
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #334155;
+  }
+  .footer {
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 12px;
+    color: #64748b;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="report-container">
+  <div class="header">
+    <div>
+      <h1>CYBERTRACE EXECUTIVE INTELLIGENCE BRIEF</h1>
+      <small style="color: #64748b;">Case Reference: {{ case_id }} | Generated: {{ generated_time }}</small>
+    </div>
+    <span class="badge">Intelligence Advisory</span>
+  </div>
+
+  <div class="disclaimer-banner">
+    <strong>ACADEMIC SYNTHETIC RESEARCH NOTICE:</strong> All complaint records and historical activity are synthetic.
+    Predicted zones and candidate rankings represent mathematical likelihoods. Candidate ATMs are NOT confirmed locations of withdrawal;
+    physical confirmation requires banking interchange logs and surveillance verification.
+  </div>
+
+  <div class="section-title">1. Case & Incident Overview</div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-label">Reported Fraud Type</div>
+      <div class="card-value">{{ case.fraud_type }}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Financial Amount</div>
+      <div class="card-value">₹{{ "{:,}".format(case.amount) }} ({{ case.amount_category }})</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Victim Bank & Rail</div>
+      <div class="card-value">{{ case.bank }} / {{ case.transaction_type }}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Reported Location</div>
+      <div class="card-value">{{ case.city }}, {{ case.district }} ({{ case.state }})</div>
+    </div>
+  </div>
+
+  <div class="section-title">2. Geographic Cash-Out Prediction</div>
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-label">Predicted Withdrawal Zone</div>
+    <div class="card-value" style="color: #0284c7; font-size: 20px;">{{ prediction.predicted_zone }}</div>
+    <p style="margin: 6px 0 0 0; font-size: 13px; color: #475569;">
+      {{ explanation.zone_summary }}
+    </p>
+  </div>
+
+  <div class="section-title">3. Candidate ATM Locations in Target Area</div>
+  <p style="font-size: 13px; color: #475569;">
+    The candidate ATMs below were discovered using OpenStreetMap open geographic data within the predicted zone and ranked by multi-criteria compatibility.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank / ID</th>
+        <th>Bank / Operator</th>
+        <th>Distance</th>
+        <th>Candidate Score</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for atm in atms %}
+      <tr class="{{ 'top-cand' if loop.first else '' }}">
+        <td>{{ atm.atm_id }}</td>
+        <td>{{ atm.bank }}</td>
+        <td>{{ atm.distance_km }} km</td>
+        <td><strong>{{ "{:.2f}".format(atm.candidate_score) }}</strong></td>
+        <td>{{ atm.designation }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <div class="section-title">4. Key Contributing Signals</div>
+  <ul>
+    {% for sig in explanation.key_signals %}
+    <li>{{ sig }}</li>
+    {% endfor %}
+  </ul>
+
+  <div class="section-title">5. Recommended Law Enforcement Focus</div>
+  <ul>
+    {% for action in explanation.recommended_focus %}
+    <li>{{ action }}</li>
+    {% endfor %}
+  </ul>
+
+  <div class="section-title">6. Official Reporting & Helplines</div>
+  <p style="font-size: 13px; color: #334155;">
+    National Cyber Crime Reporting Portal: <a href="https://www.cybercrime.gov.in/" target="_blank">https://www.cybercrime.gov.in/</a><br>
+    National Financial Cyber Fraud Helpline: <strong>1930</strong>
+  </p>
+
+  <div class="footer">
+    CyberTrace Academic Location Intelligence Platform &copy; 2026. Strictly confidential for investigative analysis.
+  </div>
+</div>
+</body>
+</html>
+"""
+
+def generate_executive_report(
+    case_data: Dict[str, Any],
+    prediction_result: Dict[str, Any],
+    ranked_atms: List[Dict[str, Any]],
+    output_filename: Optional[str] = None,
+) -> Path:
+    """Generate and write a non-technical executive intelligence HTML report."""
+    case_id = case_data.get("complaint_id", f"CASE-{datetime.now().strftime('%Y%m%d%H%M')}")
+    explanation = generate_investigative_explanation(case_data, prediction_result, ranked_atms)
+
+    template = Template(DEFAULT_HTML_TEMPLATE)
+    rendered_html = template.render(
+        case_id=case_id,
+        generated_time=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        case=case_data,
+        prediction=prediction_result,
+        atms=ranked_atms[:5],
+        explanation=explanation,
+    )
+
+    if not output_filename:
+        safe_case_id = case_id.replace(" ", "_").replace("/", "-")
+        output_filename = f"Executive_Report_{safe_case_id}.html"
+
+    report_path = GENERATED_REPORTS_DIR / output_filename
+    with open(report_path, "w", encoding="utf-8") as f:
+        f.write(rendered_html)
+
+    logger.info(f"Executive report generated successfully at: {report_path}")
+    return report_path

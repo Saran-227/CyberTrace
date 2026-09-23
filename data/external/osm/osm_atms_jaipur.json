@@ -1,0 +1,491 @@
+{
+  "region_name": "Jaipur",
+  "bbox": [
+    26.82,
+    75.69,
+    27.02,
+    75.89
+  ],
+  "timestamp": 1790192726.8326488,
+  "count": 32,
+  "elements": [
+    {
+      "type": "node",
+      "id": 1466911301,
+      "lat": 26.9163399,
+      "lon": 75.807437,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2690970389,
+      "lat": 26.9026028,
+      "lon": 75.7926001,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3677351613,
+      "lat": 26.9177877,
+      "lon": 75.7998401,
+      "tags": {
+        "amenity": "atm",
+        "name": "Indian State Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3677353029,
+      "lat": 26.91869,
+      "lon": 75.7985653,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "name": "Karnataka Bank",
+        "operator": "Karnataka Bank",
+        "operator:wikidata": "Q2042632"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3677353030,
+      "lat": 26.9181265,
+      "lon": 75.7996745,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "name": "Icici Bank",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3677355516,
+      "lat": 26.9183265,
+      "lon": 75.7995141,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Indian Overseas Bank",
+        "brand:wikidata": "Q2003611",
+        "name": "Indian Overseas Bank",
+        "operator": "Indian Overseas Bank",
+        "operator:wikidata": "Q2003611"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3685074341,
+      "lat": 26.9194143,
+      "lon": 75.7986345,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Indian Bank",
+        "brand:wikidata": "Q2003789",
+        "name": "Indian Bank",
+        "operator": "Indian Bank",
+        "operator:wikidata": "Q2003789"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3685076425,
+      "lat": 26.9195736,
+      "lon": 75.7986796,
+      "tags": {
+        "amenity": "atm",
+        "brand": "CSB Bank",
+        "brand:wikidata": "Q5053244",
+        "name": "Catholic Syrian Bank",
+        "official_name": "Catholic Syrian Bank",
+        "operator": "CSB Bank",
+        "operator:wikidata": "Q5053244"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3806491204,
+      "lat": 26.9270858,
+      "lon": 75.7950165,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3806705156,
+      "lat": 26.9160946,
+      "lon": 75.8101221,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Allahabad Bank",
+        "brand:wikidata": "Q2018840",
+        "name": "Allahabad Bank",
+        "name:en": "Allahabad Bank",
+        "website": "https://www.allahabadbank.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3806705457,
+      "lat": 26.9161083,
+      "lon": 75.8102147,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "name": "J&K Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3840693081,
+      "lat": 26.9025479,
+      "lon": 75.7853756,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3842344275,
+      "lat": 26.9165159,
+      "lon": 75.8093164,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "name": "Axis Bank",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3842353310,
+      "lat": 26.9164011,
+      "lon": 75.807356,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Standard Chartered",
+        "brand:wikidata": "Q548278",
+        "name": "Standard Chartered"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3842353311,
+      "lat": 26.9163608,
+      "lon": 75.8077409,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "name": "ICICI Bank",
+        "name:en": "ICICI Bank",
+        "short_name": "ICICI",
+        "website": "https://www.icicibank.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4703268090,
+      "lat": 26.9146995,
+      "lon": 75.7996987,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4703287189,
+      "lat": 26.9139188,
+      "lon": 75.799137,
+      "tags": {
+        "amenity": "atm",
+        "check_date": "2025-11-03",
+        "opening_hours": "24/7",
+        "operator": "India Post ATM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4703287289,
+      "lat": 26.9147271,
+      "lon": 75.7997268,
+      "tags": {
+        "amenity": "atm",
+        "opening_hours": "24/7",
+        "operator": "IndusInd Bank ATM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4763765421,
+      "lat": 26.9173574,
+      "lon": 75.7994798,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of India",
+        "brand:wikidata": "Q2004439",
+        "operator": "Bank of India",
+        "operator:wikidata": "Q2004439"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6633319187,
+      "lat": 26.9294335,
+      "lon": 75.8029083,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6859993686,
+      "lat": 26.9275854,
+      "lon": 75.7906096,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7006069585,
+      "lat": 26.925404,
+      "lon": 75.7928151,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7043371100,
+      "lat": 26.9409778,
+      "lon": 75.7777917,
+      "tags": {
+        "amenity": "atm",
+        "operator": "Central Bank of india ATM"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7048880050,
+      "lat": 26.9175134,
+      "lon": 75.7666078,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8119003882,
+      "lat": 26.9209472,
+      "lon": 75.7959054,
+      "tags": {
+        "amenity": "atm",
+        "check_date": "2026-09-08",
+        "operator": "Punjab & Sindh Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8120433447,
+      "lat": 26.898933,
+      "lon": 75.7840779,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "brand:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "brand:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "brand:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:wikidata": "Q2003777",
+        "name:en": "Canara Bank",
+        "name:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "name:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "name:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "name:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "name:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "operator": "Canara Bank",
+        "operator:wikidata": "Q2003777"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12358211501,
+      "lat": 26.9275324,
+      "lon": 75.7931445,
+      "tags": {
+        "amenity": "atm",
+        "operator": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12361795418,
+      "lat": 26.9275358,
+      "lon": 75.7908177,
+      "tags": {
+        "amenity": "atm",
+        "operator": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12365225003,
+      "lat": 26.9297136,
+      "lon": 75.8023775,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12369823003,
+      "lat": 26.9202289,
+      "lon": 75.7896248,
+      "tags": {
+        "amenity": "atm",
+        "brand": "ICICI Bank",
+        "brand:en": "ICICI Bank",
+        "brand:wikidata": "Q1653258",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/03/03)",
+        "opening_hours": "24/7",
+        "operator": "ICICI Bank",
+        "operator:en": "ICICI Bank",
+        "operator:wikidata": "Q1653258",
+        "short_name": "ICICI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13602800754,
+      "lat": 26.9277908,
+      "lon": 75.797975,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "name": "Kotak Mahindra Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14159487967,
+      "lat": 26.9189514,
+      "lon": 75.7956281,
+      "tags": {
+        "addr:floor": "G",
+        "amenity": "atm",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "check_date": "2026-09-07",
+        "currency:INR": "yes",
+        "indoor": "yes",
+        "level": "0",
+        "opening_hours": "24/7",
+        "operator": "Union Bank of India",
+        "operator:wikidata": "Q2004078",
+        "wheelchair": "yes"
+      }
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "region_name": "New Delhi",
+  "bbox": [
+    28.52,
+    77.12,
+    28.7,
+    77.3
+  ],
+  "timestamp": 1790193380.9926372,
+  "status": "OK",
+  "notes": "Retrieved 16 elements from OSM API 0.6 fallback",
+  "count": 16,
+  "elements": [
+    {
+      "type": "node",
+      "id": 4385547591,
+      "lat": 28.6135345,
+      "lon": 77.2184328,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4713325589,
+      "lat": 28.6246459,
+      "lon": 77.2053756,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/02/19)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5338583878,
+      "lat": 28.6248302,
+      "lon": 77.2029725,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5338584664,
+      "lat": 28.6249115,
+      "lon": 77.2010875,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Bank of Baroda",
+        "brand:wikidata": "Q2003797",
+        "opening_hours": "24/7",
+        "operator": "Bank of Baroda",
+        "operator:wikidata": "Q2003797"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5345521629,
+      "lat": 28.6215414,
+      "lon": 77.2192588,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Union Bank of India",
+        "brand:wikidata": "Q2004078",
+        "check_date": "2026-03-18",
+        "operator": "Union Bank of India",
+        "operator:wikidata": "Q2004078"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5345531970,
+      "lat": 28.6236459,
+      "lon": 77.2193948,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "check_date": "2026-03-18",
+        "name": "Axis Bank",
+        "operator": "Axis Bank",
+        "operator:wikidata": "Q2003549"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6385537596,
+      "lat": 28.6107735,
+      "lon": 77.2142744,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/02/19)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6385537606,
+      "lat": 28.6198985,
+      "lon": 77.2106056,
+      "tags": {
+        "addr:city": "New Delhi",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Raisina Road",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "brand:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "brand:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "brand:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "name:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "name:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "name:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "name:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6470072750,
+      "lat": 28.6229665,
+      "lon": 77.211944,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Sansad Marg",
+        "brand": "UCO Bank",
+        "brand:wikidata": "Q2005310",
+        "level": "0",
+        "name": "UCO Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6470184614,
+      "lat": 28.6175605,
+      "lon": 77.2125512,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6470184617,
+      "lat": 28.6040114,
+      "lon": 77.1976751,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "name": "State Bank of India",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/02/19)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6539240961,
+      "lat": 28.6248081,
+      "lon": 77.2193721,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "check_date": "2026-03-20",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "name": "State Bank of India",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/02/19)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7265860000,
+      "lat": 28.6103297,
+      "lon": 77.2010609,
+      "tags": {
+        "amenity": "atm",
+        "brand": "State Bank of India",
+        "brand:en": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "currency:INR": "yes",
+        "drive_through": "no",
+        "indoor": "yes",
+        "note": "Contributors are requested to not edit the \"brand\", \"brand:en\", \"brand:wikidata\", \"operator\", \"operator:en\" and \"operator:wikidata\" tags. (2025/02/19)",
+        "opening_hours": "24/7",
+        "operator": "State Bank of India",
+        "operator:en": "State Bank of India",
+        "operator:wikidata": "Q1340361",
+        "short_name": "SBI",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10732829707,
+      "lat": 28.6081726,
+      "lon": 77.2175333,
+      "tags": {
+        "amenity": "atm"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12586887172,
+      "lat": 28.6235066,
+      "lon": 77.211871,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Sansad Marg",
+        "brand": "Punjab National Bank",
+        "level": "0",
+        "name": "Punjab National Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13681529729,
+      "lat": 28.6173918,
+      "lon": 77.213635,
+      "tags": {
+        "amenity": "atm",
+        "brand": "Central Bank of India",
+        "level": "0",
+        "opening_hours": "24/7",
+        "operator": "Central Bank of India",
+        "operator:wikidata": "Q2007090"
+      }
+    }
+  ]
+}
