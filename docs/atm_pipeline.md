@@ -94,3 +94,45 @@ $$S = 0.40 \cdot S_{\text{dist}} + 0.30 \cdot S_{\text{bank}} + 0.15 \cdot S_{\t
    - Daytime-only ATM during night incident: $0.25$
 4. **Historical Activity ($S_{\text{activity}}$)**:
    - Normalized synthetic historical cash-out frequency: $\min(1.0, \frac{\text{fraud\_count}}{10})$.
+
+---
+
+## 7. Phase 2B: Synthetic Historical ATM Activity Dataset
+
+To support ATM candidate ranking without compromising proprietary banking privacy or violating financial regulations, CyberTrace includes a dedicated historical activity generation engine in `src/atm/activity.py`.
+
+### Academic Disclaimer & Synthetic Integrity
+> [!WARNING]
+> **SYNTHETIC DATA NOTICE — NOT REAL BANKING TRANSACTION DATA**:
+> All ATM activity metrics (transaction counts, cash withdrawal volumes, estimated cash volumes, and activity scores) are **100% synthetic**.
+> They are generated algorithmically for academic modeling, prototyping, and candidate-ranking demonstration only.
+> Real-world investigative confirmation **strictly requires** official bank switch transaction logs, core banking system (CBS) audit trails, and authorized CCTV surveillance footage.
+
+### Data Sources & Zero Target Leakage
+- **Input**: `data/processed/atm_locations.csv` (strictly the 333 verified OSM ATM locations).
+- **Output**: `data/processed/atm_activity.csv` (and raw version at `data/raw/atm_activity_raw.csv`).
+- **Panipat Coverage**: Panipat has 0 OSM ATM records in `atm_locations.csv` (`NO_OSM_ATMS_FOUND`). In accordance with strict data integrity rules, **no fake ATMs or activity records are fabricated for Panipat**.
+- **Zero Target Leakage**: The generation pipeline does **NOT** use `withdrawal_zone`, complaint coordinates, or fraud cluster labels. Activity levels are conditioned exclusively on physical ATM properties (city commercial weighting, bank tier, 24/7 operating hours, diurnal curves, and a deterministic hash of the `atm_id`).
+
+### Activity Dataset Schema
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `atm_id` | String | Foreign key matching verified OSM ATM node ID |
+| `date` | String | ISO date (`YYYY-MM-DD`), spanning 90 days |
+| `hour` | Integer | Operational hour ($0 \dots 23$) |
+| `day_of_week` | Integer | Day of week index ($0 = \text{Monday}, \dots, 6 = \text{Sunday}$) |
+| `is_weekend` | Integer | Binary flag: $1$ if Saturday or Sunday, $0$ otherwise |
+| `is_night` | Integer | Binary flag: $1$ between 22:00 and 05:00, $0$ otherwise |
+| `transaction_count` | Integer | Total synthetic interactions (inquiries + withdrawals + PIN ops) |
+| `cash_withdrawal_count` | Integer | Synthetic cash dispensing transactions ($\le \text{transaction\_count}$) |
+| `estimated_cash_volume` | Float | Plausible simulated cash volume dispensed in INR ($\ge 0.0$) |
+| `activity_score` | Float | Multi-metric normalized activity score bounded in $[0.0, 100.0]$ |
+| `fraud_withdrawal_count` | Integer | Synthetic anomalous cash-out signal for academic ranking |
+| `high_value_withdrawal_count` | Integer | Synthetic frequency of maximum-denomination cash withdrawals |
+| `average_amount` | Float | Synthetic mean transaction ticket in INR |
+
+### Stochastic Modeling & Reproducibility
+- **Reproducibility**: Parameterized with a fixed seed (`RANDOM_SEED = 42`).
+- **Mathematical Invariant**: $\text{cash\_withdrawal\_count} \sim \text{Binomial}(\text{transaction\_count}, p)$ where $p \sim \text{Beta}(8, 3)$, guaranteeing $0 \le \text{cash\_withdrawal\_count} \le \text{transaction\_count}$ always.
+- **Volume Distribution**: Dispensed cash is drawn from a plausible Gamma distribution ($\mu \approx ₹3,120$) reflecting typical ATM cash dispense tickets in India.
+

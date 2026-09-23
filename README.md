@@ -203,7 +203,10 @@ PHASE 1: Dataset generation and validation
 PHASE 2A: ATM geographic dataset pipeline
           STATUS: COMPLETE (OpenStreetMap ingestion, caching, normalization, and validation)
 
-PHASE 2B / PHASE 3: Geographic analysis and zone validation
+PHASE 2B: Synthetic historical ATM activity dataset
+          STATUS: COMPLETE (719,280 synthetic records, 90 days, zero target leakage, reproducible)
+
+PHASE 3: Geographic analysis and zone validation
           STATUS: NEXT
 
 PHASE 4: ML preprocessing

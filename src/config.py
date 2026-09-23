@@ -129,10 +129,16 @@ ATM_ACTIVITY_SCHEMA = [
     "atm_id",
     "date",
     "hour",
+    "day_of_week",
+    "is_weekend",
+    "is_night",
     "transaction_count",
+    "cash_withdrawal_count",
+    "estimated_cash_volume",
+    "activity_score",
     "fraud_withdrawal_count",
-    "average_amount",
     "high_value_withdrawal_count",
+    "average_amount",
 ]
 
 # Supported Location Classifier Model Families
