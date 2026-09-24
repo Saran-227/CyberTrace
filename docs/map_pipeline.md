@@ -1,39 +1,89 @@
-# Interactive Geospatial & Mapping Pipeline
+# Interactive Leaflet / OpenStreetMap Geospatial Intelligence Map Pipeline (Phase 8)
 
 ## 1. Zero-Cost, Open-Source Mapping Principle
-CyberTrace adheres strictly to free and open-source geospatial standards:
+CyberTrace adheres strictly to free, open-source geospatial standards without reliance on commercial map SDKs:
 - **Renderer**: Leaflet.js (v1.9.4)
-- **Base Tile Provider**: OpenStreetMap Carto tiles (`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`)
-- **Attribution**: `&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors`
-- **Candidate ATM Layer Data**: Sourced directly from `data/processed/atm_locations.csv` (Phase 2A OpenStreetMap ingestion)
-- **Prohibited**: Google Maps API, Mapbox commercial tokens, or any paid mapping endpoints.
+- **Base Tile Provider**: OpenStreetMap Standard Carto Tiles (`https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`)
+- **Attribution**: `&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors`
+- **Candidate ATM Layer Data**: Sourced directly from `data/processed/atm_locations.csv` (333 verified OpenStreetMap ATM records ingested and cached locally)
+- **Prohibited Technologies**: Google Maps API, Google Maps API keys, Mapbox tokens, or any paid map SDKs.
 
-## 2. Visual Representation Hierarchy
-The map visually conveys distinct spatial layers:
-1. **Complaint Origin**: High-contrast red circle marker indicating where the victim reported the incident.
-2. **Predicted Withdrawal Zone**: Bounding polygon (cyan border with semi-transparent blue fill) indicating the statistical perimeter predicted by the ML model.
-3. **Candidate ATM Points**:
-   - Ingested from `data/processed/atm_locations.csv`.
-   - Filtered spatially by bounding box or Haversine radius from the predicted zone centroid.
-   - **Highest-Ranked Candidate**: Emerald green marker (`#10b981`) with prominent icon.
-   - **Alternative Candidates**: Amber markers (`#f59e0b`).
-4. **Interactive Popups**: Display bank brand, operator, exact distance (km) from origin, and candidate compatibility score.
+## 2. Dynamic Architecture & Data Flow
+The map component functions as a pure visual intelligence consumer of the live Phase 7 pipeline (`src/intelligence/case_analysis.py`). It does not independently perform ML inference or rank ATM candidates.
 
-## 3. Streamlit Embedding Architecture
-The map is embedded using `streamlit.components.v1.html`, dynamically injecting Leaflet scripts, responsive CSS styling, and GeoJSON/JSON data objects without requiring round-trip API tokens or exposing server secrets.
+```
+USER INPUT (Complaint Form)
+            ↓
+  ANALYZE CASE TRIGGER
+            ↓
+  src/intelligence/case_analysis.py (analyze_case)
+            ↓
+  Case Analysis Result (st.session_state["case_analysis"])
+            ↓
+  src/geographic/map_data.py (prepare_map_data)
+            ↓
+  Standardized Map Contract (docs/map_contract.md)
+            ↓
+  app/components/map.py (render_investigation_map)
+            ↓
+  Leaflet.js + OpenStreetMap Tiles
+```
 
-## 4. Evidence Integrity Notice
-Markers on the Leaflet map denote candidate infrastructure discovered from OpenStreetMap. They represent geographic proximity candidates, not confirmed transaction locations.
+When a user submits a new complaint (e.g. switching from Jalandhar to Gurugram), the previous map state is discarded, new bounds are computed, and Leaflet smoothly fits to the newly relevant operational area without leaving stale markers.
 
----
+## 3. Visual Representation Hierarchy & Semantics
 
-## 5. Phase 7 Integration: Dynamic Map Input Contract
+| Visual Element | Visual Style | Semantics & Evidence Language |
+| :--- | :--- | :--- |
+| **Complaint Location** | 🔴 Red circle marker (`#ef4444`, 9px radius, white outline, pulsing aura) | **"Complaint Location"** (Where victim reported the fraud incident; NOT confirmed cash-out point) |
+| **Primary Predicted Zone** | 🟦 Cyan dashed boundary (`#00e5ff`, weight 2.5), probability-proportional fill opacity (0.10 to 0.40) | **"Predicted Withdrawal Zone"** (Statistical likelihood output from ML model; NOT confirmed area) |
+| **Secondary Candidate Zone** | 🟨 Amber dashed boundary (`#f59e0b`, weight 2.0), fill opacity 0.12 | **"Secondary Candidate Zone"** (Evaluated under Medium/Low model confidence) |
+| **Top Candidate ATM (#1)** | 🟢 Emerald green marker (`#10b981`, 10px radius, white outline, glowing green ring, star badge ⭐) | **"Highest-Ranked ATM Candidate (#1)"** (Top scored candidate by multi-criteria ranking engine) |
+| **Alternative Candidate ATMs** | 🟠 Amber circle marker (`#f59e0b`, 7px radius, white outline) | **"Alternative ATM Candidate (#2-#N)"** (Secondary proximity & compatibility candidates) |
+| **Selected ATM Candidate** | 🟣 Vivid purple marker (`#a855f7`, 11px radius, pulsing purple ring) | **"Selected Candidate"** (Active candidate currently focused in UI/table) |
 
-The interactive map in Phase 8 will consume the standardized output produced by `src/intelligence/case_analysis.py`:
-- `complaint_point`: `(complaint_latitude, complaint_longitude, popup_label)`
-- `predicted_zone_bbox`: Bounding box tuple `(min_lat, min_lon, max_lat, max_lon)` for the predicted zone.
-- `candidate_zones`: List of all evaluated sectors (including cross-boundary candidate zones).
-- `candidate_atms`: Top ranked candidate ATM objects containing `latitude`, `longitude`, `bank`, `operator`, `overall_score`, `rank`, `designation`, and `evidence_flags`.
-- `cross_zone_status`: Flag indicating whether dual-sector rendering is active.
+## 4. Confidence-Driven Zone & Cross-Zone Visualization
 
+The map dynamically adapts its boundary visualization based on the model confidence tier:
+1. **HIGH Confidence ($\Delta \ge 0.30$)**:
+   - Renders only the primary predicted zone boundary.
+   - Fits bounds tightly around the complaint point and primary sector ATM candidates.
+2. **MEDIUM Confidence ($0.15 \le \Delta < 0.30$) / Cross-Zone Search**:
+   - Renders both the primary and secondary zone boundaries (e.g., Zone_07 ↔ Zone_08 NCR sector ambiguity).
+   - Displays an overlay badge: `🔄 Cross-Zone Candidate Search Active`.
+   - Bounds encompass both sectors and all relevant ATM candidates from both zones.
+3. **LOW Confidence ($\Delta < 0.15$)**:
+   - Renders all candidate zones evaluated by the Phase 7 engine.
+   - Conveys multi-sector uncertainty to the investigator.
 
+## 5. Rich Popups & Interactive Synchronizations
+
+### Complaint Marker Popup
+- Header: `COMPLAINT ORIGIN`
+- Fields: Case ID, Reported City, Incident Date/Time, Reported Amount (INR)
+- Disclaimer: `Reported cybercrime victim location. This is NOT a confirmed withdrawal point.`
+
+### ATM Marker Popup
+- Header: `ATM CANDIDATE #Rank`
+- Fields: Bank Name, Operator, City / District, Overall Score (`XX.X / 100`), Distance (`X.XX km`), Withdrawal Zone
+- Compatibility Chips: Bank Match (`EXACT MATCH` / `CROSS-NETWORK`), Operational Hours (`24x7 ACCESS` / `STANDARD`), Activity Score
+- Disclaimer: `Ranked OpenStreetMap infrastructure candidate. Physical CCTV verification required.`
+
+### Interactive Map Controls
+- **`⟲ Fit All`**: Recalculates and smoothly flies to the full bounding box of complaint, zones, and ATMs.
+- **`🚨 Complaint`**: Centers directly on the complaint origin point (zoom level 14).
+- **`⭐ Top ATM`**: Centers directly on the highest-ranked ATM candidate (#1).
+
+## 6. Edge Cases & Resilience
+- **Missing Complaint Coordinates**: If complaint coordinates are missing or invalid (`NaN` / `0.0`), the map gracefully falls back to candidate zone centroids and displays ATM candidates without throwing an exception.
+- **Panipat Edge Case (Zero OSM ATMs)**: Panipat has 0 OSM ATMs in the dataset. The map renders the adjacent search zone (`Zone_08`) and its candidate ATMs without crashing or fabricating ATM locations.
+- **Offline Map Tile Handling**: If OSM Carto tiles fail to load or the user is offline, the container background displays an intelligence-themed fallback notice: `Map tiles are temporarily unavailable. Analytical results remain available.`
+- **Filtering Controls**: Frontend controls (candidate count 5/10/25, bank filter, zone filter) filter the display without triggering re-inference or changing the underlying ranking calculations.
+
+## 7. Evidence Integrity & Legal Disclaimers
+Under no circumstances will CyberTrace label any map entity as:
+- *"Fraud ATM"*
+- *"Actual withdrawal location"*
+- *"Confirmed criminal cash-out site"*
+
+All markers represent open physical infrastructure prioritized according to statistical proximity, institutional compatibility, and simulated operational metrics.

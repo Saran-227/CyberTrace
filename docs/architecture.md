@@ -42,6 +42,7 @@ graph TD
 - `distance.py`: Mathematical Haversine calculations.
 - `zones.py`: Geographic bounding boxes and centroids for target operational sectors.
 - `analysis.py`: Target validation, spatial separation, empirical centroid computation, bounding box overlap analysis, statistical association tests, and ATM coverage analytics (implemented in Phase 3).
+- `map_data.py`: Phase 8 map data preparation module that consumes Phase 7 `case_analysis` outputs and formats them into the standardized dynamic map contract specified in [docs/map_contract.md](file:///docs/map_contract.md). Dynamically derives bounds, zone rectangles, and marker payloads.
 - `osm_loader.py`: Overpass QL client with MD5 spatial caching on disk.
 - `loader.py`: Validated, cached loader for 333 verified OpenStreetMap ATM locations and 719,280 hourly synthetic ATM operational activity records with zero target leakage.
 - `ranking.py`: Phase 7 transparent multi-criteria ATM candidate scoring engine uniting zone likelihood, spatial proximity decay, bank matching, operational hours accessibility, simulated activity, and cash volume compatibility. Formally defined in [docs/atm_ranking.md](file:///docs/atm_ranking.md) and [docs/atm_ranking_contract.md](file:///docs/atm_ranking_contract.md).
@@ -54,4 +55,6 @@ graph TD
 - `case_analysis.py`: Live dynamic orchestration service executing end-to-end case intake, feature preprocessing, model inference, candidate ranking, and explanation generation in real-time.
 - `explanation.py`: Non-technical operational explanation and actionable investigative advice generator.
 - `report.py`: HTML/PDF executive brief generator.
+- `app/components/map.py`: Phase 8 dynamic Leaflet.js / OpenStreetMap visualizer component with dark intelligence aesthetics, pulsing complaint marker, probability-proportional candidate zones, #1 top ATM green highlight, cross-zone banner, and auto-centering bounds. Formally detailed in [docs/map_pipeline.md](file:///docs/map_pipeline.md).
 - `app/`: Multi-page Streamlit application workbench with live dynamic case analysis and embedded Leaflet.js maps.
+

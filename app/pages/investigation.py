@@ -1,6 +1,7 @@
-"""Investigation Page: Live dynamic case triage, zone prediction, and ATM candidate ranking."""
+"""Investigation Page: Live dynamic case triage, zone prediction, and Leaflet geospatial map."""
 
 from datetime import datetime
+from typing import Optional
 import streamlit as st
 import pandas as pd
 
@@ -10,11 +11,10 @@ from src.config import (
     PRIMARY_MODEL_ID,
     FALLBACK_MODEL_ID,
 )
-from src.geographic.zones import get_zone_bounding_box
 from src.intelligence.case_analysis import analyze_case
 from src.intelligence.report import generate_executive_report
 
-from app.components.map import render_leaflet_map
+from app.components.map import render_investigation_map
 from app.components.prediction_card import render_prediction_card
 from app.components.atm_table import render_atm_table
 from app.components.probability_chart import render_probability_chart
@@ -182,41 +182,25 @@ def render_investigation() -> None:
             case = analysis["case_data"]
             pred = analysis["prediction"]
             ranking = analysis["ranking"]
-            ranked = ranking["ranked_atms"]
+            raw_ranked = ranking["ranked_atms"]
             expl = analysis["explanation"]
 
-            # Analysis Status Bar
-            cross_zone_str = "ACTIVE (Dual-Sector Search)" if ranking.get("cross_zone_search") else "INACTIVE (Single Sector)"
+            # 1. Operational Status Bar
+            cross_zone_active = ranking.get("cross_zone_search", False)
+            cross_zone_str = "ACTIVE (Dual-Sector Search)" if cross_zone_active else "INACTIVE (Single Sector)"
             st.markdown(
                 f"""
-                <div style="background:#0f172a; border:1px solid #334155; border-radius:6px; padding:10px 16px; margin-bottom:14px; font-size:13px; color:#cbd5e1; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+                <div style="background:#0f172a; border:1px solid #334155; border-radius:6px; padding:10px 16px; margin-bottom:12px; font-size:13px; color:#cbd5e1; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;">
                     <div>⚙️ <strong>Model:</strong> <code>{analysis.get('model_id')}</code></div>
                     <div>⚡ <strong>Latency:</strong> {analysis.get('execution_time_ms', 0):.1f} ms</div>
-                    <div>🔄 <strong>Cross-Zone Search:</strong> <span style="color:{'#f59e0b' if ranking.get('cross_zone_search') else '#10b981'}; font-weight:700;">{cross_zone_str}</span></div>
+                    <div>🔄 <strong>Cross-Zone Search:</strong> <span style="color:{'#f59e0b' if cross_zone_active else '#10b981'}; font-weight:700;">{cross_zone_str}</span></div>
                     <div>📊 <strong>ATMs Evaluated:</strong> {ranking.get('total_atms_evaluated', 0)}</div>
                 </div>
                 """,
                 unsafe_allow_html=True,
             )
 
-            # Map Visualization
-            st.markdown("### 🗺️ Operational Geospatial Intelligence Map")
-            c_lat = case.get("complaint_latitude", 31.3260)
-            c_lon = case.get("complaint_longitude", 75.5762)
-            zone_id = pred.get("predicted_zone", "Zone_01")
-            bbox = get_zone_bounding_box(zone_id)
-
-            render_leaflet_map(
-                center_lat=c_lat,
-                center_lon=c_lon,
-                zoom=12,
-                complaint_point=(c_lat, c_lon, f"Complaint {case.get('complaint_id')} (₹{case.get('amount'):,})"),
-                predicted_zone_bbox=bbox,
-                candidate_atms=ranked,
-                height=480,
-            )
-
-            # Prediction Card and Zone Probability Chart
+            # 2. Prediction Card and Zone Probability Chart
             c_p1, c_p2 = st.columns([1.1, 0.9])
             with c_p1:
                 render_prediction_card(pred)
@@ -224,10 +208,47 @@ def render_investigation() -> None:
                 if "zone_probabilities" in pred:
                     render_probability_chart(pred["zone_probabilities"])
 
-            # Ranked ATM Candidates Table
-            render_atm_table(ranked)
+            # 3. Interactive Map Filter Controls
+            st.markdown("### 🗺️ Interactive Geospatial Intelligence Map")
+            fc1, fc2, fc3, fc4 = st.columns([1, 1.2, 1.2, 1.4])
+            with fc1:
+                cand_count = st.selectbox("Display Count", [5, 10, 25], index=1)
+            with fc2:
+                unique_banks = ["All"] + sorted(list({a.get("bank", "Unknown") for a in raw_ranked if a.get("bank")}))
+                bank_filter = st.selectbox("Filter Bank", unique_banks, index=0)
+            with fc3:
+                unique_zones = ["All"] + sorted(list({a.get("zone", "N/A") for a in raw_ranked if a.get("zone")}))
+                zone_filter = st.selectbox("Filter Zone", unique_zones, index=0)
+            with fc4:
+                atm_choices = ["None (Overview)"] + [f"#{a.get('rank', i+1)}: {a.get('atm_id')} ({a.get('bank')})" for i, a in enumerate(raw_ranked[:cand_count])]
+                selected_choice = st.selectbox("Focus ATM", atm_choices, index=0)
+                selected_atm_id: Optional[str] = None
+                if selected_choice != "None (Overview)":
+                    # Extract ATM ID
+                    selected_atm_id = selected_choice.split(":")[1].split("(")[0].strip()
 
-            # Plain-Language Operational Brief
+            # 4. Render Dynamic Leaflet Map
+            render_investigation_map(
+                case_analysis=analysis,
+                visible_candidate_count=cand_count,
+                bank_filter=bank_filter if bank_filter != "All" else None,
+                zone_filter=zone_filter if zone_filter != "All" else None,
+                selected_atm_id=selected_atm_id,
+                height=540,
+            )
+
+            # 5. Ranked ATM Candidates Table
+            # Filter table data according to current dropdown selections
+            filtered_ranked = raw_ranked
+            if bank_filter != "All":
+                filtered_ranked = [a for a in filtered_ranked if bank_filter.lower() in a.get("bank", "").lower() or bank_filter.lower() in a.get("operator", "").lower()]
+            if zone_filter != "All":
+                filtered_ranked = [a for a in filtered_ranked if a.get("zone") == zone_filter]
+            filtered_ranked = filtered_ranked[:cand_count]
+
+            render_atm_table(filtered_ranked)
+
+            # 6. Plain-Language Operational Brief
             with st.expander("📋 Non-Technical Operational Intelligence Brief", expanded=True):
                 st.markdown(f"**Zone Assessment:** {expl.get('zone_summary')}")
                 st.markdown(f"**ATM Assessment:** {expl.get('atm_summary')}")
@@ -239,10 +260,10 @@ def render_investigation() -> None:
                     st.markdown(f"1. {act}")
                 st.caption(f"🛡️ *Disclaimer:* {expl.get('evidence_disclaimer')}")
 
-            # Report Generator Trigger
+            # 7. Report Generator Trigger
             st.markdown("---")
             if st.button("📄 Generate Executive Intelligence Report", use_container_width=True):
-                report_path = generate_executive_report(case, pred, ranked)
+                report_path = generate_executive_report(case, pred, filtered_ranked)
                 st.success(f"Report generated: `{report_path.name}`. Access it under the **Reports** page.")
         else:
             st.info("👈 Enter complaint metadata and click **ANALYZE CASE** to initiate live real-time intelligence triage.")

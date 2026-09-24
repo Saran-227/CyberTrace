@@ -222,9 +222,10 @@ PHASE 7: ATM candidate ranking & live dynamic pipeline
           STATUS: COMPLETE (333 OSM ATMs, 719k activity records, 6-component scoring, dynamic cross-zone search, live orchestrator, 142 tests passing)
 
 PHASE 8: Leaflet/OpenStreetMap interactive map
-          STATUS: NEXT
+          STATUS: COMPLETE (100% dynamic Leaflet.js + OSM Carto map, zero hardcoded markers/bounds, auto-fit, cross-zone dual sector display, top candidate highlighting, dark intelligence styling, 162 tests passing)
 
 PHASE 9: Executive intelligence report
+          STATUS: NEXT
 
 PHASE 10: Streamlit integration
 
@@ -232,3 +233,4 @@ PHASE 11: Testing and refinement
 
 PHASE 12: Final presentation/demo
 ```
+
