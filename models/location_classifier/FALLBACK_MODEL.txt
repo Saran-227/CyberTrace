@@ -1,0 +1,3 @@
+model_id: logistic_full_none
+artifact: models/location_classifier/logistic_full_none.joblib
+rationale: Fast linear softmax baseline, near-instantaneous inference, identical high test Macro F1 (0.9664).

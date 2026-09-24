@@ -215,10 +215,11 @@ PHASE 4: ML preprocessing
 PHASE 5: Location classification models
           STATUS: COMPLETE (14 experiments, 4 model families, 5-fold CV, Full [F1: 0.966] vs Geo-Blind [F1: 0.069], class weighting evaluated, 104 tests passing)
 
-PHASE 6: Model evaluation and selection
-          STATUS: NEXT
+PHASE 6: Model evaluation, error analysis & pipeline selection
+          STATUS: COMPLETE (14 models evaluated, NCR boundary analysis, uncertainty diagnostics, primary [Random Forest] & fallback [Logistic Regression] selected, 118 tests passing)
 
 PHASE 7: ATM candidate ranking
+          STATUS: NEXT
 
 PHASE 8: Leaflet/OpenStreetMap interactive map
 

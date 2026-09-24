@@ -1,0 +1,8 @@
+model_id,mean_margin,median_margin,margin_lt_0_10_count,margin_lt_0_10_accuracy,margin_lt_0_20_count,margin_lt_0_20_accuracy,margin_lt_0_30_count,margin_lt_0_30_accuracy,margin_gte_0_30_count,margin_gte_0_30_accuracy
+logistic_full_none,0.8556,0.9951,113,0.5133,231,0.5152,327,0.5443,3673,0.9594
+logistic_full_balanced,0.8462,0.9955,79,0.5443,172,0.5523,290,0.5345,3710,0.9539
+knn_full,0.8601,1.0,9,0.2222,411,0.5499,413,0.5472,3587,0.9501
+decision_tree_full_none,0.8691,1.0,93,0.5161,270,0.5926,288,0.6076,3712,0.938
+decision_tree_full_balanced,0.8476,1.0,70,0.4857,70,0.4857,192,0.5677,3808,0.9372
+random_forest_full_none,0.8443,0.9887,61,0.5738,155,0.5097,314,0.551,3686,0.9552
+random_forest_full_balanced,0.8314,0.9679,21,0.3333,65,0.5846,147,0.483,3853,0.939

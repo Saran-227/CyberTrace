@@ -1,0 +1,15 @@
+model_id,artifact_exists,dataset_hash_match,prediction_file_exists,metric_reproduced,status,notes
+logistic_full_none,True,True,True,True,PASSED,OK
+logistic_full_balanced,True,True,True,True,PASSED,OK
+logistic_blind_none,True,True,True,True,PASSED,OK
+logistic_blind_balanced,True,True,True,True,PASSED,OK
+knn_full,True,True,True,True,PASSED,OK
+knn_blind,True,True,True,True,PASSED,OK
+decision_tree_full_none,True,True,True,True,PASSED,OK
+decision_tree_full_balanced,True,True,True,True,PASSED,OK
+decision_tree_blind_none,True,True,True,True,PASSED,OK
+decision_tree_blind_balanced,True,True,True,True,PASSED,OK
+random_forest_full_none,True,True,True,True,PASSED,OK
+random_forest_full_balanced,True,True,True,True,PASSED,OK
+random_forest_blind_none,True,True,True,True,PASSED,OK
+random_forest_blind_balanced,True,True,True,True,PASSED,OK

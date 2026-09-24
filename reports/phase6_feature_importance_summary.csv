@@ -1,0 +1,12 @@
+source_variable,importance,percentage,rank
+city,0.297826,29.78,1
+district,0.249611,24.96,2
+complaint_longitude,0.164972,16.5,3
+complaint_latitude,0.131577,13.16,4
+state,0.1292,12.92,5
+amount,0.0068709999999999995,0.69,6
+hour / temporal,0.0065840000000000004,0.66,7
+bank,0.004234,0.42,8
+day_of_week / day,0.0034089999999999997,0.34,9
+fraud_type,0.003226,0.32,10
+transaction_type,0.002489,0.25,11

@@ -35,6 +35,8 @@ graph TD
 - `train.py`: Pipeline constructor, 5-fold Stratified Cross-Validation orchestrator, test evaluation engine, and backward-compatible model trainer.
 - `evaluate.py`: Multi-metric evaluation (Accuracy, Balanced Accuracy, Macro/Weighted Precision, Recall, F1, Multiclass OVR ROC-AUC) and automated dual-panel confusion matrix visualization generator.
 - `predict.py`: Inference engine returning standardized probability distributions and top-k zone candidate rankings. Detailed in [docs/model_training.md](file:///docs/model_training.md).
+- **Phase 6 Model Evaluation & Selection**: Multi-criteria evaluation of 14 model experiments, error diagnostics, NCR boundary analysis, uncertainty profiling, and selection of Primary (`random_forest_full_none`) and Fallback (`logistic_full_none`) models. Formally specified in [docs/model_evaluation.md](file:///docs/model_evaluation.md) and connected downstream via [docs/location_prediction_contract.md](file:///docs/location_prediction_contract.md).
+
 
 ### 4. Geospatial & ATM Ranking Layer (`src/geographic/`, `src/atm/`)
 - `distance.py`: Mathematical Haversine calculations.

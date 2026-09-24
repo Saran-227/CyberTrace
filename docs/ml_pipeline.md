@@ -90,3 +90,28 @@ Phase 5 evaluated all 14 primary model configurations using 5-fold cross-validat
 
 Detailed benchmarks, diagnostics, and per-zone metrics are documented in [docs/model_training.md](file:///docs/model_training.md).
 
+---
+
+## 8. Phase 6 Model Evaluation, Selection & Downstream Contract
+
+Phase 6 executed multi-criteria evaluation across all 14 saved pipelines, auditing reproducibility, NCR boundary confusion, prediction uncertainty, and calibration:
+
+1. **Reproducibility**: 100% verified against canonical SHA-256 (`2be4188500ff2be70522220753ba8bddd0af5466c777bd8e6ef6528d916cb4ff`). All metrics replicated exactly.
+2. **Selected Primary Location Model**: `random_forest_full_none`
+   - Test Macro F1: **0.9575** | Balanced Accuracy: **0.9572** | Accuracy: **0.9235**
+   - Multiclass ROC-AUC Macro: **0.9972** | Generalization Gap: **+0.0028**
+   - Zone_09 Recall: **1.0000** | Zone_08 Recall: **0.9274** | Zone_07 Recall: **0.7875**
+3. **Selected Fallback Location Model**: `logistic_full_none`
+   - Test Macro F1: **0.9525** | Balanced Accuracy: **0.9524** | Accuracy: **0.9143**
+   - Linear parametric formulation with transparent interpretable weights and sub-millisecond inference.
+4. **Dominant Failure Mode Identified**:
+   - 96.08% of all model errors are mutual misclassifications between East NCR (`Zone_07`) and West NCR (`Zone_08`).
+   - Non-NCR zones achieve 100% precision and recall.
+   - Mean combined probability $P(\text{Zone\_07}) + P(\text{Zone\_08})$ across NCR test cases is **0.9947**.
+5. **Uncertainty Margin Diagnostics**:
+   - Defined as $\Delta = P_{\text{top}} - P_{\text{second}}$.
+   - Cases with $\Delta \ge 0.30$ (92.15% of records) achieve **95.52% accuracy**.
+   - Cases with $\Delta < 0.30$ (7.85% of records) achieve **55.10% accuracy**, indicating contested boundary zones.
+6. **Downstream Interface**: Formally bound to Phase 7 ATM ranking via the standardized prediction contract documented in [docs/location_prediction_contract.md](file:///docs/location_prediction_contract.md). Full evaluation details are available in [docs/model_evaluation.md](file:///docs/model_evaluation.md).
+
+
