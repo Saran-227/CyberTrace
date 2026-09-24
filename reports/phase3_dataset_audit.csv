@@ -1,0 +1,16 @@
+metric,value,status,details
+total_records,20000,VALID,"Expected 20,000"
+total_columns,19,VALID,Visible complaint features
+duplicate_rows,0,CLEAN,Deduplicated
+missing_values_total,360,FLAGGED,"{'bank': 160, 'transaction_type': 120, 'district': 80}"
+invalid_latitudes,0,CLEAN,"Bounded in [-90, 90]"
+invalid_longitudes,0,CLEAN,"Bounded in [-180, 180]"
+out_of_study_region_coords,0,CLEAN,Bounded in North India envelope
+invalid_amounts,0,CLEAN,Amount > 0 INR
+invalid_dates,0,CLEAN,ISO format YYYY-MM-DD
+unique_cities_count,15,VALID,All 15 study cities
+unique_banks_count,10,VALID,Commercial banks represented
+unique_transaction_types,6,VALID,Payment rails represented
+unique_fraud_types,9,VALID,Modus operandi types
+unique_withdrawal_zones,10,VALID,Target classes (Zone_01 to Zone_10)
+hidden_cashout_columns_found,0,CLEAN,[]

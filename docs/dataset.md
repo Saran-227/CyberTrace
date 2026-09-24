@@ -77,4 +77,23 @@ Generated in **Phase 2B & audited in Phase 2B.1** to simulate historical operati
 - **Panipat Status**: Panipat has 0 OSM ATMs in `atm_locations.csv`; thus, exactly 0 activity records are generated for Panipat (no fake ATMs fabricated).
 - **Invariant Guarantee**: `cash_withdrawal_count <= transaction_count` holds strictly across all 719,280 generated records.
 
+---
+
+## 4. Phase 3 Geographic Target Validation & Statistical Intelligence
+
+In **Phase 3**, the `withdrawal_zone` target variable was subjected to complete geographic and statistical validation before initiating ML preprocessing:
+
+> [!IMPORTANT]
+> **Academic Target Disclaimer**:
+> `withdrawal_zone` is a synthetic target created for academic supervised-learning experimentation. It does not represent confirmed NCRP withdrawal locations.
+
+- **Target Completeness**: Exactly 10 withdrawal zones (`Zone_01` to `Zone_10`) across 20,000 complaints.
+- **Spatial Separation**: Mean pairwise centroid distance is **205.8 km** (max 532.5 km between Amritsar and Jaipur, min 21.1 km between East and West NCR).
+- **Class Imbalance**: Imbalance ratio of **23.43:1** (`Zone_07` has 5,436 records [27.18%], while `Zone_09` has 232 records [1.16%]). Phase 4 must employ `StratifiedKFold` and class weighting.
+- **Statistical Associations**:
+  - `city` is the primary spatial predictor (Cramér's $V = 0.9732$, $p < 10^{-15}$).
+  - Non-spatial features (`bank`, `transaction_type`, `amount`, `hour`, `fraud_type`) show negligible effect sizes ($V < 0.05$, $\eta^2 < 0.001$), confirming zero artificial synthetic leakage.
+- **Hidden Feature Exclusion**: `synthetic_cashout_latitude` and `synthetic_cashout_longitude` are strictly verified to be excluded from processed data.
+
+
 

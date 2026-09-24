@@ -39,9 +39,14 @@ graph TD
 ### 4. Geospatial & ATM Ranking Layer (`src/geographic/`, `src/atm/`)
 - `distance.py`: Mathematical Haversine calculations.
 - `zones.py`: Geographic bounding boxes and centroids for target operational sectors.
+- `analysis.py`: Target validation, spatial separation, empirical centroid computation, bounding box overlap analysis, statistical association tests, and ATM coverage analytics (implemented in Phase 3).
 - `osm_loader.py`: Overpass QL client with MD5 spatial caching on disk.
 - `atm_discovery.py`: Zone-filtered POI discovery.
 - `ranking.py`: Multi-criteria heuristic scoring engine.
+
+> [!NOTE]
+> **Synthetic Target Disclosure**: `withdrawal_zone` is a synthetic target created for academic supervised-learning experimentation. It does not represent confirmed NCRP withdrawal locations.
+
 
 ### 5. Intelligence & Presentation Layer (`src/intelligence/`, `app/`)
 - `scoring.py`: Multi-factor prioritization synthesis.

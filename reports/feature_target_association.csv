@@ -1,0 +1,11 @@
+feature,feature_type,test,statistic,p_value,effect_size,interpretation
+city,Categorical (Nominal),Chi-Square Test of Independence,170517.155,0.0000e+00,Cramér's V = 0.9732,Very strong statistical association (high predictive utility)
+bank,Categorical (Nominal),Chi-Square Test of Independence,164.04,3.0843e-06,Cramér's V = 0.0203,Negligible / near-independent relationship
+transaction_type,Categorical (Nominal),Chi-Square Test of Independence,68.043,0.0947,Cramér's V = 0.0108,Negligible / near-independent relationship
+fraud_type,Categorical (Nominal),Chi-Square Test of Independence,105.763,0.0059,Cramér's V = 0.0145,Negligible / near-independent relationship
+day_of_week,Categorical (Ordinal),Chi-Square Test of Independence,54.016,0.4738,Cramér's V = 0.0003,Negligible / near-independent relationship
+is_weekend,Binary (0/1),Chi-Square Test of Independence,10.979,0.2771,Cramér's V = 0.0099,Negligible / near-independent relationship
+is_night,Binary (0/1),Chi-Square Test of Independence,31.339,0.0003,Cramér's V = 0.0334,Negligible / near-independent relationship
+amount_category,Categorical (Ordinal),Chi-Square Test of Independence,21.052,0.7839,Cramér's V = 0.0000,Negligible / near-independent relationship
+amount,Numerical (Continuous INR),Kruskal-Wallis H Test,21.263,0.0115,Epsilon-squared / eta2 = 0.0006,Negligible variation across zones (uniform distribution)
+hour,Numerical (Discrete 0-23),Kruskal-Wallis H Test,2.397,0.9835,Epsilon-squared / eta2 = 0.0000,Negligible variation across zones (uniform distribution)

@@ -1,0 +1,13 @@
+metric,value
+total_instances,"20,000"
+number_of_classes,10
+majority_class,Zone_07
+majority_count,"5,436"
+majority_proportion,27.18%
+minority_class,Zone_09
+minority_count,232
+minority_proportion,1.16%
+imbalance_ratio,23.43:1
+shannon_entropy_bits,2.9084 (max 3.3219)
+normalized_entropy,0.8755
+imbalance_classification,"Moderate to High Class Imbalance (Requires stratified CV, class weighting)"

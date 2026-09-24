@@ -1,0 +1,11 @@
+withdrawal_zone,atm_count_in_bbox,atm_count_within_5km_centroid,known_bank_count,unknown_bank_count
+Zone_01,12,12,10,2
+Zone_02,3,3,3,0
+Zone_03,4,4,4,0
+Zone_04,94,0,87,7
+Zone_05,0,0,0,0
+Zone_06,44,43,44,0
+Zone_07,143,0,129,14
+Zone_08,143,4,129,14
+Zone_09,2,2,2,0
+Zone_10,32,32,30,2

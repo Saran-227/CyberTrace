@@ -1,0 +1,18 @@
+======================================================================
+CYBERTRACE PHASE 3: COMPLAINT DATASET AUDIT REPORT
+======================================================================
+File Path:                C:\Users\Saranjeet Singh\OneDrive\Desktop\CyberTrace\data\processed\cybercrime_complaints.csv
+Total Complaint Records:  20,000
+Total Columns:            19
+Duplicate Rows:           0
+Total Missing Values:     360
+Geographic Bounds:        Lat [26.8126, 31.7529], Lon [74.7191, 77.8512]
+Amount Range (INR):       Min 500.00 | Median 18,000.00 | Max 2,339,237.00
+Temporal Span:            2025-10-01 to 2026-09-30
+Unique Cities:            15 (All 15 target study regions represented)
+Unique Banks:             10
+Transaction Types:        6
+Fraud Types:              9
+Withdrawal Zones:         10 (Zone_01 through Zone_10)
+Hidden Coordinates Check: CLEAN - Zero hidden cash-out coordinates in processed dataset
+======================================================================

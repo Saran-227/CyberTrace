@@ -1,0 +1,140 @@
+city,nearest_zone,bank,atm_count,known_count
+Alwar,Zone_09,ICICI Bank,1,1
+Alwar,Zone_09,Saksham,1,1
+Ambala,Zone_04,Axis Bank,1,1
+Ambala,Zone_04,HDFC Bank,1,1
+Ambala,Zone_04,Punjab National Bank,1,1
+Ambala,Zone_04,State Bank of India,1,1
+Ambala,Zone_04,unknown,1,0
+Amritsar,Zone_01,Axis Bank,1,1
+Amritsar,Zone_01,Bank of India,1,1
+Amritsar,Zone_01,HDFC Bank,1,1
+Amritsar,Zone_01,Jammu and Kashmir Bank,1,1
+Amritsar,Zone_01,PNB,1,1
+Amritsar,Zone_01,State Bank,1,1
+Amritsar,Zone_01,State Bank of India,2,2
+Amritsar,Zone_01,UCO Bank,1,1
+Amritsar,Zone_01,state bank,1,1
+Amritsar,Zone_01,unknown,2,0
+Chandigarh,Zone_04,Bank of Baroda,1,1
+Chandigarh,Zone_04,CSB Bank,1,1
+Chandigarh,Zone_04,Canara Bank,1,1
+Chandigarh,Zone_04,Central Bank of India,1,1
+Chandigarh,Zone_04,Citibank,2,2
+Chandigarh,Zone_04,HDFC Bank,3,3
+Chandigarh,Zone_04,ICICI Bank,1,1
+Chandigarh,Zone_04,IndusInd Bank,2,2
+Chandigarh,Zone_04,J&K Bank,1,1
+Chandigarh,Zone_04,Kotak Mahindra Bank,2,2
+Chandigarh,Zone_04,Punjab National Bank,4,4
+Chandigarh,Zone_04,SBI,1,1
+Chandigarh,Zone_04,State Bank ATM (Khuda Ali Sher),1,1
+Chandigarh,Zone_04,State Bank ATM Civil Secretariat Chandigarh,1,1
+Chandigarh,Zone_04,State Bank ATM Industrial and Business Park,1,1
+Chandigarh,Zone_04,State Bank ATM ManiMajra Chandigarh,1,1
+Chandigarh,Zone_04,State Bank ATM Sector 14 Chandigarh,1,1
+Chandigarh,Zone_04,State Bank ATM Sector 22 Chandigarh,2,2
+Chandigarh,Zone_04,State Bank ATM Sector 28 Chandigarh,1,1
+Chandigarh,Zone_04,State Bank ATM Sector 31 Chandigarh,1,1
+Chandigarh,Zone_04,State Bank ATM Sector 35 Chandigarh,1,1
+Chandigarh,Zone_04,State Bank ATM Sector 36 Chandigarh,1,1
+Chandigarh,Zone_04,State Bank ATM Sector 42 Chandigarh,1,1
+Chandigarh,Zone_04,State Bank ATM sector 49 Chandigarh,1,1
+Chandigarh,Zone_04,State Bank ATM shanti nagar Manimajra Chandigarh,1,1
+Chandigarh,Zone_04,State Bank of India,43,43
+Chandigarh,Zone_04,Union Bank of India,2,2
+Chandigarh,Zone_04,riti ghar,1,1
+Chandigarh,Zone_04,sbp,1,1
+Chandigarh,Zone_04,unknown,3,0
+Faridabad,Zone_07,HDFC Bank,1,1
+Faridabad,Zone_07,Kotak Mahindra Bank ATM,1,1
+Faridabad,Zone_07,PnB,1,1
+Faridabad,Zone_07,SBI Bank,1,1
+Faridabad,Zone_07,unknown,2,0
+Ghaziabad,Zone_07,State Bank of India,1,1
+Gurugram,Zone_08,ABN Amro,1,1
+Gurugram,Zone_08,ABN Amro Bank,1,1
+Gurugram,Zone_08,AU Small Finance Bank,1,1
+Gurugram,Zone_08,Axis Bank,15,15
+Gurugram,Zone_08,Axis Bank ATM,1,1
+Gurugram,Zone_08,Axis Bank Limited,1,1
+Gurugram,Zone_08,Bank of Baroda,3,3
+Gurugram,Zone_08,Bank of Maharashtra,1,1
+Gurugram,Zone_08,Central Bank of India,1,1
+Gurugram,Zone_08,Citibank,5,5
+Gurugram,Zone_08,HDFC,1,1
+Gurugram,Zone_08,HDFC Bank,15,15
+Gurugram,Zone_08,HDFC atm,1,1
+Gurugram,Zone_08,HSBC Bank,1,1
+Gurugram,Zone_08,ICICI Bank,17,17
+Gurugram,Zone_08,IDBI Bank,1,1
+Gurugram,Zone_08,IndusInd Bank,7,7
+Gurugram,Zone_08,Karnataka Bank,1,1
+Gurugram,Zone_08,Kotak Mahindra Bank,6,6
+Gurugram,Zone_08,Punjab National Bank,5,5
+Gurugram,Zone_08,RBL Bank,2,2
+Gurugram,Zone_08,SBI,1,1
+Gurugram,Zone_08,Standard Chartered,4,4
+Gurugram,Zone_08,State Bank of India,14,14
+Gurugram,Zone_08,Union Bank of India,1,1
+Gurugram,Zone_08,Utkarsh Small Finance Bank,1,1
+Gurugram,Zone_08,Yes Bank,1,1
+Gurugram,Zone_08,state bank,1,1
+Gurugram,Zone_08,unknown,9,0
+Jaipur,Zone_10,Allahabad Bank,1,1
+Jaipur,Zone_10,Axis Bank,2,2
+Jaipur,Zone_10,Bank of India,1,1
+Jaipur,Zone_10,CSB Bank,1,1
+Jaipur,Zone_10,Canara Bank,1,1
+Jaipur,Zone_10,Central Bank of india ATM,1,1
+Jaipur,Zone_10,ICICI Bank,4,4
+Jaipur,Zone_10,India Post ATM,1,1
+Jaipur,Zone_10,Indian Bank,1,1
+Jaipur,Zone_10,Indian Overseas Bank,1,1
+Jaipur,Zone_10,Indian State Bank,1,1
+Jaipur,Zone_10,IndusInd Bank ATM,1,1
+Jaipur,Zone_10,J&K Bank,1,1
+Jaipur,Zone_10,Karnataka Bank,1,1
+Jaipur,Zone_10,Kotak Mahindra Bank,1,1
+Jaipur,Zone_10,Punjab & Sindh Bank,1,1
+Jaipur,Zone_10,SBI,2,2
+Jaipur,Zone_10,Standard Chartered,1,1
+Jaipur,Zone_10,State Bank of India,6,6
+Jaipur,Zone_10,Union Bank of India,1,1
+Jaipur,Zone_10,unknown,2,0
+Jalandhar,Zone_02,ICICI Bank,1,1
+Jalandhar,Zone_02,Punjab National Bank,1,1
+Jalandhar,Zone_02,Syndicate Bank,1,1
+Ludhiana,Zone_03,Central Bank of India,1,1
+Ludhiana,Zone_03,Punjab National Bank,1,1
+Ludhiana,Zone_03,Union Bank Of  India,1,1
+Ludhiana,Zone_03,Union bank,1,1
+Meerut,Zone_06,Axis Bank,5,5
+Meerut,Zone_06,Bank of Baroda,5,5
+Meerut,Zone_06,Bank of India,1,1
+Meerut,Zone_06,Canara Bank,4,4
+Meerut,Zone_06,DCB Bank,1,1
+Meerut,Zone_06,HDFC Bank,3,3
+Meerut,Zone_06,Hitachi,1,1
+Meerut,Zone_06,ICICI Bank,4,4
+Meerut,Zone_06,Indian Bank,1,1
+Meerut,Zone_06,IndusInd Bank,1,1
+Meerut,Zone_06,Karur Vysya Bank,1,1
+Meerut,Zone_06,Punjab & Sind Bank,1,1
+Meerut,Zone_06,Punjab National Bank,6,6
+Meerut,Zone_06,State Bank of India,7,7
+Meerut,Zone_06,UCO Bank,2,2
+New Delhi,Zone_08,Axis Bank,1,1
+New Delhi,Zone_08,Bank of Baroda,1,1
+New Delhi,Zone_08,Canara Bank,1,1
+New Delhi,Zone_08,Central Bank of India,1,1
+New Delhi,Zone_08,Punjab National Bank,1,1
+New Delhi,Zone_08,State Bank,1,1
+New Delhi,Zone_08,State Bank of India,5,5
+New Delhi,Zone_08,UCO Bank,1,1
+New Delhi,Zone_08,Union Bank of India,1,1
+New Delhi,Zone_08,unknown,3,0
+Noida,Zone_07,State Bank of India,1,1
+Patiala,Zone_04,AXIS Bank,1,1
+Patiala,Zone_04,HDFC Bank,1,1
+Patiala,Zone_04,unknown,3,0
