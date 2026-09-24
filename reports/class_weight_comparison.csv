@@ -1,0 +1,7 @@
+model,feature_set,none_test_macro_f1,balanced_test_macro_f1,diff_macro_f1,none_test_balanced_acc,balanced_test_balanced_acc,diff_balanced_acc,none_zone09_recall,balanced_zone09_recall,diff_zone09_recall,none_zone09_f1,balanced_zone09_f1,diff_zone09_f1
+Decision Tree,full,0.9618,0.9628,0.001,0.9594,0.9635,0.0041,1.0,1.0,0.0,1.0,1.0,0.0
+Decision Tree,geographic_blind,0.0801,0.0678,-0.0123,0.1027,0.0991,-0.0036,0.0,0.0652,0.0652,0.0,0.0162,0.0162
+Logistic Regression,full,0.9664,0.9642,-0.0022,0.9643,0.9647,0.0004,1.0,1.0,0.0,1.0,1.0,0.0
+Logistic Regression,geographic_blind,0.0688,0.075,0.0062,0.1081,0.0878,-0.0203,0.0,0.1304,0.1304,0.0,0.0131,0.0131
+Random Forest,full,0.9657,0.9652,-0.0005,0.9643,0.9641,-0.0002,1.0,1.0,0.0,1.0,1.0,0.0
+Random Forest,geographic_blind,0.0666,0.0902,0.0236,0.104,0.0897,-0.0143,0.0,0.0,0.0,0.0,0.0,0.0

@@ -64,3 +64,29 @@ Phase 3 established the empirical and spatial properties of the `withdrawal_zone
    - `city`, `complaint_latitude`, and `complaint_longitude` have massive predictive power (Cramér's $V = 0.9732$).
    - Non-spatial attributes (`bank`, `amount`, `transaction_type`, `fraud_type`, `hour`) show near-zero leakage, functioning as secondary regularizers.
 
+---
+
+## 7. Phase 5 Model Training & Benchmark Results
+
+Phase 5 evaluated all 14 primary model configurations using 5-fold cross-validation on the training set ($N = 16,000$) and evaluation on the untouched test partition ($N = 4,000$):
+
+- **Full Metadata Performance**:
+  - Accuracy: **90.8% - 92.5%**
+  - Balanced Accuracy: **94.3% - 96.5%**
+  - Macro F1: **0.951 - 0.966**
+  - Multiclass ROC-AUC (OVR Macro): **0.986 - 0.996**
+  - Generalization Gap ($|\text{CV Macro F1} - \text{Test Macro F1}|$): $< 0.006$ across all models (no overfitting detected).
+
+- **Geographic-Blind Baseline Performance**:
+  - Accuracy: **7.1% - 27.8%**
+  - Balanced Accuracy: **8.8% - 10.8%**
+  - Macro F1: **0.067 - 0.090**
+  - Multiclass ROC-AUC: **~0.500** (random guessing).
+  - *Analytical Conclusion*: Complaint geography carries the primary signal for predicting withdrawal jurisdiction. Non-spatial complaint characteristics carry negligible spatial information, proving zero synthetic leakage.
+
+- **Class Weighting Impact**:
+  - For Full Metadata models, `Zone_09` (minority, 232 cases) achieves $1.0$ F1-score even with `class_weight=None` due to clear spatial separation.
+  - In Geographic-Blind models, balanced class weighting elevates minority recall at the expense of overall accuracy.
+
+Detailed benchmarks, diagnostics, and per-zone metrics are documented in [docs/model_training.md](file:///docs/model_training.md).
+

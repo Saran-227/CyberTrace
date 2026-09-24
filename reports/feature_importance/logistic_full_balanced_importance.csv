@@ -1,0 +1,81 @@
+feature_name,mean_abs_coefficient,rank
+num__complaint_longitude,1.301694,1
+num__complaint_latitude,1.224546,2
+cat__city_Panipat,0.665478,3
+cat__district_Panipat,0.638388,4
+cat__state_Haryana,0.632674,5
+cat__city_Ludhiana,0.630119,6
+cat__state_Uttar Pradesh,0.618007,7
+cat__city_Jalandhar,0.598073,8
+cat__city_Meerut,0.586117,9
+cat__district_Ludhiana,0.572658,10
+cat__district_Jalandhar,0.550593,11
+cat__district_Meerut,0.544517,12
+cat__city_Alwar,0.533989,13
+cat__district_Alwar,0.533989,14
+cat__state_Rajasthan,0.501701,15
+cat__state_Delhi,0.453448,16
+cat__city_New Delhi,0.453448,17
+cat__district_New Delhi,0.447392,18
+cat__city_Patiala,0.446688,19
+cat__district_Patiala,0.434602,20
+cat__city_Gurugram,0.432765,21
+cat__city_Amritsar,0.423373,22
+cat__district_Gurugram,0.415485,23
+cat__district_Amritsar,0.414566,24
+cat__city_Faridabad,0.395601,25
+cat__district_Faridabad,0.390877,26
+cat__city_Ambala,0.390833,27
+cat__city_Noida,0.380746,28
+cat__district_Ambala,0.375769,29
+cat__district_Noida,0.369584,30
+cat__city_Jaipur,0.339273,31
+cat__city_Ghaziabad,0.33405,32
+cat__district_Ghaziabad,0.332461,33
+cat__state_Punjab,0.329959,34
+cat__district_Jaipur,0.327882,35
+cat__city_Chandigarh,0.251965,36
+cat__state_Chandigarh,0.251965,37
+cat__district_Chandigarh,0.249679,38
+cat__bank_Kotak Mahindra,0.246336,39
+cat__bank_Canara Bank,0.179428,40
+cat__fraud_type_Card Fraud,0.156327,41
+cat__amount_category_Low,0.145733,42
+cat__bank_Union Bank,0.14384,43
+cat__bank_ICICI,0.143706,44
+cat__bank_HDFC,0.142256,45
+cat__bank_Bank of Baroda,0.133319,46
+cat__fraud_type_Investment Scam,0.128495,47
+cat__amount_category_High,0.12755,48
+cat__amount_category_Medium,0.124324,49
+cat__transaction_type_Debit Card,0.121729,50
+num__amount_log,0.120154,51
+cat__transaction_type_UPI,0.116929,52
+cat__fraud_type_Phishing,0.115381,53
+cat__transaction_type_IMPS,0.111219,54
+cat__bank_IndusInd,0.109194,55
+cat__transaction_type_Unknown,0.107207,56
+cat__fraud_type_Remote Access,0.09961,57
+cat__bank_Axis,0.09684,58
+num__is_weekend,0.096743,59
+cat__fraud_type_Identity Theft,0.094303,60
+cat__district_Unknown,0.086515,61
+cat__bank_PNB,0.083374,62
+cat__fraud_type_Account Takeover,0.080871,63
+cat__amount_category_Very High,0.080725,64
+cat__transaction_type_NEFT,0.076845,65
+cat__fraud_type_SIM Swap,0.075774,66
+num__is_night,0.075205,67
+num__amount,0.070647,68
+num__hour_cos,0.067714,69
+num__day_of_week_sin,0.064922,70
+cat__transaction_type_Net Banking,0.064479,71
+num__day_of_week,0.062641,72
+cat__bank_SBI,0.058163,73
+num__day_of_week_cos,0.056282,74
+cat__bank_Unknown,0.052203,75
+cat__fraud_type_Loan Scam,0.051287,76
+cat__fraud_type_UPI Fraud,0.049976,77
+cat__transaction_type_ATM,0.049831,78
+num__hour,0.041588,79
+num__hour_sin,0.034874,80

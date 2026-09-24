@@ -213,9 +213,10 @@ PHASE 4: ML preprocessing
           STATUS: COMPLETE (Production-grade pipeline, dual feature sets [Full: 80 enc, Geo-Blind: 41 enc], stratified split, zero leakage, 83 tests passing)
 
 PHASE 5: Location classification models
-          STATUS: NEXT
+          STATUS: COMPLETE (14 experiments, 4 model families, 5-fold CV, Full [F1: 0.966] vs Geo-Blind [F1: 0.069], class weighting evaluated, 104 tests passing)
 
 PHASE 6: Model evaluation and selection
+          STATUS: NEXT
 
 PHASE 7: ATM candidate ranking
 

@@ -31,10 +31,10 @@ graph TD
 - `pipeline.py`: Leakage-safe Skikit-Learn `ColumnTransformer` builder supporting dual feature sets (`FEATURE_SET_FULL` and `FEATURE_SET_GEOGRAPHIC_BLIND`), stratified train/test split, StratifiedKFold cross-validation preparation, and balanced class weight calculation. Detailed in [docs/preprocessing.md](file:///docs/preprocessing.md).
 
 ### 3. Machine Learning Layer (`src/models/`)
-- `location_model.py`: Unified object-oriented wrapper around Scikit-Learn classifiers.
-- `train.py`: Stratified train/test splitting and benchmark comparison.
-- `evaluate.py`: Multi-metric evaluation (Accuracy, Precision, Recall, Macro/Weighted F1, Confusion Matrix, ROC-AUC).
-- `predict.py`: Inference engine returning standardized probability distributions.
+- `location_model.py`: Object-oriented wrapper around Scikit-Learn pipelines supporting pipeline loading, training, prediction, and probability estimation.
+- `train.py`: Pipeline constructor, 5-fold Stratified Cross-Validation orchestrator, test evaluation engine, and backward-compatible model trainer.
+- `evaluate.py`: Multi-metric evaluation (Accuracy, Balanced Accuracy, Macro/Weighted Precision, Recall, F1, Multiclass OVR ROC-AUC) and automated dual-panel confusion matrix visualization generator.
+- `predict.py`: Inference engine returning standardized probability distributions and top-k zone candidate rankings. Detailed in [docs/model_training.md](file:///docs/model_training.md).
 
 ### 4. Geospatial & ATM Ranking Layer (`src/geographic/`, `src/atm/`)
 - `distance.py`: Mathematical Haversine calculations.

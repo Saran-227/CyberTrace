@@ -23,8 +23,16 @@ ATM_RANKER_DIR = MODELS_DIR / "atm_ranker"
 REPORTS_DIR = BASE_DIR / "reports"
 GENERATED_REPORTS_DIR = REPORTS_DIR / "generated"
 REPORT_TEMPLATES_DIR = REPORTS_DIR / "templates"
+CONFUSION_MATRICES_DIR = REPORTS_DIR / "figures" / "confusion_matrices"
+PER_ZONE_METRICS_DIR = REPORTS_DIR / "per_zone_metrics"
+PREDICTIONS_DIR = REPORTS_DIR / "predictions"
+PROBABILITY_DIAGNOSTICS_DIR = REPORTS_DIR / "probability_diagnostics"
+FEATURE_IMPORTANCE_DIR = REPORTS_DIR / "feature_importance"
 
 APP_DIR = BASE_DIR / "app"
+
+# Canonical complaint dataset SHA-256 fingerprint
+CANONICAL_COMPLAINTS_SHA256 = "2be4188500ff2be70522220753ba8bddd0af5466c777bd8e6ef6528d916cb4ff"
 
 # Ensure essential runtime directories exist
 for path in [
@@ -35,6 +43,11 @@ for path in [
     ATM_RANKER_DIR,
     GENERATED_REPORTS_DIR,
     REPORT_TEMPLATES_DIR,
+    CONFUSION_MATRICES_DIR,
+    PER_ZONE_METRICS_DIR,
+    PREDICTIONS_DIR,
+    PROBABILITY_DIAGNOSTICS_DIR,
+    FEATURE_IMPORTANCE_DIR,
 ]:
     path.mkdir(parents=True, exist_ok=True)
 
@@ -236,4 +249,120 @@ ATM_COVERAGE_SCHEMA = [
 
 CYBERCRIME_PORTAL_URL = "https://www.cybercrime.gov.in/"
 FINANCIAL_FRAUD_HELPLINE = "1930"
+
+# Phase 5 Location Classifier Experiment Configurations (14 primary experiments)
+EXPERIMENT_CONFIGS = [
+    {
+        "experiment_id": "logistic_full_none",
+        "model_name": "Logistic Regression",
+        "algorithm": "LogisticRegression",
+        "feature_set": "full",
+        "class_weight": None,
+        "hyperparameters": {"max_iter": 1000, "solver": "lbfgs", "random_state": 42},
+    },
+    {
+        "experiment_id": "logistic_full_balanced",
+        "model_name": "Logistic Regression",
+        "algorithm": "LogisticRegression",
+        "feature_set": "full",
+        "class_weight": "balanced",
+        "hyperparameters": {"max_iter": 1000, "solver": "lbfgs", "random_state": 42, "class_weight": "balanced"},
+    },
+    {
+        "experiment_id": "logistic_blind_none",
+        "model_name": "Logistic Regression",
+        "algorithm": "LogisticRegression",
+        "feature_set": "geographic_blind",
+        "class_weight": None,
+        "hyperparameters": {"max_iter": 1000, "solver": "lbfgs", "random_state": 42},
+    },
+    {
+        "experiment_id": "logistic_blind_balanced",
+        "model_name": "Logistic Regression",
+        "algorithm": "LogisticRegression",
+        "feature_set": "geographic_blind",
+        "class_weight": "balanced",
+        "hyperparameters": {"max_iter": 1000, "solver": "lbfgs", "random_state": 42, "class_weight": "balanced"},
+    },
+    {
+        "experiment_id": "knn_full",
+        "model_name": "K-Nearest Neighbors",
+        "algorithm": "KNeighborsClassifier",
+        "feature_set": "full",
+        "class_weight": "NOT_SUPPORTED",
+        "hyperparameters": {"n_neighbors": 5, "weights": "uniform", "metric": "minkowski"},
+    },
+    {
+        "experiment_id": "knn_blind",
+        "model_name": "K-Nearest Neighbors",
+        "algorithm": "KNeighborsClassifier",
+        "feature_set": "geographic_blind",
+        "class_weight": "NOT_SUPPORTED",
+        "hyperparameters": {"n_neighbors": 5, "weights": "uniform", "metric": "minkowski"},
+    },
+    {
+        "experiment_id": "decision_tree_full_none",
+        "model_name": "Decision Tree",
+        "algorithm": "DecisionTreeClassifier",
+        "feature_set": "full",
+        "class_weight": None,
+        "hyperparameters": {"criterion": "gini", "max_depth": 12, "min_samples_split": 10, "min_samples_leaf": 5, "random_state": 42},
+    },
+    {
+        "experiment_id": "decision_tree_full_balanced",
+        "model_name": "Decision Tree",
+        "algorithm": "DecisionTreeClassifier",
+        "feature_set": "full",
+        "class_weight": "balanced",
+        "hyperparameters": {"criterion": "gini", "max_depth": 12, "min_samples_split": 10, "min_samples_leaf": 5, "random_state": 42, "class_weight": "balanced"},
+    },
+    {
+        "experiment_id": "decision_tree_blind_none",
+        "model_name": "Decision Tree",
+        "algorithm": "DecisionTreeClassifier",
+        "feature_set": "geographic_blind",
+        "class_weight": None,
+        "hyperparameters": {"criterion": "gini", "max_depth": 12, "min_samples_split": 10, "min_samples_leaf": 5, "random_state": 42},
+    },
+    {
+        "experiment_id": "decision_tree_blind_balanced",
+        "model_name": "Decision Tree",
+        "algorithm": "DecisionTreeClassifier",
+        "feature_set": "geographic_blind",
+        "class_weight": "balanced",
+        "hyperparameters": {"criterion": "gini", "max_depth": 12, "min_samples_split": 10, "min_samples_leaf": 5, "random_state": 42, "class_weight": "balanced"},
+    },
+    {
+        "experiment_id": "random_forest_full_none",
+        "model_name": "Random Forest",
+        "algorithm": "RandomForestClassifier",
+        "feature_set": "full",
+        "class_weight": None,
+        "hyperparameters": {"n_estimators": 100, "max_depth": 15, "min_samples_split": 5, "min_samples_leaf": 2, "random_state": 42, "n_jobs": -1},
+    },
+    {
+        "experiment_id": "random_forest_full_balanced",
+        "model_name": "Random Forest",
+        "algorithm": "RandomForestClassifier",
+        "feature_set": "full",
+        "class_weight": "balanced",
+        "hyperparameters": {"n_estimators": 100, "max_depth": 15, "min_samples_split": 5, "min_samples_leaf": 2, "random_state": 42, "n_jobs": -1, "class_weight": "balanced"},
+    },
+    {
+        "experiment_id": "random_forest_blind_none",
+        "model_name": "Random Forest",
+        "algorithm": "RandomForestClassifier",
+        "feature_set": "geographic_blind",
+        "class_weight": None,
+        "hyperparameters": {"n_estimators": 100, "max_depth": 15, "min_samples_split": 5, "min_samples_leaf": 2, "random_state": 42, "n_jobs": -1},
+    },
+    {
+        "experiment_id": "random_forest_blind_balanced",
+        "model_name": "Random Forest",
+        "algorithm": "RandomForestClassifier",
+        "feature_set": "geographic_blind",
+        "class_weight": "balanced",
+        "hyperparameters": {"n_estimators": 100, "max_depth": 15, "min_samples_split": 5, "min_samples_leaf": 2, "random_state": 42, "n_jobs": -1, "class_weight": "balanced"},
+    },
+]
 

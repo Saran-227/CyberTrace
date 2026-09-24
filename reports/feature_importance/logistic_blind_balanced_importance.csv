@@ -1,0 +1,42 @@
+feature_name,mean_abs_coefficient,rank
+cat__amount_category_Very High,0.372552,1
+cat__transaction_type_Unknown,0.336588,2
+cat__bank_Unknown,0.267837,3
+cat__bank_Bank of Baroda,0.183302,4
+cat__amount_category_Low,0.178395,5
+cat__bank_Union Bank,0.139086,6
+cat__fraud_type_Investment Scam,0.129711,7
+cat__bank_Canara Bank,0.121128,8
+num__is_weekend,0.120037,9
+cat__bank_Kotak Mahindra,0.119646,10
+num__day_of_week,0.113369,11
+cat__transaction_type_ATM,0.105114,12
+cat__bank_Axis,0.103252,13
+cat__bank_IndusInd,0.103212,14
+cat__fraud_type_Identity Theft,0.1022,15
+num__amount_log,0.099597,16
+cat__transaction_type_NEFT,0.09659,17
+cat__fraud_type_SIM Swap,0.095524,18
+cat__transaction_type_Net Banking,0.094712,19
+cat__transaction_type_IMPS,0.093959,20
+cat__fraud_type_Loan Scam,0.092378,21
+cat__transaction_type_UPI,0.091165,22
+cat__amount_category_High,0.089064,23
+cat__fraud_type_Card Fraud,0.08533,24
+cat__bank_SBI,0.081758,25
+cat__fraud_type_Account Takeover,0.073961,26
+cat__fraud_type_Remote Access,0.073877,27
+cat__bank_PNB,0.073763,28
+cat__amount_category_Medium,0.068933,29
+cat__bank_HDFC,0.066203,30
+cat__bank_ICICI,0.062385,31
+num__day_of_week_cos,0.061085,32
+cat__transaction_type_Debit Card,0.054468,33
+cat__fraud_type_UPI Fraud,0.052926,34
+num__hour_sin,0.051217,35
+num__is_night,0.049796,36
+num__hour,0.04915,37
+num__amount,0.0491,38
+cat__fraud_type_Phishing,0.048693,39
+num__hour_cos,0.041423,40
+num__day_of_week_sin,0.012828,41

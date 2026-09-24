@@ -1,0 +1,15 @@
+experiment_id,model,feature_set,class_weight,confidence_mean,confidence_std,confidence_min,confidence_max,avg_confidence_correct,avg_confidence_incorrect,calibration_status
+logistic_full_none,Logistic Regression,full,None,0.9271,0.1334,0.5002,0.9998,0.9474,0.6748,Raw uncalibrated probabilities
+logistic_full_balanced,Logistic Regression,full,balanced,0.922,0.131,0.4991,0.9999,0.9417,0.6848,Raw uncalibrated probabilities
+logistic_blind_none,Logistic Regression,geographic_blind,None,0.2811,0.0309,0.1978,0.4068,0.2827,0.2805,Raw uncalibrated probabilities
+logistic_blind_balanced,Logistic Regression,geographic_blind,balanced,0.1385,0.0199,0.1079,0.334,0.1331,0.139,Raw uncalibrated probabilities
+knn_full,K-Nearest Neighbors,full,NOT_SUPPORTED,0.9293,0.1354,0.2,1.0,0.95,0.723,Raw uncalibrated probabilities
+knn_blind,K-Nearest Neighbors,geographic_blind,NOT_SUPPORTED,0.4248,0.1376,0.2,1.0,0.4601,0.4173,Raw uncalibrated probabilities
+decision_tree_full_none,Decision Tree,full,None,0.9345,0.1334,0.5,1.0,0.9551,0.7156,Raw uncalibrated probabilities
+decision_tree_full_balanced,Decision Tree,full,balanced,0.9238,0.122,0.5456,1.0,0.9414,0.722,Raw uncalibrated probabilities
+decision_tree_blind_none,Decision Tree,geographic_blind,None,0.3456,0.1307,0.1667,1.0,0.3338,0.3494,Raw uncalibrated probabilities
+decision_tree_blind_balanced,Decision Tree,geographic_blind,balanced,0.2774,0.194,0.1141,1.0,0.2898,0.2765,Raw uncalibrated probabilities
+random_forest_full_none,Random Forest,full,None,0.9216,0.1339,0.5023,1.0,0.9417,0.6793,Raw uncalibrated probabilities
+random_forest_full_balanced,Random Forest,full,balanced,0.913,0.1227,0.5048,1.0,0.9313,0.6951,Raw uncalibrated probabilities
+random_forest_blind_none,Random Forest,geographic_blind,None,0.2815,0.0388,0.1802,0.4823,0.2819,0.2813,Raw uncalibrated probabilities
+random_forest_blind_balanced,Random Forest,geographic_blind,balanced,0.1592,0.0238,0.1134,0.3333,0.1567,0.1597,Raw uncalibrated probabilities

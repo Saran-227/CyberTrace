@@ -1,0 +1,15 @@
+experiment_id,model,feature_set,class_weight,cv_macro_f1,test_macro_f1,difference,overfitting_flag
+logistic_full_none,Logistic Regression,full,None,0.9683,0.9664,0.0019,NORMAL
+logistic_full_balanced,Logistic Regression,full,balanced,0.965,0.9642,0.0008,NORMAL
+logistic_blind_none,Logistic Regression,geographic_blind,None,0.0681,0.0688,-0.0007,NORMAL
+logistic_blind_balanced,Logistic Regression,geographic_blind,balanced,0.0776,0.075,0.0026,NORMAL
+knn_full,K-Nearest Neighbors,full,NOT_SUPPORTED,0.9565,0.9508,0.0057,NORMAL
+knn_blind,K-Nearest Neighbors,geographic_blind,NOT_SUPPORTED,0.0963,0.0895,0.0068,NORMAL
+decision_tree_full_none,Decision Tree,full,None,0.9643,0.9618,0.0025,NORMAL
+decision_tree_full_balanced,Decision Tree,full,balanced,0.9656,0.9628,0.0028,NORMAL
+decision_tree_blind_none,Decision Tree,geographic_blind,None,0.0822,0.0801,0.0021,NORMAL
+decision_tree_blind_balanced,Decision Tree,geographic_blind,balanced,0.0668,0.0678,-0.001,NORMAL
+random_forest_full_none,Random Forest,full,None,0.9678,0.9657,0.0021,NORMAL
+random_forest_full_balanced,Random Forest,full,balanced,0.9675,0.9652,0.0023,NORMAL
+random_forest_blind_none,Random Forest,geographic_blind,None,0.0679,0.0666,0.0013,NORMAL
+random_forest_blind_balanced,Random Forest,geographic_blind,balanced,0.1,0.0902,0.0098,NORMAL

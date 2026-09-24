@@ -1,0 +1,81 @@
+feature_name,importance,rank
+num__complaint_latitude,0.342112,1
+num__complaint_longitude,0.170464,2
+cat__district_Alwar,0.11717,3
+cat__state_Rajasthan,0.11717,4
+cat__city_Panipat,0.11717,5
+cat__city_Ludhiana,0.11717,6
+cat__city_Gurugram,0.006982,7
+cat__district_New Delhi,0.004342,8
+cat__city_New Delhi,0.002509,9
+cat__district_Ghaziabad,0.001161,10
+cat__city_Faridabad,0.000961,11
+num__hour,0.000691,12
+num__day_of_week,0.000453,13
+num__amount,0.000434,14
+num__is_night,0.000426,15
+cat__bank_ICICI,0.000254,16
+num__hour_cos,0.000183,17
+cat__bank_Axis,0.000136,18
+cat__fraud_type_Remote Access,0.000111,19
+num__day_of_week_sin,7.5e-05,20
+num__amount_log,2.4e-05,21
+num__hour_sin,0.0,22
+num__day_of_week_cos,0.0,23
+num__is_weekend,0.0,24
+cat__bank_HDFC,0.0,25
+cat__bank_Canara Bank,0.0,26
+cat__bank_Bank of Baroda,0.0,27
+cat__transaction_type_Debit Card,0.0,28
+cat__bank_SBI,0.0,29
+cat__bank_IndusInd,0.0,30
+cat__bank_Kotak Mahindra,0.0,31
+cat__bank_PNB,0.0,32
+cat__fraud_type_Card Fraud,0.0,33
+cat__fraud_type_Account Takeover,0.0,34
+cat__transaction_type_Unknown,0.0,35
+cat__fraud_type_Identity Theft,0.0,36
+cat__fraud_type_Phishing,0.0,37
+cat__fraud_type_SIM Swap,0.0,38
+cat__fraud_type_Loan Scam,0.0,39
+cat__fraud_type_Investment Scam,0.0,40
+cat__state_Chandigarh,0.0,41
+cat__transaction_type_IMPS,0.0,42
+cat__transaction_type_NEFT,0.0,43
+cat__transaction_type_Net Banking,0.0,44
+cat__transaction_type_UPI,0.0,45
+cat__bank_Union Bank,0.0,46
+cat__bank_Unknown,0.0,47
+cat__transaction_type_ATM,0.0,48
+cat__district_Amritsar,0.0,49
+cat__district_Ambala,0.0,50
+cat__state_Uttar Pradesh,0.0,51
+cat__state_Punjab,0.0,52
+cat__state_Delhi,0.0,53
+cat__state_Haryana,0.0,54
+cat__fraud_type_UPI Fraud,0.0,55
+cat__district_Faridabad,0.0,56
+cat__district_Meerut,0.0,57
+cat__district_Noida,0.0,58
+cat__district_Panipat,0.0,59
+cat__district_Chandigarh,0.0,60
+cat__district_Jaipur,0.0,61
+cat__district_Jalandhar,0.0,62
+cat__district_Ludhiana,0.0,63
+cat__district_Gurugram,0.0,64
+cat__city_Amritsar,0.0,65
+cat__city_Ambala,0.0,66
+cat__city_Alwar,0.0,67
+cat__district_Unknown,0.0,68
+cat__district_Patiala,0.0,69
+cat__city_Jaipur,0.0,70
+cat__city_Ghaziabad,0.0,71
+cat__city_Chandigarh,0.0,72
+cat__city_Meerut,0.0,73
+cat__city_Jalandhar,0.0,74
+cat__city_Noida,0.0,75
+cat__city_Patiala,0.0,76
+cat__amount_category_High,0.0,77
+cat__amount_category_Low,0.0,78
+cat__amount_category_Medium,0.0,79
+cat__amount_category_Very High,0.0,80
