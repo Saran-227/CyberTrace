@@ -11,9 +11,21 @@ Target leakage occurs if features directly convey information about the withdraw
 - Zone centroid approximations: **PROHIBITED**
 - `withdrawal_zone` in feature matrix: **STRICTLY PROHIBITED**
 
-## 3. Candidate Features
-- Numerical: `amount`, `complaint_latitude`, `complaint_longitude`, `hour`, `day_of_week`, `is_weekend`, `is_night`
-- Categorical: `bank`, `transaction_type`, `fraud_type`, `state`, `district`, `city`, `amount_category`
+## 3. Dual Feature Configurations (Phase 4)
+CyberTrace maintains two formalized feature configurations to evaluate the exact contribution of spatial vs. non-spatial predictors:
+
+### Configuration A: Full Metadata (`FEATURE_SET_FULL`)
+- **19 Raw Features** $\to$ **80 Encoded Features** via `ColumnTransformer`.
+- **Numerical (12)**: `amount`, `amount_log`, `complaint_latitude`, `complaint_longitude`, `hour`, `hour_sin`, `hour_cos`, `day_of_week`, `day_of_week_sin`, `day_of_week_cos`, `is_weekend`, `is_night`.
+- **Categorical (7)**: `bank`, `transaction_type`, `fraud_type`, `city`, `state`, `district`, `amount_category`.
+- **Transformations**: `SimpleImputer(median) -> StandardScaler()`, `SimpleImputer('Unknown') -> OneHotEncoder(ignore)`.
+
+### Configuration B: Geographic-Blind Baseline (`FEATURE_SET_GEOGRAPHIC_BLIND`)
+- **14 Raw Features** $\to$ **41 Encoded Features** via `ColumnTransformer`.
+- Excludes all direct spatial identifiers (`city`, `state`, `district`, `complaint_latitude`, `complaint_longitude`).
+- **Numerical (10)**: `amount`, `amount_log`, `hour`, `hour_sin`, `hour_cos`, `day_of_week`, `day_of_week_sin`, `day_of_week_cos`, `is_weekend`, `is_night`.
+- **Categorical (4)**: `bank`, `transaction_type`, `fraud_type`, `amount_category`.
+- *Purpose*: Isolates transaction modus operandi to benchmark how much spatial predictors boost classification accuracy.
 
 ## 4. Evaluated Algorithms
 The platform supports multi-model benchmarking without hardcoding a predetermined winner:

@@ -26,9 +26,9 @@ graph TD
 - `generator.py`: Synthetic benchmark generator with reproducible noise injection.
 
 ### 2. Preprocessing & Feature Engineering (`src/preprocessing/`)
-- `cleaning.py`: Deduplication and missing value imputation.
-- `features.py`: Temporal extraction and risk tiers.
-- `pipeline.py`: ColumnTransformer pipelines with strict runtime assertion preventing target leakage.
+- `cleaning.py`: Missing value handling, categorical normalization, numeric coordinate/amount validation, and deduplication with comprehensive auditing.
+- `features.py`: Feature engineering including cyclical temporal transformations (`hour_sin`, `hour_cos`, `day_of_week_sin`, `day_of_week_cos`) and monetary log transformation (`amount_log`).
+- `pipeline.py`: Leakage-safe Skikit-Learn `ColumnTransformer` builder supporting dual feature sets (`FEATURE_SET_FULL` and `FEATURE_SET_GEOGRAPHIC_BLIND`), stratified train/test split, StratifiedKFold cross-validation preparation, and balanced class weight calculation. Detailed in [docs/preprocessing.md](file:///docs/preprocessing.md).
 
 ### 3. Machine Learning Layer (`src/models/`)
 - `location_model.py`: Unified object-oriented wrapper around Scikit-Learn classifiers.

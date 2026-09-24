@@ -1,0 +1,20 @@
+feature,source_column,feature_type,feature_set,transformation,uses_target,uses_hidden_data,notes
+amount,amount,Numerical (Continuous INR),Both (Full & Geographic-Blind),SimpleImputer(median) -> StandardScaler(),False,False,Transaction amount in INR. Monitored for right-skewed distribution.
+amount_log,amount,Numerical (Continuous),Both (Full & Geographic-Blind),log1p(amount) -> StandardScaler(),False,False,Engineered natural log transform to stabilize variance of high monetary amounts.
+complaint_latitude,complaint_latitude,Numerical (Spatial Latitude °N),Full only,SimpleImputer(median) -> StandardScaler(),False,False,Legitimate visible complaint coordinate. Excluded in geographic-blind baseline.
+complaint_longitude,complaint_longitude,Numerical (Spatial Longitude °E),Full only,SimpleImputer(median) -> StandardScaler(),False,False,Legitimate visible complaint coordinate. Excluded in geographic-blind baseline.
+hour,hour,Numerical (Discrete 0-23),Both (Full & Geographic-Blind),SimpleImputer(median) -> StandardScaler(),False,False,Hour of incident reporting.
+hour_sin,hour,Numerical (Continuous Cyclical),Both (Full & Geographic-Blind),sin(2*pi*hour/24) -> StandardScaler(),False,False,Engineered 24-hour circular sine coordinate.
+hour_cos,hour,Numerical (Continuous Cyclical),Both (Full & Geographic-Blind),cos(2*pi*hour/24) -> StandardScaler(),False,False,Engineered 24-hour circular cosine coordinate.
+day_of_week,day_of_week,Numerical (Discrete 0-6),Both (Full & Geographic-Blind),SimpleImputer(median) -> StandardScaler(),False,False,"Day of week index (0=Monday, 6=Sunday)."
+day_of_week_sin,day_of_week,Numerical (Continuous Cyclical),Both (Full & Geographic-Blind),sin(2*pi*dow/7) -> StandardScaler(),False,False,Engineered 7-day circular sine coordinate.
+day_of_week_cos,day_of_week,Numerical (Continuous Cyclical),Both (Full & Geographic-Blind),cos(2*pi*dow/7) -> StandardScaler(),False,False,Engineered 7-day circular cosine coordinate.
+is_weekend,is_weekend / day_of_week,Numerical (Binary 0/1),Both (Full & Geographic-Blind),Binary indicator -> StandardScaler(),False,False,Binary flag indicating Saturday or Sunday.
+is_night,is_night / hour,Numerical (Binary 0/1),Both (Full & Geographic-Blind),Binary indicator -> StandardScaler(),False,False,Binary flag indicating overnight hours (22:00 to 05:00).
+bank,bank,Categorical (Nominal),Both (Full & Geographic-Blind),SimpleImputer('Unknown') -> OneHotEncoder(ignore),False,False,Complainant commercial bank. Missing values explicitly imputed as 'Unknown'.
+transaction_type,transaction_type,Categorical (Nominal),Both (Full & Geographic-Blind),SimpleImputer('Unknown') -> OneHotEncoder(ignore),False,False,"Payment rail (UPI, IMPS, NetBanking, Debit Card, etc.)."
+fraud_type,fraud_type,Categorical (Nominal),Both (Full & Geographic-Blind),SimpleImputer('Unknown') -> OneHotEncoder(ignore),False,False,"Modus operandi classification (Investment Scam, KYC Phishing, Job Fraud, etc.)."
+amount_category,amount_category / amount,Categorical (Ordinal Binned),Both (Full & Geographic-Blind),Binned categories -> OneHotEncoder(ignore),False,False,"Risk buckets: Low (<5k), Medium (5k-25k), High (25k-50k), Critical (>50k)."
+city,city,Categorical (Nominal Spatial),Full only,SimpleImputer('Unknown') -> OneHotEncoder(ignore),False,False,Reporting municipality across 15 study regions. Excluded in geographic-blind baseline.
+district,district,Categorical (Nominal Spatial),Full only,SimpleImputer('Unknown') -> OneHotEncoder(ignore),False,False,Administrative district. Excluded in geographic-blind baseline.
+state,state,Categorical (Nominal Spatial),Full only,SimpleImputer('Unknown') -> OneHotEncoder(ignore),False,False,State administrative region. Excluded in geographic-blind baseline.

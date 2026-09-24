@@ -95,5 +95,22 @@ In **Phase 3**, the `withdrawal_zone` target variable was subjected to complete 
   - Non-spatial features (`bank`, `transaction_type`, `amount`, `hour`, `fraud_type`) show negligible effect sizes ($V < 0.05$, $\eta^2 < 0.001$), confirming zero artificial synthetic leakage.
 - **Hidden Feature Exclusion**: `synthetic_cashout_latitude` and `synthetic_cashout_longitude` are strictly verified to be excluded from processed data.
 
+---
+
+## 5. Phase 4 ML Preprocessing & Dual Feature Sets
+
+Phase 4 defines two strict feature configurations derived from `data/processed/cybercrime_complaints.csv` without target leakage:
+
+1. **Configuration A (`FEATURE_SET_FULL`)**:
+   - 19 raw features: Full legitimate complaint metadata and spatial identifiers (`city`, `state`, `district`, `complaint_latitude`, `complaint_longitude`) + temporal and monetary features.
+   - Transforms into **80 one-hot encoded and standardized features**.
+
+2. **Configuration B (`FEATURE_SET_GEOGRAPHIC_BLIND`)**:
+   - 14 raw features: Non-spatial baseline completely excluding `city`, `state`, `district`, `complaint_latitude`, and `complaint_longitude`.
+   - Transforms into **41 one-hot encoded and standardized features**.
+   - Serves as the control benchmark to evaluate non-spatial predictive power vs geographic dependency ($V = 0.9732$).
+
+For full mathematical descriptions, cyclical feature encodings, missing value strategies, and leakage tests, see [docs/preprocessing.md](file:///docs/preprocessing.md).
+
 
 

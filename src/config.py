@@ -89,14 +89,24 @@ CANDIDATE_FEATURES = [
     "is_weekend",
     "is_night",
     "amount_category",
+    "amount_log",
+    "hour_sin",
+    "hour_cos",
+    "day_of_week_sin",
+    "day_of_week_cos",
 ]
 
 NUMERICAL_FEATURES = [
     "amount",
+    "amount_log",
     "complaint_latitude",
     "complaint_longitude",
     "hour",
+    "hour_sin",
+    "hour_cos",
     "day_of_week",
+    "day_of_week_sin",
+    "day_of_week_cos",
     "is_weekend",
     "is_night",
 ]
@@ -110,6 +120,58 @@ CATEGORICAL_FEATURES = [
     "city",
     "amount_category",
 ]
+
+# Phase 4 Feature Configurations
+FEATURE_SET_FULL = {
+    "name": "full",
+    "description": "Full complaint metadata including legitimate complaint geography and engineered temporal/monetary features",
+    "numerical": [
+        "amount",
+        "amount_log",
+        "complaint_latitude",
+        "complaint_longitude",
+        "hour",
+        "hour_sin",
+        "hour_cos",
+        "day_of_week",
+        "day_of_week_sin",
+        "day_of_week_cos",
+        "is_weekend",
+        "is_night",
+    ],
+    "categorical": [
+        "bank",
+        "transaction_type",
+        "fraud_type",
+        "state",
+        "district",
+        "city",
+        "amount_category",
+    ],
+}
+
+FEATURE_SET_GEOGRAPHIC_BLIND = {
+    "name": "geographic_blind",
+    "description": "Geographic-blind baseline excluding direct geographic identifiers (city, state, district, lat, lon)",
+    "numerical": [
+        "amount",
+        "amount_log",
+        "hour",
+        "hour_sin",
+        "hour_cos",
+        "day_of_week",
+        "day_of_week_sin",
+        "day_of_week_cos",
+        "is_weekend",
+        "is_night",
+    ],
+    "categorical": [
+        "bank",
+        "transaction_type",
+        "fraud_type",
+        "amount_category",
+    ],
+}
 
 ATM_LOCATIONS_SCHEMA = [
     "atm_id",
