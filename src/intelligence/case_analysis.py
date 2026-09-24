@@ -108,7 +108,7 @@ def validate_and_normalize_case_input(raw_input: Union[Dict[str, Any], pd.DataFr
         data = dict(raw_input)
 
     # 1. Reference Complaint ID
-    complaint_id = str(data.get("complaint_id", f"CT-CASE-{int(time.time())}"))
+    complaint_id = str(data.get("complaint_id") or data.get("case_id") or f"CT-CASE-{int(time.time())}")
 
     # 2. Date and Time parsing
     date_str = str(data.get("complaint_date", datetime.today().strftime("%Y-%m-%d"))).strip()

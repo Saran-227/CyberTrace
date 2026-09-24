@@ -1,7 +1,18 @@
-"""Investigation Page: Live dynamic case triage, zone prediction, and Leaflet geospatial map."""
+"""Investigation Workbench for CyberTrace (Phase 10).
+
+The core operational product experience:
+- Clean, grouped input controls
+- Real-time execution with latency measurement
+- Synchronized prediction, horizontal probability distribution, and interactive Leaflet map
+- Candidate spotlight card with multi-criteria progress bars
+- Filterable candidate ATM table
+- Non-technical operational brief
+- Direct executive intelligence report generation
+"""
 
 from datetime import datetime
 from typing import Optional
+import time
 import streamlit as st
 import pandas as pd
 
@@ -14,13 +25,13 @@ from src.config import (
 from src.intelligence.case_analysis import analyze_case
 from src.intelligence.report import generate_executive_report
 
-from app.components.map import render_investigation_map
+from app.components.map import render_investigation_map, render_neutral_map
 from app.components.prediction_card import render_prediction_card
 from app.components.atm_table import render_atm_table
+from app.components.atm_card import render_atm_spotlight_card
 from app.components.probability_chart import render_probability_chart
 
-
-# Complete 15 Study Cities with default coordinates
+# Complete 15 Study Cities with verified centroids
 STUDY_CITIES_COORDS = {
     "Amritsar": (31.6340, 74.8723, "Amritsar", "Punjab"),
     "Jalandhar": (31.3260, 75.5762, "Jalandhar", "Punjab"),
@@ -58,22 +69,14 @@ def render_investigation() -> None:
     # 1. Official Reporting Directive Banner
     st.markdown(
         f"""
-        <div class="official-reporting-banner">
-            <div class="banner-left">
-                <span class="banner-title">🛡️ OFFICIAL GOVERNMENT REPORTING DIRECTIVE</span>
-                <span class="banner-desc">
-                    CyberTrace is an intelligence research tool and does NOT register official police complaints.
-                    Victims must report incidents directly to law enforcement authorities.
-                </span>
+        <div class="cyber-notice" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+            <div>
+                <strong>OFFICIAL LAW ENFORCEMENT DIRECTIVE:</strong> CyberTrace is an academic intelligence tool and does not process legal police filings.
+                Official complaints must be submitted directly to <a href="{CYBERCRIME_PORTAL_URL}" target="_blank" style="color:#b91c1c; font-weight:700;">cybercrime.gov.in</a>.
             </div>
             <div>
-                <a href="{CYBERCRIME_PORTAL_URL}" target="_blank" style="text-decoration:none;">
-                    <button style="background:#dc2626; color:#ffffff; border:none; padding:10px 16px; border-radius:6px; font-weight:700; cursor:pointer;">
-                        🚨 Report Cybercrime (cybercrime.gov.in)
-                    </button>
-                </a>
-                <span class="helpline-pill" style="margin-left: 8px;">
-                    📞 Helpline: {FINANCIAL_FRAUD_HELPLINE}
+                <span class="status-pill-amber" style="background:#fee2e2; border-color:#fecaca; color:#b91c1c;">
+                    📞 National Helpline: {FINANCIAL_FRAUD_HELPLINE}
                 </span>
             </div>
         </div>
@@ -81,15 +84,17 @@ def render_investigation() -> None:
         unsafe_allow_html=True,
     )
 
-    st.markdown("## 🔎 Live Case Investigation Workbench")
-    st.caption("Execute the real-time CyberTrace pipeline on user input to predict cash-out withdrawal zones and prioritize candidate ATMs.")
+    st.markdown("## 🔍 Investigation Workspace")
+    st.caption("Trace a complaint. Model the withdrawal zone. Discover candidate ATM infrastructure.")
 
-    # Two column layout: Case Input Form (Left) and Intelligence Display (Right)
-    col_form, col_intel = st.columns([1.1, 1.9])
+    # Two-Column Layout: Case Intake Form (Left) & Intelligence Display (Right)
+    col_form, col_intel = st.columns([1.1, 1.9], gap="large")
 
     with col_form:
-        st.markdown("### 📝 Incident Input")
-        with st.form("case_input_form"):
+        st.markdown("### 📝 Incident Intake")
+        st.caption("Start with the reported incident metadata.")
+
+        with st.form("case_intake_form"):
             complaint_id = st.text_input("Complaint Reference ID", value="CT-2026-8812")
 
             c_amt, c_bank = st.columns(2)
@@ -109,7 +114,7 @@ def render_investigation() -> None:
                 )
 
             fraud_type = st.selectbox(
-                "Reported Fraud Modus Operandi",
+                "Modus Operandi",
                 [
                     "OTP Fraud",
                     "Phishing/Smishing",
@@ -122,7 +127,7 @@ def render_investigation() -> None:
                     "KYC Update",
                     "Loan Fraud",
                 ],
-                index=0,
+                index=1,
             )
 
             c_date, c_time = st.columns(2)
@@ -131,13 +136,12 @@ def render_investigation() -> None:
             with c_time:
                 inc_time = st.time_input("Incident Time", value=datetime.strptime("14:30", "%H:%M").time())
 
-            # Coordinate lookup
+            # City default coordinates lookup
             def_lat, def_lon, district, state = STUDY_CITIES_COORDS[city]
-            with st.expander("Geographic Coordinates (Optional Adjustment)"):
-                complaint_lat = st.number_input("Latitude", value=float(def_lat), format="%.5f")
-                complaint_lon = st.number_input("Longitude", value=float(def_lon), format="%.5f")
+            with st.expander("🌐 Geographic Coordinates (Optional Adjustment)"):
+                complaint_lat = st.number_input("Latitude", value=float(def_lat), format="%.4f")
+                complaint_lon = st.number_input("Longitude", value=float(def_lon), format="%.4f")
 
-            # Model Selection
             selected_model = st.selectbox(
                 "Inference Model",
                 [PRIMARY_MODEL_ID, FALLBACK_MODEL_ID],
@@ -145,10 +149,11 @@ def render_investigation() -> None:
                 index=0,
             )
 
-            analyze_submitted = st.form_submit_button("⚡ ANALYZE CASE", use_container_width=True)
+            analyze_submitted = st.form_submit_button("⚡ ANALYZE CASE", type="primary", use_container_width=True)
 
         if analyze_submitted:
-            with st.spinner("Executing real-time location prediction and ATM candidate ranking..."):
+            with st.spinner("Analyzing geographic signal and ranking candidate infrastructure..."):
+                t0 = time.time()
                 raw_case_dict = {
                     "complaint_id": complaint_id,
                     "complaint_date": str(inc_date),
@@ -178,7 +183,7 @@ def render_investigation() -> None:
                 st.session_state["report_status"] = "OUTDATED"
                 st.session_state["current_report_path"] = None
 
-    # Display Right: Intelligence & Geographic Visualization
+    # Right Column: Intelligence & Geospatial Visualization
     with col_intel:
         if "case_analysis" in st.session_state and st.session_state["case_analysis"]:
             analysis = st.session_state["case_analysis"]
@@ -193,26 +198,30 @@ def render_investigation() -> None:
             cross_zone_str = "ACTIVE (Dual-Sector Search)" if cross_zone_active else "INACTIVE (Single Sector)"
             st.markdown(
                 f"""
-                <div style="background:#0f172a; border:1px solid #334155; border-radius:6px; padding:10px 16px; margin-bottom:12px; font-size:13px; color:#cbd5e1; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+                <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:12px; padding:10px 16px; margin-bottom:14px; font-size:12.5px; color:#334155; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; box-shadow:0 2px 6px rgba(0,0,0,0.02);">
                     <div>⚙️ <strong>Model:</strong> <code>{analysis.get('model_id')}</code></div>
-                    <div>⚡ <strong>Latency:</strong> {analysis.get('execution_time_ms', 0):.1f} ms</div>
-                    <div>🔄 <strong>Cross-Zone Search:</strong> <span style="color:{'#f59e0b' if cross_zone_active else '#10b981'}; font-weight:700;">{cross_zone_str}</span></div>
-                    <div>📊 <strong>ATMs Evaluated:</strong> {ranking.get('total_atms_evaluated', 0)}</div>
+                    <div>⚡ <strong>Latency:</strong> <strong>{analysis.get('execution_time_ms', 0):.1f} ms</strong></div>
+                    <div>🔄 <strong>Cross-Zone Search:</strong> <span style="color:{'#d97706' if cross_zone_active else '#16a34a'}; font-weight:700;">{cross_zone_str}</span></div>
+                    <div>🏧 <strong>Evaluated ATMs:</strong> {ranking.get('total_atms_evaluated', 0)}</div>
                 </div>
                 """,
                 unsafe_allow_html=True,
             )
 
-            # 2. Prediction Card and Zone Probability Chart
+            # 2. Prediction Card and Horizontal Probability Chart
             c_p1, c_p2 = st.columns([1.1, 0.9])
             with c_p1:
                 render_prediction_card(pred)
             with c_p2:
                 if "zone_probabilities" in pred:
-                    render_probability_chart(pred["zone_probabilities"])
+                    render_probability_chart(
+                        pred["zone_probabilities"],
+                        predicted_zone=pred.get("predicted_zone"),
+                        second_zone=pred.get("second_best_zone"),
+                    )
 
             # 3. Interactive Map Filter Controls
-            st.markdown("### 🗺️ Interactive Geospatial Intelligence Map")
+            st.markdown("### 🗺️ Geospatial Intelligence Map")
             fc1, fc2, fc3, fc4 = st.columns([1, 1.2, 1.2, 1.4])
             with fc1:
                 cand_count = st.selectbox("Display Count", [5, 10, 25], index=1)
@@ -227,7 +236,6 @@ def render_investigation() -> None:
                 selected_choice = st.selectbox("Focus ATM", atm_choices, index=0)
                 selected_atm_id: Optional[str] = None
                 if selected_choice != "None (Overview)":
-                    # Extract ATM ID
                     selected_atm_id = selected_choice.split(":")[1].split("(")[0].strip()
 
             # 4. Render Dynamic Leaflet Map
@@ -237,11 +245,14 @@ def render_investigation() -> None:
                 bank_filter=bank_filter if bank_filter != "All" else None,
                 zone_filter=zone_filter if zone_filter != "All" else None,
                 selected_atm_id=selected_atm_id,
-                height=540,
+                height=520,
             )
 
-            # 5. Ranked ATM Candidates Table
-            # Filter table data according to current dropdown selections
+            # 5. Top Candidate Spotlight Card (#1 Candidate)
+            if raw_ranked:
+                render_atm_spotlight_card(raw_ranked[0])
+
+            # 6. Filter and Render Ranked ATM Candidates Table
             filtered_ranked = raw_ranked
             if bank_filter != "All":
                 filtered_ranked = [a for a in filtered_ranked if bank_filter.lower() in a.get("bank", "").lower() or bank_filter.lower() in a.get("operator", "").lower()]
@@ -251,7 +262,7 @@ def render_investigation() -> None:
 
             render_atm_table(filtered_ranked)
 
-            # 6. Plain-Language Operational Brief
+            # 7. Plain-Language Operational Brief
             with st.expander("📋 Non-Technical Operational Intelligence Brief", expanded=True):
                 st.markdown(f"**Zone Assessment:** {expl.get('zone_summary')}")
                 st.markdown(f"**ATM Assessment:** {expl.get('atm_summary')}")
@@ -263,9 +274,9 @@ def render_investigation() -> None:
                     st.markdown(f"1. {act}")
                 st.caption(f"🛡️ *Disclaimer:* {expl.get('evidence_disclaimer')}")
 
-            # 7. Report Generator Trigger
+            # 8. Report Generator Trigger
             st.markdown("---")
-            if st.button("📄 Generate Executive Intelligence Report (HTML & PDF)", use_container_width=True):
+            if st.button("📄 Generate Executive Intelligence Report (HTML & PDF)", type="primary", use_container_width=True):
                 with st.spinner("Compiling official executive intelligence brief (HTML & PDF)..."):
                     report_path = generate_executive_report(analysis)
                     st.session_state["current_report_path"] = report_path
@@ -273,4 +284,16 @@ def render_investigation() -> None:
                 st.success(f"✅ Intelligence Brief successfully compiled: `{report_path.name}`. Access HTML preview and PDF download in the **Reports** section.")
 
         else:
-            st.info("👈 Enter complaint metadata and click **ANALYZE CASE** to initiate live real-time intelligence triage.")
+            # Clean Empty State: Neutral OpenStreetMap View of Target Region
+            st.markdown(
+                """
+                <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:12px; padding:18px 24px; margin-bottom:14px;">
+                    <div style="font-size:15px; font-weight:700; color:#0f172a; margin-bottom:4px;">Ready for Investigation</div>
+                    <div style="font-size:13px; color:#64748b;">
+                        Enter the incident details on the left and click <strong>ANALYZE CASE</strong> to initiate supervised location classification and spatial ATM discovery.
+                    </div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+            render_neutral_map(height=520)

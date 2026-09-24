@@ -60,4 +60,17 @@ graph TD
 - `app/pages/report.py`: Interactive Streamlit report management workbench with live dynamic case summary, HTML preview, and direct HTML/PDF download controls.
 - `app/`: Multi-page Streamlit application workbench with live dynamic case analysis, embedded Leaflet.js maps, and executive briefs.
 
+### 6. Phase 10 Unified Frontend Workbench (`app/`)
+- `app/app.py`: Top-level router with floating pill navigation, light Apple/Haven design system injection, system readiness monitoring, and module dispatching.
+- `app/components/navbar.py`: Floating rounded navigation container with real-time engine readiness diagnostics and active investigation indicator.
+- `app/components/atm_card.py`: Dedicated #1 ranked ATM candidate spotlight card with multi-criteria progress bar decomposition.
+- `app/components/atm_table.py`: Formatted candidate table with polymorphic evidence flags and unknown bank label handling.
+- `app/components/probability_chart.py`: Clean Altair horizontal probability distribution bar chart with semantic sector color coding.
+- `app/components/map.py`: Dynamic Leaflet/OSM map with neutral empty-state India visualization and candidate marker limiting.
+- `app/pages/dashboard.py`: System status cards, dynamic case overview, project asset statistics (20,000 complaints, 333 OSM ATMs, 14 model pipelines), and architecture flowcards.
+- `app/pages/investigation.py`: Primary investigation workspace with grouped input cards, real execution latency measurement, dynamic session state reactivity, and synchronized geospatial filtering.
+- `app/pages/analytics.py`: Cached analytical workbench for Phase 3/6 datasets and evaluation benchmarks without runtime recomputation.
+- `app/pages/report.py`: Intelligence brief generator connected to `case_analysis`, with live generation controls, HTML preview, and PDF downloads.
+- `app/assets/css/style.css`: Light, modern, calm CSS design system inspired by Haven and modern SaaS interfaces. Formally documented in [docs/frontend_architecture.md](file:///docs/frontend_architecture.md).
+
 

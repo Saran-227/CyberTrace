@@ -22,13 +22,20 @@ def render_atm_table(ranked_atms: List[Dict[str, Any]]) -> None:
     display_data = []
     for atm in ranked_atms:
         overall = atm.get("overall_score", round(float(atm.get("candidate_score", 0.0)) * 100, 1))
+        raw_bank = str(atm.get("bank", "Unknown")).strip()
+        bank_label = "Bank information unavailable" if raw_bank.lower() in ["unknown", "none", "nan", ""] else raw_bank
         flags = atm.get("evidence_flags", [])
-        flag_str = ", ".join(flags[:3]) if flags else "STANDARD"
+        if isinstance(flags, list):
+            flag_str = ", ".join(flags[:3]) if flags else "STANDARD"
+        elif isinstance(flags, dict):
+            flag_str = f"{flags.get('bank_match', 'Compatible')}, {flags.get('operating_hours', 'Standard')}"
+        else:
+            flag_str = "STANDARD"
 
         display_data.append({
             "Rank": atm.get("rank", 1),
             "ATM ID": atm.get("atm_id", "Unknown"),
-            "Bank / Operator": atm.get("bank", "Unknown"),
+            "Bank / Operator": bank_label,
             "City": atm.get("city", "Unknown"),
             "Zone": atm.get("zone", "N/A"),
             "Distance (km)": f"{float(atm.get('distance_km', 0.0)):.1f}",

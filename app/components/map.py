@@ -526,44 +526,70 @@ def render_investigation_map(
     components.html(html_content, height=height + 20)
 
 
-def render_leaflet_map(
-    center_lat: float = 31.3260,
-    center_lon: float = 75.5762,
-    zoom: int = 12,
-    complaint_point: Optional[Tuple[float, float, str]] = None,
-    predicted_zone_bbox: Optional[Tuple[float, float, float, float]] = None,
-    candidate_atms: Optional[List[Dict[str, Any]]] = None,
-    height: int = 520,
-) -> None:
-    """Backward-compatible map wrapper for legacy callers."""
-    # Synthesize minimal case_analysis mock from legacy arguments
-    mock_case_analysis = {
-        "case_id": "CYBER-CASE",
-        "model_id": "random_forest_full_none",
-        "case_data": {
-            "complaint_latitude": complaint_point[0] if complaint_point else center_lat,
-            "complaint_longitude": complaint_point[1] if complaint_point else center_lon,
-            "city": "Reported Area",
-            "amount": 25000.0,
-            "bank": "Unknown Bank",
-        },
-        "prediction": {
-            "predicted_zone": "Zone_01",
-            "prediction_confidence": 0.85,
-            "confidence_tier": "HIGH",
-            "probability_margin": 0.80,
-            "zone_probabilities": {"Zone_01": 0.85},
-        },
-        "ranking": {
-            "candidate_zones": ["Zone_01"],
-            "cross_zone_search": False,
-            "total_atms_evaluated": len(candidate_atms or []),
-            "ranked_atms": candidate_atms or [],
-        },
-    }
+def render_neutral_map(height: int = 540) -> None:
+    """Render a neutral empty-state map before case analysis is submitted."""
+    html_content = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberTrace Neutral Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <style>
+    body {{
+      margin: 0;
+      padding: 0;
+      background: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }}
+    #map {{
+      width: 100%;
+      height: {height}px;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+    }}
+    .empty-banner {{
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      border: 1px solid #e2e8f0;
+      border-radius: 9999px;
+      padding: 8px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #0f172a;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      pointer-events: none;
+    }}
+  </style>
+</head>
+<body>
+  <div class="empty-banner">
+    <span>📍</span> Geographic intelligence will appear here after case analysis
+  </div>
+  <div id="map"></div>
+  <script>
+    var map = L.map('map', {{
+      center: [29.5, 76.5],
+      zoom: 7,
+      zoomControl: true
+    }});
+    L.tileLayer('https://{{s}}.tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }}).addTo(map);
+  </script>
+</body>
+</html>
+"""
+    components.html(html_content, height=height + 15)
 
-    render_investigation_map(
-        case_analysis=mock_case_analysis,
-        visible_candidate_count=len(candidate_atms or []),
-        height=height,
-    )
