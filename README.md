@@ -218,10 +218,11 @@ PHASE 5: Location classification models
 PHASE 6: Model evaluation, error analysis & pipeline selection
           STATUS: COMPLETE (14 models evaluated, NCR boundary analysis, uncertainty diagnostics, primary [Random Forest] & fallback [Logistic Regression] selected, 118 tests passing)
 
-PHASE 7: ATM candidate ranking
-          STATUS: NEXT
+PHASE 7: ATM candidate ranking & live dynamic pipeline
+          STATUS: COMPLETE (333 OSM ATMs, 719k activity records, 6-component scoring, dynamic cross-zone search, live orchestrator, 142 tests passing)
 
 PHASE 8: Leaflet/OpenStreetMap interactive map
+          STATUS: NEXT
 
 PHASE 9: Executive intelligence report
 

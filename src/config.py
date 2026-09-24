@@ -223,6 +223,34 @@ SUPPORTED_MODELS = [
     "Random Forest",
 ]
 
+# Phase 6 Selected Models & Artifact Pointers
+PRIMARY_MODEL_ID = "random_forest_full_none"
+FALLBACK_MODEL_ID = "logistic_full_none"
+PRIMARY_MODEL_PATH = LOCATION_CLASSIFIER_DIR / "random_forest_full_none.joblib"
+FALLBACK_MODEL_PATH = LOCATION_CLASSIFIER_DIR / "logistic_full_none.joblib"
+
+# Phase 7 ATM Candidate Ranking Weights (Must sum strictly to 1.0)
+ATM_RANKING_WEIGHTS = {
+    "zone_probability": 0.35,  # Statistical likelihood of withdrawal zone from ML model
+    "spatial": 0.25,           # Proximity to zone centroid/reference location
+    "bank": 0.15,              # Victim bank vs ATM operator compatibility
+    "activity": 0.10,          # Simulated historical operational activity level
+    "time": 0.10,              # Operational hours compatibility (e.g. 24x7)
+    "amount": 0.05,            # Cash volume/amount compatibility
+}
+
+assert abs(sum(ATM_RANKING_WEIGHTS.values()) - 1.0) < 1e-6, "ATM_RANKING_WEIGHTS must sum to 1.0"
+
+# Phase 7 Candidate Search Configuration
+CANDIDATE_SEARCH_CONFIG = {
+    "cumulative_probability_threshold": 0.80,  # Accumulate candidate zones until reaching 80% probability mass
+    "high_confidence_margin": 0.30,           # Margin >= 0.30: High confidence, primary zone
+    "medium_confidence_margin": 0.15,         # 0.15 <= Margin < 0.30: Medium confidence, include second best zone
+    "default_top_n": 10,                      # Default candidate count
+    "max_candidates": 25,                     # Maximum candidate count
+    "temporal_window_hours": 2,               # +/- 2 hours for activity matching
+}
+
 # External Service Endpoints & Helplines
 OVERPASS_API_URL = os.getenv("OVERPASS_API_URL", "https://overpass-api.de/api/interpreter")
 OVERPASS_ENDPOINTS = [

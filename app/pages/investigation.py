@@ -1,4 +1,4 @@
-"""Investigation Page: Case information, zone prediction, Leaflet map, and ATM candidates."""
+"""Investigation Page: Live dynamic case triage, zone prediction, and ATM candidate ranking."""
 
 from datetime import datetime
 import streamlit as st
@@ -7,30 +7,62 @@ import pandas as pd
 from src.config import (
     CYBERCRIME_PORTAL_URL,
     FINANCIAL_FRAUD_HELPLINE,
-    LOCATION_CLASSIFIER_DIR,
+    PRIMARY_MODEL_ID,
+    FALLBACK_MODEL_ID,
 )
-from src.geographic.zones import get_all_zones, get_zone_bounding_box, get_zone_centroid
-from src.models.location_model import LocationClassifier
-from src.models.predict import predict_withdrawal_zone
-from src.atm.atm_discovery import discover_candidate_atms
-from src.atm.ranking import rank_atm_candidates
+from src.geographic.zones import get_zone_bounding_box
+from src.intelligence.case_analysis import analyze_case
 from src.intelligence.report import generate_executive_report
-from src.app_helpers import get_or_create_session_state
 
 from app.components.map import render_leaflet_map
 from app.components.prediction_card import render_prediction_card
 from app.components.atm_table import render_atm_table
 from app.components.probability_chart import render_probability_chart
 
+
+# Complete 15 Study Cities with default coordinates
+STUDY_CITIES_COORDS = {
+    "Amritsar": (31.6340, 74.8723, "Amritsar", "Punjab"),
+    "Jalandhar": (31.3260, 75.5762, "Jalandhar", "Punjab"),
+    "Ludhiana": (30.9010, 75.8573, "Ludhiana", "Punjab"),
+    "Patiala": (30.3398, 76.3869, "Patiala", "Punjab"),
+    "Chandigarh": (30.7333, 76.7794, "Chandigarh", "Chandigarh"),
+    "Ambala": (30.3782, 76.7767, "Ambala", "Haryana"),
+    "Panipat": (29.3909, 76.9635, "Panipat", "Haryana"),
+    "Ghaziabad": (28.6692, 77.4538, "Ghaziabad", "Uttar Pradesh"),
+    "Meerut": (28.9845, 77.7064, "Meerut", "Uttar Pradesh"),
+    "New Delhi": (28.6139, 77.2090, "New Delhi", "Delhi"),
+    "Noida": (28.5355, 77.3910, "Gautam Buddha Nagar", "Uttar Pradesh"),
+    "Gurugram": (28.4595, 77.0266, "Gurugram", "Haryana"),
+    "Faridabad": (28.4089, 77.3178, "Faridabad", "Haryana"),
+    "Alwar": (27.5530, 76.6346, "Alwar", "Rajasthan"),
+    "Jaipur": (26.9124, 75.7873, "Jaipur", "Rajasthan"),
+}
+
+BANKS_LIST = [
+    "State Bank of India",
+    "HDFC Bank",
+    "ICICI Bank",
+    "Punjab National Bank",
+    "Axis Bank",
+    "Bank of Baroda",
+    "Kotak Mahindra Bank",
+    "Canara Bank",
+    "Union Bank of India",
+    "IndusInd Bank",
+    "unknown",
+]
+
+
 def render_investigation() -> None:
-    # 1. Official Reporting Banner (National Cyber Crime Reporting Portal & Helpline 1930)
+    # 1. Official Reporting Directive Banner
     st.markdown(
         f"""
         <div class="official-reporting-banner">
             <div class="banner-left">
                 <span class="banner-title">🛡️ OFFICIAL GOVERNMENT REPORTING DIRECTIVE</span>
                 <span class="banner-desc">
-                    CyberTrace is an intelligence analysis tool and does NOT register official police complaints.
+                    CyberTrace is an intelligence research tool and does NOT register official police complaints.
                     Victims must report incidents directly to law enforcement authorities.
                 </span>
             </div>
@@ -49,159 +81,129 @@ def render_investigation() -> None:
         unsafe_allow_html=True,
     )
 
-    st.markdown("## 🔎 Case Investigation Workbench")
-    st.caption("Enter case metadata to analyze cash-out probabilities and identify candidate ATM points of interest.")
+    st.markdown("## 🔎 Live Case Investigation Workbench")
+    st.caption("Execute the real-time CyberTrace pipeline on user input to predict cash-out withdrawal zones and prioritize candidate ATMs.")
 
     # Two column layout: Case Input Form (Left) and Intelligence Display (Right)
     col_form, col_intel = st.columns([1.1, 1.9])
 
     with col_form:
-        st.markdown("### 📝 Case Information")
+        st.markdown("### 📝 Incident Input")
         with st.form("case_input_form"):
-            complaint_id = st.text_input("Complaint Reference ID", value="CYBER-2026-0814")
+            complaint_id = st.text_input("Complaint Reference ID", value="CT-2026-8812")
 
             c_amt, c_bank = st.columns(2)
             with c_amt:
-                amount = st.number_input("Amount (₹)", min_value=500, max_value=5000000, value=42500, step=1000)
+                amount = st.number_input("Disputed Amount (₹)", min_value=100, max_value=5000000, value=35000, step=1000)
             with c_bank:
-                bank = st.selectbox(
-                    "Victim Bank",
-                    ["HDFC", "SBI", "ICICI", "Axis Bank", "Punjab National Bank", "Bank of Baroda", "Kotak Mahindra"],
-                    index=0,
-                )
+                bank = st.selectbox("Victim Bank", BANKS_LIST, index=1)
 
             c_loc, c_tx = st.columns(2)
             with c_loc:
-                city = st.selectbox("Reported City", ["Jalandhar", "Ludhiana", "Amritsar", "Patiala", "Chandigarh", "Mohali"])
+                city = st.selectbox("Reported City", list(STUDY_CITIES_COORDS.keys()), index=1)
             with c_tx:
-                transaction_type = st.selectbox("Transaction Type", ["UPI", "IMPS", "NEFT", "Net Banking", "ATM Withdrawal"])
+                transaction_type = st.selectbox(
+                    "Payment Rail",
+                    ["UPI", "IMPS", "NEFT", "Net Banking", "ATM Withdrawal", "AEPS", "CARD"],
+                    index=0,
+                )
 
             fraud_type = st.selectbox(
                 "Reported Fraud Modus Operandi",
                 [
+                    "OTP Fraud",
                     "Phishing/Smishing",
                     "Lottery/Task Scam",
                     "Identity Theft",
                     "Impersonation",
                     "Investment Scam",
                     "Customer Support Fraud",
+                    "Job Scam",
+                    "KYC Update",
+                    "Loan Fraud",
                 ],
+                index=0,
             )
 
             c_date, c_time = st.columns(2)
             with c_date:
                 inc_date = st.date_input("Incident Date", value=datetime.today())
             with c_time:
-                inc_time = st.time_input("Incident Time", value=datetime.strptime("23:15", "%H:%M").time())
+                inc_time = st.time_input("Incident Time", value=datetime.strptime("14:30", "%H:%M").time())
 
-            # Default coordinates lookup based on city
-            city_coords = {
-                "Jalandhar": (31.3260, 75.5762, "Jalandhar", "Punjab"),
-                "Ludhiana": (30.9010, 75.8573, "Ludhiana", "Punjab"),
-                "Amritsar": (31.6340, 74.8723, "Amritsar", "Punjab"),
-                "Patiala": (30.3398, 76.3869, "Patiala", "Punjab"),
-                "Chandigarh": (30.7333, 76.7794, "Chandigarh", "Chandigarh"),
-                "Mohali": (30.7046, 76.7179, "SAS Nagar", "Punjab"),
-            }
-            default_lat, default_lon, district, state = city_coords[city]
-
+            # Coordinate lookup
+            def_lat, def_lon, district, state = STUDY_CITIES_COORDS[city]
             with st.expander("Geographic Coordinates (Optional Adjustment)"):
-                complaint_lat = st.number_input("Latitude", value=float(default_lat), format="%.5f")
-                complaint_lon = st.number_input("Longitude", value=float(default_lon), format="%.5f")
+                complaint_lat = st.number_input("Latitude", value=float(def_lat), format="%.5f")
+                complaint_lon = st.number_input("Longitude", value=float(def_lon), format="%.5f")
 
-            analyze_submitted = st.form_submit_button("⚡ Analyze Case", use_container_width=True)
+            # Model Selection
+            selected_model = st.selectbox(
+                "Inference Model",
+                [PRIMARY_MODEL_ID, FALLBACK_MODEL_ID],
+                format_func=lambda x: f"Primary: {x}" if "forest" in x else f"Fallback: {x}",
+                index=0,
+            )
+
+            analyze_submitted = st.form_submit_button("⚡ ANALYZE CASE", use_container_width=True)
 
         if analyze_submitted:
-            # Prepare case dictionary
-            hour = inc_time.hour
-            dow = inc_date.weekday()
-            is_weekend = int(dow >= 5)
-            is_night = int(hour >= 22 or hour <= 5)
-            amount_category = "High (25k-50k)" if amount >= 25000 and amount < 50000 else "Medium (5k-25k)"
-
-            case_data = {
-                "complaint_id": complaint_id,
-                "complaint_date": str(inc_date),
-                "complaint_time": str(inc_time),
-                "amount": float(amount),
-                "bank": bank,
-                "transaction_type": transaction_type,
-                "fraud_type": fraud_type,
-                "city": city,
-                "state": state,
-                "district": district,
-                "complaint_latitude": complaint_lat,
-                "complaint_longitude": complaint_lon,
-                "hour": hour,
-                "day_of_week": dow,
-                "day_name": inc_date.strftime("%A"),
-                "is_weekend": is_weekend,
-                "is_night": is_night,
-                "amount_category": amount_category,
-            }
-            st.session_state["active_case"] = case_data
-            st.session_state["last_case"] = case_data
-
-            # Check if a trained location model pipeline exists on disk
-            candidate_model_files = list(LOCATION_CLASSIFIER_DIR.glob("*.joblib"))
-            if candidate_model_files:
-                try:
-                    classifier = LocationClassifier.load(candidate_model_files[0])
-                    input_df = pd.DataFrame([case_data])
-                    pred_res = predict_withdrawal_zone(input_df, model=classifier)
-                    st.session_state["prediction_result"] = pred_res
-                except Exception as exc:
-                    st.warning(f"Model inference failed: {exc}. Using designated operational zone stub.")
-                    st.session_state["prediction_result"] = None
-            else:
-                # Clean interface notice: model not trained yet (Phase 5)
-                # For Phase 1 demonstration of map & ranking architecture, associate to corresponding operational zone
-                zone_stub = "Zone_04" if city == "Ludhiana" else "Zone_01"
-                st.session_state["prediction_result"] = {
-                    "predicted_zone": zone_stub,
-                    "confidence": 0.814,
-                    "top_predictions": [
-                        {"zone": zone_stub, "probability": 0.814},
-                        {"zone": "Zone_02" if zone_stub == "Zone_01" else "Zone_03", "probability": 0.102},
-                        {"zone": "Zone_05", "probability": 0.051},
-                    ],
-                    "is_phase1_stub": True,
+            with st.spinner("Executing real-time location prediction and ATM candidate ranking..."):
+                raw_case_dict = {
+                    "complaint_id": complaint_id,
+                    "complaint_date": str(inc_date),
+                    "complaint_time": str(inc_time),
+                    "amount": float(amount),
+                    "bank": bank,
+                    "transaction_type": transaction_type,
+                    "fraud_type": fraud_type,
+                    "city": city,
+                    "state": state,
+                    "district": district,
+                    "complaint_latitude": complaint_lat,
+                    "complaint_longitude": complaint_lon,
+                    "hour": inc_time.hour,
+                    "day_of_week": inc_date.weekday(),
                 }
 
-            # Run ATM Candidate Discovery & Ranking
-            active_zone = st.session_state["prediction_result"]["predicted_zone"]
-            discovered_atms = discover_candidate_atms(
-                predicted_zone=active_zone,
-                complaint_lat=complaint_lat,
-                complaint_lon=complaint_lon,
-                use_synthetic_fallback=True,
-            )
-            ranked = rank_atm_candidates(
-                candidates=discovered_atms,
-                complaint_bank=bank,
-                complaint_hour=hour,
-                top_n=10,
-            )
-            st.session_state["ranked_atms"] = ranked
+                # Run live dynamic pipeline
+                analysis_result = analyze_case(raw_case_dict, model_id=selected_model)
+
+                # Update session state with dynamic result
+                st.session_state["case_analysis"] = analysis_result
+                st.session_state["active_case"] = analysis_result["case_data"]
+                st.session_state["prediction_result"] = analysis_result["prediction"]
+                st.session_state["ranked_atms"] = analysis_result["ranking"]["ranked_atms"]
 
     # Display Right: Intelligence & Geographic Visualization
     with col_intel:
-        if "active_case" in st.session_state and st.session_state["active_case"]:
-            case = st.session_state["active_case"]
-            pred = st.session_state.get("prediction_result")
-            ranked = st.session_state.get("ranked_atms", [])
-            zone_id = pred.get("predicted_zone", "Zone_01") if pred else "Zone_01"
+        if "case_analysis" in st.session_state and st.session_state["case_analysis"]:
+            analysis = st.session_state["case_analysis"]
+            case = analysis["case_data"]
+            pred = analysis["prediction"]
+            ranking = analysis["ranking"]
+            ranked = ranking["ranked_atms"]
+            expl = analysis["explanation"]
 
-            if pred and pred.get("is_phase1_stub"):
-                st.info(
-                    "ℹ️ **Phase 1 Architecture Mode:** Location classifier estimators have not been trained yet "
-                    "(Phase 5). Showing calibrated test zone to verify map, ranking, and reporting interfaces."
-                )
+            # Analysis Status Bar
+            cross_zone_str = "ACTIVE (Dual-Sector Search)" if ranking.get("cross_zone_search") else "INACTIVE (Single Sector)"
+            st.markdown(
+                f"""
+                <div style="background:#0f172a; border:1px solid #334155; border-radius:6px; padding:10px 16px; margin-bottom:14px; font-size:13px; color:#cbd5e1; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+                    <div>⚙️ <strong>Model:</strong> <code>{analysis.get('model_id')}</code></div>
+                    <div>⚡ <strong>Latency:</strong> {analysis.get('execution_time_ms', 0):.1f} ms</div>
+                    <div>🔄 <strong>Cross-Zone Search:</strong> <span style="color:{'#f59e0b' if ranking.get('cross_zone_search') else '#10b981'}; font-weight:700;">{cross_zone_str}</span></div>
+                    <div>📊 <strong>ATMs Evaluated:</strong> {ranking.get('total_atms_evaluated', 0)}</div>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
 
             # Map Visualization
             st.markdown("### 🗺️ Operational Geospatial Intelligence Map")
             c_lat = case.get("complaint_latitude", 31.3260)
             c_lon = case.get("complaint_longitude", 75.5762)
+            zone_id = pred.get("predicted_zone", "Zone_01")
             bbox = get_zone_bounding_box(zone_id)
 
             render_leaflet_map(
@@ -214,16 +216,28 @@ def render_investigation() -> None:
                 height=480,
             )
 
-            # Prediction Card and Top Alternatives
-            c_p1, c_p2 = st.columns([1, 1])
+            # Prediction Card and Zone Probability Chart
+            c_p1, c_p2 = st.columns([1.1, 0.9])
             with c_p1:
                 render_prediction_card(pred)
             with c_p2:
-                if pred and "top_predictions" in pred:
-                    render_probability_chart(pred["top_predictions"])
+                if "zone_probabilities" in pred:
+                    render_probability_chart(pred["zone_probabilities"])
 
-            # ATM Candidates Table
+            # Ranked ATM Candidates Table
             render_atm_table(ranked)
+
+            # Plain-Language Operational Brief
+            with st.expander("📋 Non-Technical Operational Intelligence Brief", expanded=True):
+                st.markdown(f"**Zone Assessment:** {expl.get('zone_summary')}")
+                st.markdown(f"**ATM Assessment:** {expl.get('atm_summary')}")
+                st.markdown("**Key Operational Signals:**")
+                for sig in expl.get("key_signals", []):
+                    st.markdown(f"- {sig}")
+                st.markdown("**Recommended Investigative Actions:**")
+                for act in expl.get("recommended_focus", []):
+                    st.markdown(f"1. {act}")
+                st.caption(f"🛡️ *Disclaimer:* {expl.get('evidence_disclaimer')}")
 
             # Report Generator Trigger
             st.markdown("---")
@@ -231,4 +245,4 @@ def render_investigation() -> None:
                 report_path = generate_executive_report(case, pred, ranked)
                 st.success(f"Report generated: `{report_path.name}`. Access it under the **Reports** page.")
         else:
-            st.info("👈 Enter complaint metadata and click **Analyze Case** to initiate intelligence triage.")
+            st.info("👈 Enter complaint metadata and click **ANALYZE CASE** to initiate live real-time intelligence triage.")

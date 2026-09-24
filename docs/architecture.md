@@ -43,15 +43,15 @@ graph TD
 - `zones.py`: Geographic bounding boxes and centroids for target operational sectors.
 - `analysis.py`: Target validation, spatial separation, empirical centroid computation, bounding box overlap analysis, statistical association tests, and ATM coverage analytics (implemented in Phase 3).
 - `osm_loader.py`: Overpass QL client with MD5 spatial caching on disk.
-- `atm_discovery.py`: Zone-filtered POI discovery.
-- `ranking.py`: Multi-criteria heuristic scoring engine.
+- `loader.py`: Validated, cached loader for 333 verified OpenStreetMap ATM locations and 719,280 hourly synthetic ATM operational activity records with zero target leakage.
+- `ranking.py`: Phase 7 transparent multi-criteria ATM candidate scoring engine uniting zone likelihood, spatial proximity decay, bank matching, operational hours accessibility, simulated activity, and cash volume compatibility. Formally defined in [docs/atm_ranking.md](file:///docs/atm_ranking.md) and [docs/atm_ranking_contract.md](file:///docs/atm_ranking_contract.md).
 
 > [!NOTE]
 > **Synthetic Target Disclosure**: `withdrawal_zone` is a synthetic target created for academic supervised-learning experimentation. It does not represent confirmed NCRP withdrawal locations.
 
 
 ### 5. Intelligence & Presentation Layer (`src/intelligence/`, `app/`)
-- `scoring.py`: Multi-factor prioritization synthesis.
-- `explanation.py`: Non-technical signal explanation and investigative advice generator.
-- `report.py`: HTML/PDF brief generator.
-- `app/`: Multi-page Streamlit application shell with embedded Leaflet.js maps.
+- `case_analysis.py`: Live dynamic orchestration service executing end-to-end case intake, feature preprocessing, model inference, candidate ranking, and explanation generation in real-time.
+- `explanation.py`: Non-technical operational explanation and actionable investigative advice generator.
+- `report.py`: HTML/PDF executive brief generator.
+- `app/`: Multi-page Streamlit application workbench with live dynamic case analysis and embedded Leaflet.js maps.

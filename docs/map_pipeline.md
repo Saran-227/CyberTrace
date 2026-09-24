@@ -25,3 +25,15 @@ The map is embedded using `streamlit.components.v1.html`, dynamically injecting 
 ## 4. Evidence Integrity Notice
 Markers on the Leaflet map denote candidate infrastructure discovered from OpenStreetMap. They represent geographic proximity candidates, not confirmed transaction locations.
 
+---
+
+## 5. Phase 7 Integration: Dynamic Map Input Contract
+
+The interactive map in Phase 8 will consume the standardized output produced by `src/intelligence/case_analysis.py`:
+- `complaint_point`: `(complaint_latitude, complaint_longitude, popup_label)`
+- `predicted_zone_bbox`: Bounding box tuple `(min_lat, min_lon, max_lat, max_lon)` for the predicted zone.
+- `candidate_zones`: List of all evaluated sectors (including cross-boundary candidate zones).
+- `candidate_atms`: Top ranked candidate ATM objects containing `latitude`, `longitude`, `bank`, `operator`, `overall_score`, `rank`, `designation`, and `evidence_flags`.
+- `cross_zone_status`: Flag indicating whether dual-sector rendering is active.
+
+
