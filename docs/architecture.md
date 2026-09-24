@@ -54,7 +54,10 @@ graph TD
 ### 5. Intelligence & Presentation Layer (`src/intelligence/`, `app/`)
 - `case_analysis.py`: Live dynamic orchestration service executing end-to-end case intake, feature preprocessing, model inference, candidate ranking, and explanation generation in real-time.
 - `explanation.py`: Non-technical operational explanation and actionable investigative advice generator.
-- `report.py`: HTML/PDF executive brief generator.
+- `report.py`: Phase 9 executive intelligence report generator compiling normalized `case_analysis` data into structured 14-section briefs (HTML and PDF). Formally specified in [docs/report_contract.md](file:///docs/report_contract.md) and detailed in [docs/reporting.md](file:///docs/reporting.md).
+- `report_pdf.py`: Multi-page formal PDF generator built with ReportLab 5.0, featuring two-pass `NumberedCanvas`, embedded high-DPI horizontal probability bar charts, and auto-wrapping table cells.
 - `app/components/map.py`: Phase 8 dynamic Leaflet.js / OpenStreetMap visualizer component with dark intelligence aesthetics, pulsing complaint marker, probability-proportional candidate zones, #1 top ATM green highlight, cross-zone banner, and auto-centering bounds. Formally detailed in [docs/map_pipeline.md](file:///docs/map_pipeline.md).
-- `app/`: Multi-page Streamlit application workbench with live dynamic case analysis and embedded Leaflet.js maps.
+- `app/pages/report.py`: Interactive Streamlit report management workbench with live dynamic case summary, HTML preview, and direct HTML/PDF download controls.
+- `app/`: Multi-page Streamlit application workbench with live dynamic case analysis, embedded Leaflet.js maps, and executive briefs.
+
 

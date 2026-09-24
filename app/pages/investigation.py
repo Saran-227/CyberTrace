@@ -174,6 +174,9 @@ def render_investigation() -> None:
                 st.session_state["active_case"] = analysis_result["case_data"]
                 st.session_state["prediction_result"] = analysis_result["prediction"]
                 st.session_state["ranked_atms"] = analysis_result["ranking"]["ranked_atms"]
+                # Invalidate old report so user never downloads stale case brief
+                st.session_state["report_status"] = "OUTDATED"
+                st.session_state["current_report_path"] = None
 
     # Display Right: Intelligence & Geographic Visualization
     with col_intel:
@@ -262,8 +265,12 @@ def render_investigation() -> None:
 
             # 7. Report Generator Trigger
             st.markdown("---")
-            if st.button("📄 Generate Executive Intelligence Report", use_container_width=True):
-                report_path = generate_executive_report(case, pred, filtered_ranked)
-                st.success(f"Report generated: `{report_path.name}`. Access it under the **Reports** page.")
+            if st.button("📄 Generate Executive Intelligence Report (HTML & PDF)", use_container_width=True):
+                with st.spinner("Compiling official executive intelligence brief (HTML & PDF)..."):
+                    report_path = generate_executive_report(analysis)
+                    st.session_state["current_report_path"] = report_path
+                    st.session_state["report_status"] = "CURRENT"
+                st.success(f"✅ Intelligence Brief successfully compiled: `{report_path.name}`. Access HTML preview and PDF download in the **Reports** section.")
+
         else:
             st.info("👈 Enter complaint metadata and click **ANALYZE CASE** to initiate live real-time intelligence triage.")

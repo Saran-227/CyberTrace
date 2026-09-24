@@ -2,222 +2,611 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CyberTrace Executive Intelligence Report - Case {{ case_id }}</title>
 <style>
+  :root {
+    --bg-main: #0b1120;
+    --bg-card: #0f172a;
+    --bg-subtle: #1e293b;
+    --border-main: #334155;
+    --border-accent: #0284c7;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --cyan: #00e5ff;
+    --blue: #0284c7;
+    --emerald: #10b981;
+    --amber: #f59e0b;
+    --red: #ef4444;
+    --purple: #a855f7;
+  }
+  * { box-sizing: border-box; }
   body {
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-    color: #1e293b;
-    background: #f8fafc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-primary);
+    background: var(--bg-main);
     margin: 0;
-    padding: 30px;
+    padding: 32px 20px;
+    line-height: 1.5;
   }
   .report-container {
-    max-width: 850px;
+    max-width: 960px;
     margin: 0 auto;
-    background: #ffffff;
-    padding: 36px 48px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e2e8f0;
+    background: var(--bg-card);
+    padding: 40px 48px;
+    border-radius: 12px;
+    border: 1px solid var(--border-main);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
   }
   .header {
-    border-bottom: 2px solid #0284c7;
-    padding-bottom: 16px;
+    border-bottom: 2px solid var(--border-accent);
+    padding-bottom: 20px;
     margin-bottom: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
   }
-  .header h1 {
+  .header-titles h1 {
     margin: 0;
-    font-size: 24px;
-    color: #0f172a;
+    font-size: 26px;
+    color: #ffffff;
     letter-spacing: 0.5px;
+    font-weight: 800;
   }
+  .header-titles .subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    color: var(--cyan);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .badge-container { text-align: right; }
   .badge {
-    background: #0284c7;
+    background: linear-gradient(135deg, #0284c7, #0369a1);
     color: #ffffff;
     font-size: 11px;
     font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 4px;
+    padding: 6px 12px;
+    border-radius: 6px;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+  }
+  .meta-sub {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 6px;
   }
   .disclaimer-banner {
-    background: #fef2f2;
-    border-left: 4px solid #ef4444;
-    padding: 12px 16px;
-    margin-bottom: 24px;
-    font-size: 13px;
-    color: #991b1b;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid var(--red);
+    border-left: 5px solid var(--red);
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 28px;
+    font-size: 12.5px;
+    color: #fca5a5;
   }
+  .disclaimer-banner strong { color: #ffffff; }
   .section-title {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
-    color: #0f172a;
-    margin-top: 24px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid #e2e8f0;
-    padding-bottom: 6px;
+    color: #ffffff;
+    margin-top: 32px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border-main);
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
   .grid-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-bottom: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
   }
   .card {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 6px;
-    padding: 12px 16px;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-main);
+    border-radius: 8px;
+    padding: 14px 18px;
+  }
+  .card-highlight {
+    background: rgba(2, 132, 199, 0.1);
+    border-color: #0284c7;
+  }
+  .card-top {
+    background: rgba(16, 185, 129, 0.08);
+    border-color: #10b981;
+  }
+  .card-warning {
+    background: rgba(245, 158, 11, 0.08);
+    border-color: #f59e0b;
   }
   .card-label {
-    font-size: 12px;
-    color: #64748b;
+    font-size: 11px;
+    color: var(--text-muted);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     margin-bottom: 4px;
   }
   .card-value {
     font-size: 16px;
     font-weight: 700;
-    color: #0f172a;
+    color: #ffffff;
+  }
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 14px;
+    margin-bottom: 20px;
   }
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 12px;
-    font-size: 13px;
+    font-size: 12.5px;
   }
   th, td {
     padding: 10px 12px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--border-main);
     text-align: left;
   }
   th {
-    background: #f1f5f9;
-    font-weight: 600;
-    color: #475569;
+    background: var(--bg-subtle);
+    font-weight: 700;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
   }
-  .top-cand {
-    background: #f0fdf4;
-    font-weight: 600;
+  tr:nth-child(even) { background: rgba(30, 41, 59, 0.4); }
+  .top-cand-row {
+    background: rgba(16, 185, 129, 0.15) !important;
+    border: 1px solid #10b981;
   }
+  .top-cand-row td { font-weight: 600; color: #ffffff; }
+  .badge-chip {
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  .badge-chip-emerald { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981; }
+  .badge-chip-cyan { background: rgba(0, 229, 255, 0.2); color: var(--cyan); border: 1px solid var(--cyan); }
+  .badge-chip-amber { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid #f59e0b; }
+  .badge-chip-slate { background: rgba(100, 116, 139, 0.2); color: #94a3b8; border: 1px solid #64748b; }
+  
+  /* Horizontal Probability Meters */
+  .prob-meter-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 12px;
+    font-size: 12px;
+  }
+  .prob-meter-label { width: 80px; font-weight: 700; }
+  .prob-meter-bar-container {
+    flex: 1;
+    background: #1e293b;
+    border-radius: 4px;
+    height: 16px;
+    overflow: hidden;
+    position: relative;
+  }
+  .prob-meter-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.4s ease;
+  }
+  .prob-meter-val { width: 55px; text-align: right; font-weight: 700; }
+
   ul {
-    padding-left: 20px;
-    margin: 8px 0;
+    padding-left: 22px;
+    margin: 10px 0;
   }
   li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-size: 13px;
-    color: #334155;
+    color: var(--text-secondary);
   }
+  li strong { color: var(--text-primary); }
+  
   .footer {
-    margin-top: 36px;
-    padding-top: 16px;
-    border-top: 1px solid #e2e8f0;
-    font-size: 12px;
-    color: #64748b;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-main);
+    font-size: 11.5px;
+    color: var(--text-muted);
     text-align: center;
+  }
+  .footer-links {
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+  .footer-links a { color: var(--cyan); text-decoration: none; }
+  .footer-links a:hover { text-decoration: underline; }
+
+  @media print {
+    body { background: #ffffff; color: #000000; padding: 0; }
+    .report-container { max-width: 100%; border: none; box-shadow: none; padding: 10px; }
+    .card { background: #f8fafc; border-color: #cbd5e1; }
+    th { background: #f1f5f9; color: #0f172a; }
+    td { color: #1e293b; }
+    .disclaimer-banner { background: #fef2f2; color: #991b1b; }
+    .section-title { page-break-after: avoid; }
+    table, tr { page-break-inside: avoid; }
   }
 </style>
 </head>
 <body>
 <div class="report-container">
+  
+  <!-- HEADER -->
   <div class="header">
-    <div>
+    <div class="header-titles">
       <h1>CYBERTRACE EXECUTIVE INTELLIGENCE BRIEF</h1>
-      <small style="color: #64748b;">Case Reference: {{ case_id }} | Generated: {{ generated_time }}</small>
+      <div class="subtitle">Law Enforcement & Analytical Advisory</div>
+      <div class="meta-sub">Case Reference: <strong>{{ case_id }}</strong> | Generated: {{ metadata.generated_at }}</div>
     </div>
-    <span class="badge">Intelligence Advisory</span>
+    <div class="badge-container">
+      <span class="badge">Official Analytical Advisory</span>
+      <div class="meta-sub">Restricted Law Enforcement Dissemination</div>
+    </div>
   </div>
 
+
+  <!-- ACADEMIC NOTICE & EVIDENCE DISCLAIMER -->
   <div class="disclaimer-banner">
-    <strong>ACADEMIC SYNTHETIC RESEARCH NOTICE:</strong> All complaint records and historical activity are synthetic.
-    Predicted zones and candidate rankings represent mathematical likelihoods. Candidate ATMs are NOT confirmed locations of withdrawal;
-    physical confirmation requires banking interchange logs and surveillance verification.
+    <strong>ACADEMIC SYNTHETIC RESEARCH NOTICE & EVIDENCE BOUNDARIES:</strong><br>
+    All cybercrime complaints, victim details, and historical ATM operational records evaluated by CyberTrace are <strong>synthetic</strong>.
+    Predicted withdrawal zones and ATM candidate rankings represent mathematical and simulated operational likelihoods.
+    <strong>ATM candidates are NOT confirmed locations of criminal withdrawal.</strong> Official forensic confirmation strictly
+    requires authorized banking interchange audit logs and physical CCTV surveillance verification.
   </div>
 
-  <div class="section-title">1. Case & Incident Overview</div>
-  <div class="grid-2">
-    <div class="card">
-      <div class="card-label">Reported Fraud Type</div>
-      <div class="card-value">{{ case.fraud_type }}</div>
-    </div>
-    <div class="card">
-      <div class="card-label">Financial Amount</div>
-      <div class="card-value">₹{{ "{:,}".format(case.amount) }} ({{ case.amount_category }})</div>
-    </div>
-    <div class="card">
-      <div class="card-label">Victim Bank & Rail</div>
-      <div class="card-value">{{ case.bank }} / {{ case.transaction_type }}</div>
+  <!-- SECTION 1: EXECUTIVE SUMMARY -->
+  <div class="section-title">1. Executive Summary</div>
+  <div class="grid-4">
+    <div class="card card-highlight">
+      <div class="card-label">Predicted Withdrawal Zone</div>
+      <div class="card-value" style="color: var(--cyan);">{{ prediction.predicted_zone }}</div>
+      <div style="font-size: 11px; color: var(--text-secondary); margin-top: 4px;">Model Confidence: <strong>{{ "%.1f"|format(prediction.prediction_confidence * 100) }}%</strong> ({{ prediction.confidence_tier }})</div>
     </div>
     <div class="card">
       <div class="card-label">Reported Location</div>
-      <div class="card-value">{{ case.city }}, {{ case.district }} ({{ case.state }})</div>
+      <div class="card-value">{{ case.city }}, {{ case.state }}</div>
+      <div style="font-size: 11px; color: var(--text-secondary); margin-top: 4px;">District: {{ case.district }}</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Reported Amount</div>
+      <div class="card-value">INR {{ "{:,}".format(case.amount|int) }}</div>
+      <div style="font-size: 11px; color: var(--text-secondary); margin-top: 4px;">Rail: {{ case.transaction_type }}</div>
+    </div>
+    <div class="card card-top">
+      <div class="card-label">Top ATM Candidate (#1)</div>
+      {% if ranked_atms %}
+      <div class="card-value" style="color: #34d399; font-size: 14px;">{{ ranked_atms[0].bank }}</div>
+      <div style="font-size: 11px; color: var(--text-secondary); margin-top: 4px;">Score: <strong>{{ "%.1f"|format(ranked_atms[0].overall_score) }} / 100</strong> ({{ ranked_atms[0].distance_km }} km)</div>
+      {% else %}
+      <div class="card-value" style="color: var(--text-muted); font-size: 13px;">No OSM ATMs in Sector</div>
+      <div style="font-size: 11px; color: var(--text-secondary); margin-top: 4px;">Refer to coverage notice</div>
+      {% endif %}
     </div>
   </div>
 
-  <div class="section-title">2. Geographic Cash-Out Prediction</div>
+  <!-- SECTION 2: CASE INFORMATION -->
+  <div class="section-title">2. Case & Incident Profile</div>
   <div class="card" style="margin-bottom: 16px;">
-    <div class="card-label">Predicted Withdrawal Zone</div>
-    <div class="card-value" style="color: #0284c7; font-size: 20px;">{{ prediction.predicted_zone }}</div>
-    <p style="margin: 6px 0 0 0; font-size: 13px; color: #475569;">
-      {{ explanation.zone_summary }}
+    <p style="margin: 0; font-size: 13px; color: var(--text-secondary);">
+      CyberTrace ingested complaint reference <strong>{{ case_id }}</strong> and executed real-time feature preprocessing,
+      supervised location classification, and multi-criteria infrastructure discovery. The reported incident involves
+      <strong>INR {{ "{:,}".format(case.amount|int) }}</strong> disputed under modus operandi <strong>{{ case.fraud_type }}</strong>,
+      affecting <strong>{{ case.bank }}</strong> on <strong>{{ case.complaint_date }}</strong> at <strong>{{ case.complaint_time }}</strong>.
+    </p>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-label">Victim Jurisdiction & Geography</div>
+      <div style="font-size: 13px; margin-top: 6px;">
+        <div><strong>City:</strong> {{ case.city }}</div>
+        <div><strong>District:</strong> {{ case.district }}</div>
+        <div><strong>State:</strong> {{ case.state }}</div>
+        <div><strong>Coordinates:</strong> Lat {{ "%.4f"|format(case.complaint_latitude|float) }}, Lon {{ "%.4f"|format(case.complaint_longitude|float) }}</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label">Financial & Transaction Metrics</div>
+      <div style="font-size: 13px; margin-top: 6px;">
+        <div><strong>Financial Amount:</strong> INR {{ "{:,}".format(case.amount|int) }}</div>
+        <div><strong>Amount Category:</strong> {{ case.amount_category }}</div>
+        <div><strong>Issuing Bank:</strong> {{ case.bank }}</div>
+        <div><strong>Transaction Channel:</strong> {{ case.transaction_type }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: LOCATION PREDICTION & PROBABILITY ANALYSIS -->
+  <div class="section-title">3. Location Prediction & Probability Analysis</div>
+  <p style="font-size: 13px; color: var(--text-secondary);">
+    Active Model: <code>{{ prediction.model_id }}</code>.
+    The model evaluated all 10 geographical withdrawal zones. <strong>{{ prediction.predicted_zone }}</strong> yielded the maximum posterior probability
+    at <strong>{{ "%.1f"|format(prediction.prediction_confidence * 100) }}%</strong>, followed by <strong>{{ prediction.second_best_zone }}</strong> with a probability margin of <strong>Δ {{ "%.3f"|format(prediction.probability_margin) }}</strong>.
+  </p>
+
+  {% if chart_base64 %}
+  <div style="text-align: center; margin: 16px 0;">
+    <img src="data:image/png;base64,{{ chart_base64 }}" alt="Probability Distribution" style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-main);">
+  </div>
+  {% endif %}
+
+  <!-- Sorted Probability Meters -->
+  <div class="card" style="margin-top: 14px;">
+    <div class="card-label" style="margin-bottom: 12px;">Posterior Probability Distribution Across 10 Sectors</div>
+    {% for zone_id, prob in sorted_probabilities %}
+    {% set pct = prob * 100 %}
+    <div class="prob-meter-row">
+      <div class="prob-meter-label" style="color: {{ 'var(--cyan)' if zone_id == prediction.predicted_zone else ('#fbbf24' if zone_id == prediction.second_best_zone else 'var(--text-secondary)') }};">
+        {{ zone_id }}
+      </div>
+      <div class="prob-meter-bar-container">
+        <div class="prob-meter-fill" style="width: {{ pct }}%; background: {{ 'var(--cyan)' if zone_id == prediction.predicted_zone else ('#f59e0b' if zone_id == prediction.second_best_zone else '#475569') }};"></div>
+      </div>
+      <div class="prob-meter-val" style="color: {{ '#ffffff' if pct >= 10.0 else 'var(--text-muted)' }};">
+        {{ "%.1f"|format(pct) }}%
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- SECTION 4: CONFIDENCE & UNCERTAINTY -->
+  <div class="section-title">4. Confidence & Uncertainty Diagnostic</div>
+  <div class="card {{ 'card-highlight' if prediction.confidence_tier == 'HIGH' else ('card-warning' if prediction.confidence_tier == 'MEDIUM' else '') }}">
+    <div class="card-label">Diagnostic Confidence Tier: {{ prediction.confidence_tier }} (Margin Δ {{ "%.3f"|format(prediction.probability_margin) }})</div>
+    <p style="margin: 6px 0 0 0; font-size: 13px; color: var(--text-secondary);">
+      {% if prediction.confidence_tier == 'HIGH' %}
+      <strong>High Confidence (Δ ≥ 0.30):</strong> The highest-probability zone is decisively separated from all competing sectors. Primary candidate discovery focuses on infrastructure located within <strong>{{ prediction.predicted_zone }}</strong>.
+      {% elif prediction.confidence_tier == 'MEDIUM' %}
+      <strong>Medium Confidence (0.15 ≤ Δ &lt; 0.30):</strong> The classifier shows competitive probability mass across adjacent sectors ({{ prediction.predicted_zone }} vs {{ prediction.second_best_zone }}). Dual-sector cross-zone search was automatically initiated.
+      {% else %}
+      <strong>Low Confidence (Δ &lt; 0.15):</strong> High classification ambiguity. Investigators should consider secondary telecommunications or IP address evidence before narrowing candidate searches.
+      {% endif %}
     </p>
   </div>
 
-  <div class="section-title">3. Candidate ATM Locations in Target Area</div>
-  <p style="font-size: 13px; color: #475569;">
-    The candidate ATMs below were discovered using OpenStreetMap open geographic data within the predicted zone and ranked by multi-criteria compatibility.
-  </p>
-  <table>
-    <thead>
-      <tr>
-        <th>Rank / ID</th>
-        <th>Bank / Operator</th>
-        <th>Distance</th>
-        <th>Candidate Score</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for atm in atms %}
-      <tr class="{{ 'top-cand' if loop.first else '' }}">
-        <td>{{ atm.atm_id }}</td>
-        <td>{{ atm.bank }}</td>
-        <td>{{ atm.distance_km }} km</td>
-        <td><strong>{{ "{:.2f}".format(atm.candidate_score) }}</strong></td>
-        <td>{{ atm.designation }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-
-  <div class="section-title">4. Key Contributing Signals</div>
-  <ul>
-    {% for sig in explanation.key_signals %}
-    <li>{{ sig }}</li>
-    {% endfor %}
-  </ul>
-
-  <div class="section-title">5. Recommended Law Enforcement Focus</div>
-  <ul>
-    {% for action in explanation.recommended_focus %}
-    <li>{{ action }}</li>
-    {% endfor %}
-  </ul>
-
-  <div class="section-title">6. Official Reporting & Helplines</div>
-  <p style="font-size: 13px; color: #334155;">
-    National Cyber Crime Reporting Portal: <a href="https://www.cybercrime.gov.in/" target="_blank">https://www.cybercrime.gov.in/</a><br>
-    National Financial Cyber Fraud Helpline: <strong>1930</strong>
-  </p>
-
-  <div class="footer">
-    CyberTrace Academic Location Intelligence Platform &copy; 2026. Strictly confidential for investigative analysis.
+  <!-- SECTION 5: GEOGRAPHIC ASSESSMENT & CROSS-ZONE SEARCH -->
+  <div class="section-title">5. Geographic Assessment</div>
+  <div class="card" style="margin-bottom: 14px;">
+    <p style="margin: 0; font-size: 13px; color: var(--text-secondary);">
+      Complaint Point: <strong>Lat {{ "%.4f"|format(case.complaint_latitude|float) }}, Lon {{ "%.4f"|format(case.complaint_longitude|float) }}</strong> ({{ case.city }}).
+      Evaluated Sectors: <strong>{{ candidate_zones|join(', ') }}</strong>.
+      Cross-Zone Evaluation Status: <strong>{{ 'ACTIVE (Dual Sector)' if ranking.cross_zone_search else 'INACTIVE (Single Sector)' }}</strong>.
+    </p>
   </div>
+
+  {% if ranking.cross_zone_search %}
+  <div class="card card-warning" style="margin-bottom: 14px;">
+    <div class="card-label" style="color: #fbbf24;">Cross-Zone Candidate Assessment Active</div>
+    <p style="margin: 6px 0 0 0; font-size: 13px; color: var(--text-secondary);">
+      Due to administrative sector boundary proximity and probability contention between <strong>{{ prediction.predicted_zone }}</strong> and <strong>{{ prediction.second_best_zone }}</strong>,
+      candidate ATMs were discovered and ranked across both jurisdictions. This reflects jurisdictional ambiguity (e.g. NCR boundary zones) rather than confirmed physical transit.
+    </p>
+  </div>
+  {% endif %}
+
+  <!-- SECTION 6: CANDIDATE ATM ASSESSMENT -->
+  <div class="section-title">6. Candidate ATM Infrastructure Assessment (Top Candidates)</div>
+  {% if ranked_atms %}
+  <div class="table-responsive">
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>ATM ID</th>
+          <th>Bank / Operator</th>
+          <th>City / District</th>
+          <th>Zone</th>
+          <th>Dist (km)</th>
+          <th>Score</th>
+          <th>Bank Match</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for atm in ranked_atms[:10] %}
+        <tr class="{{ 'top-cand-row' if loop.first else '' }}">
+          <td>#{{ atm.rank }}</td>
+          <td><code>{{ atm.atm_id[:16] }}</code></td>
+          <td><strong>{{ atm.bank }}</strong></td>
+          <td>{{ atm.city }} ({{ atm.district }})</td>
+          <td><span class="badge-chip badge-chip-slate">{{ atm.zone }}</span></td>
+          <td>{{ "%.2f"|format(atm.distance_km) }} km</td>
+          <td><strong>{{ "%.2f"|format(atm.overall_score) }}</strong></td>
+          <td>
+            {% if atm.evidence_flags.bank_match == 'Exact Match' %}
+            <span class="badge-chip badge-chip-emerald">Exact</span>
+            {% else %}
+            <span class="badge-chip badge-chip-slate">Cross-Net</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="card" style="border-left: 4px solid #64748b;">
+    <p style="margin: 0; font-size: 13px; color: var(--text-secondary);">
+      <strong>Zero OSM ATM Records Found:</strong> The OpenStreetMap catalog contains no verified ATM points of interest within the primary sector (e.g. Panipat). CyberTrace strictly avoids fabricating coordinates. Investigators must query acquiring bank networks directly.
+    </p>
+  </div>
+  {% endif %}
+
+  <!-- SECTION 7: HIGHEST-RANKED ATM SPOTLIGHT -->
+  {% if ranked_atms %}
+  {% set top = ranked_atms[0] %}
+  <div class="section-title">7. Highest-Ranked ATM Candidate Spotlight (#1)</div>
+  <div class="card card-top" style="margin-bottom: 14px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+      <div>
+        <span class="badge-chip badge-chip-emerald" style="font-size: 11px;">Highest-Ranked Candidate (#1)</span>
+        <h3 style="margin: 8px 0 2px 0; color: #ffffff;">{{ top.bank }} — {{ top.city }}</h3>
+        <div style="font-size: 12px; color: var(--text-secondary);">OSM Reference: <code>{{ top.atm_id }}</code> | Zone: <strong>{{ top.zone }}</strong> | Distance: <strong>{{ "%.2f"|format(top.distance_km) }} km</strong></div>
+      </div>
+      <div style="text-align: right;">
+        <div style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Composite Score</div>
+        <div style="font-size: 26px; font-weight: 800; color: #34d399;">{{ "%.2f"|format(top.overall_score) }} <span style="font-size: 13px; color: var(--text-muted);">/ 100</span></div>
+      </div>
+    </div>
+    <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(16, 185, 129, 0.2);">
+      <div class="card-label" style="color: #34d399;">Multi-Criteria Score Breakdown</div>
+      <div class="grid-4" style="margin-top: 8px; margin-bottom: 0;">
+        <div class="card" style="padding: 8px 12px; background: rgba(15, 23, 42, 0.6);">
+          <div class="card-label">Zone Prob (30%)</div>
+          <div style="font-size: 14px; font-weight: 700;">{{ "%.1f"|format(top.zone_score) }}</div>
+        </div>
+        <div class="card" style="padding: 8px 12px; background: rgba(15, 23, 42, 0.6);">
+          <div class="card-label">Spatial Prox (25%)</div>
+          <div style="font-size: 14px; font-weight: 700;">{{ "%.1f"|format(top.spatial_score) }}</div>
+        </div>
+        <div class="card" style="padding: 8px 12px; background: rgba(15, 23, 42, 0.6);">
+          <div class="card-label">Bank Match (20%)</div>
+          <div style="font-size: 14px; font-weight: 700;">{{ "%.1f"|format(top.bank_score) }}</div>
+        </div>
+        <div class="card" style="padding: 8px 12px; background: rgba(15, 23, 42, 0.6);">
+          <div class="card-label">Hours / Act (20%)</div>
+          <div style="font-size: 14px; font-weight: 700;">{{ "%.1f"|format((top.time_score + top.activity_score)/2) }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- SECTION 8: ANALYTICAL REASONING -->
+  <div class="section-title">8. Analytical Reasoning & Contributing Signals</div>
+  <div class="card">
+    <p style="margin: 0 0 10px 0; font-size: 13px; color: #ffffff;"><strong>Key Investigative Indicators:</strong></p>
+    <ul>
+      {% for sig in explanation.key_signals %}
+      <li>{{ sig }}</li>
+      {% endfor %}
+    </ul>
+    <p style="margin: 14px 0 8px 0; font-size: 13px; color: #ffffff;"><strong>Recommended Investigative Next Steps:</strong></p>
+    <ul>
+      {% for act in explanation.recommended_focus %}
+      <li>{{ act }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- SECTION 9: EVIDENCE HIERARCHY -->
+  <div class="section-title">9. Evidence Hierarchy & Legal Separation</div>
+  <div class="table-responsive">
+    <table>
+      <thead>
+        <tr>
+          <th>Evidence Level</th>
+          <th>Intelligence Nature</th>
+          <th>CyberTrace System Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>LEVEL 1: Model Prediction</strong></td>
+          <td>Supervised ML probabilistic classification of cash-out operational sector.</td>
+          <td><span class="badge-chip badge-chip-cyan">Produced</span> Mathematical probability distribution</td>
+        </tr>
+        <tr>
+          <td><strong>LEVEL 2: Analytical Candidate</strong></td>
+          <td>Multi-criteria compatibility scoring of open OpenStreetMap physical infrastructure.</td>
+          <td><span class="badge-chip badge-chip-emerald">Produced</span> Prioritized candidate ATM ranking</td>
+        </tr>
+        <tr>
+          <td><strong>LEVEL 3: Physical Evidence</strong></td>
+          <td>Bank interchange logs, ATM electronic journal, physical CCTV recordings, suspect device CDRs.</td>
+          <td><span class="badge-chip badge-chip-amber">Not Produced</span> Requires authorized law enforcement subpoena</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 10: DATA PROVENANCE -->
+  <div class="section-title">10. Data Sources & Provenance</div>
+  <div class="card">
+    <p style="font-size: 12.5px; color: var(--text-secondary); margin: 0;">
+      • <strong>CyberTrace Synthetic Complaint Dataset:</strong> 20,000 synthetic records with verified zero target leakage.<br>
+      • <strong>OpenStreetMap Verified Geographic Infrastructure:</strong> 333 physical ATM locations ingested via Overpass API under ODbL.<br>
+      • <strong>Synthetic ATM Activity Dataset:</strong> 719,280 hourly synthetic records simulating baseline diurnal footfall without fraud variables.<br>
+      • <strong>Location Classifier Artifact:</strong> <code>{{ provenance.model_artifact }}</code> ({{ provenance.model_family }}).<br>
+      • <strong>Attribution:</strong> Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" style="color: var(--cyan);">OpenStreetMap</a> contributors.
+    </p>
+  </div>
+
+  <!-- SECTION 11: METHODOLOGICAL LIMITATIONS -->
+  <div class="section-title">11. Methodological Limitations</div>
+  <div class="card">
+    <ol style="margin: 0; padding-left: 20px; font-size: 12.5px; color: var(--text-secondary);">
+      <li>Complaint metadata is synthetic and generated for academic supervised-learning experimentation.</li>
+      <li>ATM historical activity is synthetic and reflects simulated operational baselines, not real bank transaction records.</li>
+      <li>OpenStreetMap ATM coverage is crowdsourced and incomplete (e.g. Panipat catalog has 0 OSM ATMs).</li>
+      <li>Bank/operator metadata may be unrecorded in public OSM records, receiving default neutral compatibility scores.</li>
+      <li>Candidate ATM ranking is an analytical prioritization tool, not forensic proof of criminal withdrawal.</li>
+      <li>Zone boundaries are statistical spatial bounding representations derived from training centroids.</li>
+      <li>Model predictions depend on training data distribution and may reflect regional class frequency imbalance.</li>
+      <li>Confidential banking switch records and CCTV footage were not accessed by CyberTrace.</li>
+      <li>Authoritative cardholder audit logs and device telecom tower records are required for legal corroboration.</li>
+      <li>Prediction uncertainty exists in boundary regions (e.g. NCR sectors), requiring multi-sector evaluation.</li>
+    </ol>
+  </div>
+
+  <!-- SECTION 12: VERIFICATION RECOMMENDATIONS -->
+  <div class="section-title">12. Recommended Investigative Verification Steps</div>
+  <div class="card">
+    <ul>
+      <li>Issue formal legal notice to the acquiring bank for ATM electronic journal (EJ) logs and cash-out timestamps.</li>
+      <li>Request surveillance CCTV footage for top candidate ATMs covering a ±30 minute window around incident timing.</li>
+      <li>Cross-reference suspect cellular tower Call Detail Records (CDR) against candidate ATM geographic coordinates.</li>
+      <li>Request National Payments Corporation of India (NPCI) interchange switch logs for transaction tracing.</li>
+      <li>Verify physical operational status and cash replenishment records for candidate ATMs during the incident window.</li>
+      <li>File official intelligence documentation under the victim's National Cyber Crime Reporting Portal reference.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 13: OFFICIAL CYBERCRIME REPORTING & SYSTEM AUDIT -->
+  <div class="section-title">13. Official Cybercrime Reporting & System Audit</div>
+  <div class="card" style="background: rgba(15, 23, 42, 0.8);">
+    <div style="font-size: 13px; color: var(--text-secondary);">
+      <div>🌐 <strong>National Cyber Crime Reporting Portal:</strong> <a href="https://www.cybercrime.gov.in/" target="_blank" style="color: var(--cyan);">https://www.cybercrime.gov.in/</a></div>
+      <div style="margin-top: 4px;">📞 <strong>Citizen Financial Cyber Fraud Helpline:</strong> <strong style="color: #ffffff;">1930</strong></div>
+      <div style="margin-top: 4px; font-size: 11.5px; color: var(--text-muted);">
+        Notice: CyberTrace is an academic intelligence prototype and does not file official law enforcement complaints.
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>CyberTrace Location Intelligence Platform &copy; 2026. All Rights Reserved.</div>
+    <div class="footer-links">
+      Report Version: <strong>{{ metadata.report_version }}</strong> |
+      Model: <code>{{ prediction.model_id }}</code> |
+      Status: <strong>ANALYSIS_COMPLETED</strong>
+    </div>
+  </div>
+
 </div>
 </body>
 </html>
