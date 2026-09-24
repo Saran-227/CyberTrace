@@ -1,0 +1,41 @@
+source,withdrawal_zone,count,percentage
+source_dataset (cybercrime_complaints.csv),Zone_01,1241,6.205
+source_dataset (cybercrime_complaints.csv),Zone_02,1577,7.885
+source_dataset (cybercrime_complaints.csv),Zone_03,1818,9.09
+source_dataset (cybercrime_complaints.csv),Zone_04,2592,12.96
+source_dataset (cybercrime_complaints.csv),Zone_05,764,3.82
+source_dataset (cybercrime_complaints.csv),Zone_06,841,4.205
+source_dataset (cybercrime_complaints.csv),Zone_07,5436,27.18
+source_dataset (cybercrime_complaints.csv),Zone_08,4339,21.695
+source_dataset (cybercrime_complaints.csv),Zone_09,232,1.16
+source_dataset (cybercrime_complaints.csv),Zone_10,1160,5.8
+phase3_report (reports/zone_statistics.csv),Zone_01,1241,6.205
+phase3_report (reports/zone_statistics.csv),Zone_02,1577,7.885
+phase3_report (reports/zone_statistics.csv),Zone_03,1818,9.09
+phase3_report (reports/zone_statistics.csv),Zone_04,2592,12.96
+phase3_report (reports/zone_statistics.csv),Zone_05,764,3.82
+phase3_report (reports/zone_statistics.csv),Zone_06,841,4.205
+phase3_report (reports/zone_statistics.csv),Zone_07,5436,27.18
+phase3_report (reports/zone_statistics.csv),Zone_08,4339,21.695
+phase3_report (reports/zone_statistics.csv),Zone_09,232,1.16
+phase3_report (reports/zone_statistics.csv),Zone_10,1160,5.8
+phase4_report (reports/phase4_preprocessing_summary.md),Zone_01,1241,6.205
+phase4_report (reports/phase4_preprocessing_summary.md),Zone_02,1577,7.885
+phase4_report (reports/phase4_preprocessing_summary.md),Zone_03,1818,9.09
+phase4_report (reports/phase4_preprocessing_summary.md),Zone_04,2592,12.96
+phase4_report (reports/phase4_preprocessing_summary.md),Zone_05,764,3.82
+phase4_report (reports/phase4_preprocessing_summary.md),Zone_06,841,4.205
+phase4_report (reports/phase4_preprocessing_summary.md),Zone_07,5436,27.18
+phase4_report (reports/phase4_preprocessing_summary.md),Zone_08,4339,21.695
+phase4_report (reports/phase4_preprocessing_summary.md),Zone_09,232,1.16
+phase4_report (reports/phase4_preprocessing_summary.md),Zone_10,1160,5.8
+phase4_assistant_chat_erroneous (conversational response),Zone_01,2746,13.73
+phase4_assistant_chat_erroneous (conversational response),Zone_02,2642,13.21
+phase4_assistant_chat_erroneous (conversational response),Zone_03,2544,12.72
+phase4_assistant_chat_erroneous (conversational response),Zone_04,2540,12.7
+phase4_assistant_chat_erroneous (conversational response),Zone_05,1440,7.2
+phase4_assistant_chat_erroneous (conversational response),Zone_06,1220,6.1
+phase4_assistant_chat_erroneous (conversational response),Zone_07,5436,27.18
+phase4_assistant_chat_erroneous (conversational response),Zone_08,940,4.7
+phase4_assistant_chat_erroneous (conversational response),Zone_09,232,1.16
+phase4_assistant_chat_erroneous (conversational response),Zone_10,260,1.3

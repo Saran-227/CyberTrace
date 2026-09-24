@@ -1,0 +1,20 @@
+column_index,column_name,dtype,role,in_feature_set_full,in_feature_set_geo_blind,is_target,is_hidden_coordinate,notes
+1,complaint_id,object,Identifier/Raw Timestamp,False,False,False,False,"Raw metadata, excluded from ML feature matrix X"
+2,complaint_date,object,Identifier/Raw Timestamp,False,False,False,False,"Raw metadata, excluded from ML feature matrix X"
+3,complaint_time,object,Identifier/Raw Timestamp,False,False,False,False,"Raw metadata, excluded from ML feature matrix X"
+4,amount,float64,Feature (Both Sets),True,True,False,False,Core transaction feature present in both configurations
+5,bank,object,Feature (Both Sets),True,True,False,False,Core transaction feature present in both configurations
+6,transaction_type,object,Feature (Both Sets),True,True,False,False,Core transaction feature present in both configurations
+7,fraud_type,object,Feature (Both Sets),True,True,False,False,Core transaction feature present in both configurations
+8,city,object,Feature (Full Only - Spatial),True,False,False,False,"Legitimate spatial feature, excluded in blind baseline"
+9,state,object,Feature (Full Only - Spatial),True,False,False,False,"Legitimate spatial feature, excluded in blind baseline"
+10,district,object,Feature (Full Only - Spatial),True,False,False,False,"Legitimate spatial feature, excluded in blind baseline"
+11,complaint_latitude,float64,Feature (Full Only - Spatial),True,False,False,False,"Legitimate spatial feature, excluded in blind baseline"
+12,complaint_longitude,float64,Feature (Full Only - Spatial),True,False,False,False,"Legitimate spatial feature, excluded in blind baseline"
+13,hour,int64,Feature (Both Sets),True,True,False,False,Core transaction feature present in both configurations
+14,day_of_week,int64,Feature (Both Sets),True,True,False,False,Core transaction feature present in both configurations
+15,day_name,object,Other,False,False,False,False,Core transaction feature present in both configurations
+16,is_weekend,int64,Feature (Both Sets),True,True,False,False,Core transaction feature present in both configurations
+17,is_night,int64,Feature (Both Sets),True,True,False,False,Core transaction feature present in both configurations
+18,amount_category,object,Feature (Both Sets),True,True,False,False,Core transaction feature present in both configurations
+19,withdrawal_zone,object,Target (y),False,False,True,False,Primary target variable

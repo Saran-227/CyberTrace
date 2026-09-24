@@ -1,0 +1,51 @@
+============================================================
+CYBERTRACE CANONICAL DATASET FINGERPRINT
+============================================================
+File Path: data/processed/cybercrime_complaints.csv
+Timestamp of Audit: 2026-09-24
+SHA-256 Hash: 2be4188500ff2be70522220753ba8bddd0af5466c777bd8e6ef6528d916cb4ff
+
+Dimensions:
+- Total Rows: 20,000
+- Total Columns: 19
+
+Complaint ID Integrity:
+- Total Complaint IDs: 20,000
+- Duplicate Complaint IDs: 0
+
+Column List (19 columns):
+complaint_id, complaint_date, complaint_time, amount, bank, transaction_type, fraud_type, city, state, district, complaint_latitude, complaint_longitude, hour, day_of_week, day_name, is_weekend, is_night, amount_category, withdrawal_zone
+
+Withdrawal Zone Distribution:
+withdrawal_zone
+Zone_01    1241
+Zone_02    1577
+Zone_03    1818
+Zone_04    2592
+Zone_05     764
+Zone_06     841
+Zone_07    5436
+Zone_08    4339
+Zone_09     232
+Zone_10    1160
+
+Amount Summary:
+- Min: ₹500.00
+- Max: ₹2,339,237.00
+- Mean: ₹28,607.84
+- Median: ₹18,000.00
+- Q1 (25%): ₹10,100.00
+- Q3 (75%): ₹32,125.00
+- P95: ₹74,205.00
+- P99: ₹143,701.00
+
+Missing Values in Source:
+- bank: 160 (0.80%)
+- transaction_type: 120 (0.60%)
+- district: 80 (0.40%)
+- all other columns: 0 missing
+
+Immutability Confirmation:
+This dataset has remained byte-identical since initial creation in Phase 1 (commit 0810efe).
+Neither Phase 3 analysis nor Phase 4 preprocessing has modified this file.
+============================================================

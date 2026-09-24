@@ -1,0 +1,4 @@
+column,source_missing_count,source_missing_percentage,expected_by_generator,imputation_strategy,post_imputation_missing,post_imputation_unknown_count
+bank,160,0.8,Yes (synthetic missingness),Categorical constant -> 'Unknown',0,160
+transaction_type,120,0.6,Yes (synthetic missingness),Categorical constant -> 'Unknown',0,120
+district,80,0.4,Yes (synthetic missingness),Categorical constant -> 'Unknown',0,80
