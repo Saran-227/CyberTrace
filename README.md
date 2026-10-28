@@ -130,7 +130,8 @@ python -m pytest tests/ -v
 
 ### 4. Launch Streamlit Intelligence Application
 ```powershell
-streamlit run app/app.py
+npm run dev
+# or: streamlit run app/app.py
 ```
 Open browser at `http://localhost:8501`.
 
